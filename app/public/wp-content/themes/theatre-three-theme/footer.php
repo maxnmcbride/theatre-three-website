@@ -9,14 +9,23 @@
       412 Main Street
       Port Jefferson, NY 11777
     </a></pre>
+
     <br class="footer-breaks">
-    <h5 class="footer-column-heading">Box Office</h5>
+    <h5 class="footer-column-heading">Phone</h5>
     <pre class="footer-column-paragraph">
       <a href="tel:6319289100" class="phone-numbers">631-928-9100</a> Box Office
       <a href="tel:6319281130" class="phone-numbers">631-928-1130</a> Group Sales
       <a href="tel:6319289202" class="phone-numbers">631-928-9202</a> Business Office
     </pre>
+
+    <br class="footer-breaks">
+    <h5 class="footer-column-heading">Email</h5>
+    <pre class="footer-column-paragraph">
+      <a href="mailto:info@theatrethree.com" class="phone-numbers">info@theatrethree.com</a> General Information
+      <a href="mailto:marci@theatrethree.com" class="phone-numbers">marci@theatrethree.com</a> Group Sales
+    </pre>
   </div>
+
   <div class="footer-column">
     <h4 class="footer-column-heading">Hours</h4>
     <pre class="footer-column-paragraph">
