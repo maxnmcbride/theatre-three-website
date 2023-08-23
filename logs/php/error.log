@@ -1,0 +1,23 @@
+[17-Aug-2023 02:03:23 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[17-Aug-2023 14:24:16 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 449
+[17-Aug-2023 14:24:18 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 730
+[23-Aug-2023 01:51:40 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 01:52:19 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 02:00:55 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 02:01:16 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 02:01:29 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 02:01:30 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 02:07:49 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 02:08:43 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 02:23:51 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 02:23:58 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 02:24:01 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[23-Aug-2023 15:17:15 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/functions.php on line 7 and at least 2 expected in /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php:441
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/functions.php(7): add_action('after_setup_the...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-settings.php(600): include('/Users/max/Loca...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-config.php(103): require_once('/Users/max/Loca...')
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-load.php(50): require_once('/Users/max/Loca...')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/max/Loca...')
+#5 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php on line 441
