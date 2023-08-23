@@ -35,6 +35,7 @@
     <h5 class="footer-column-heading">Box Office</h5>
       Mon - Sat 10AM - 5PM
       Sun Two hours before showtime
+
     <h5 class="footer-column-heading">Business Office</h5>
       Tue - Fri 10AM - 4PM
     </pre>
@@ -52,3 +53,4 @@
 </body>
 </html>
 <!-- these are closed out in this file as opposed to the header tag because they are generated at the bottom of the page -->
+<!-- test comment -->
