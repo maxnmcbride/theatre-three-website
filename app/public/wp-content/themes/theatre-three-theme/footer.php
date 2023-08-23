@@ -9,7 +9,6 @@
       Port Jefferson, NY 11777</pre>
     <br class="footer-breaks">
     <h5 class="footer-column-heading">Box Office</h5>
-    <br class="footer-breaks">
     <pre class="footer-column-paragraph">
       <a href="tel:6319289100" class="phone-numbers">631-928-9100</a> Box Office
       <a href="tel:6319281130" class="phone-numbers">631-928-1130</a> Group Sales
