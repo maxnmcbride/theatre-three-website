@@ -83,6 +83,11 @@ Version: 1.0
     color: white;
 }
 
+.address{
+    text-decoration: none;
+    color: white;
+}
+
 .footer-title{
     font-family: Futura,Trebuchet MS,Arial,sans-serif;
     color: white;

@@ -4,9 +4,11 @@
     <h4 class="footer-column-heading">Contact Us</h4>
     <h5 class="footer-column-heading">Location</h5>
     <pre class="footer-column-paragraph">
+      <a class="address" href="https://www.google.com/maps/search/412-main-street-port-jefferson-ny" target="_blank">
       Theatre Three
       412 Main Street
-      Port Jefferson, NY 11777</pre>
+      Port Jefferson, NY 11777
+    </a></pre>
     <br class="footer-breaks">
     <h5 class="footer-column-heading">Box Office</h5>
     <pre class="footer-column-paragraph">
