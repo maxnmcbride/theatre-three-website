@@ -18,7 +18,15 @@
     </pre>
   </div>
   <div class="footer-column">
-    <h4 class="footer-column-heading">Contact Us</h4>
+    <h4 class="footer-column-heading">Hours</h4>
+    <pre class="footer-column-paragraph">
+      Box Office:
+      Mon - Sat: 10 am - 5 pm
+      Sun: Two hours before showtime
+      
+      Business Office:
+      Tue - Fri: 10 am - 4 pm
+    </pre>
   </div>
   <div class="footer-column">
     <h4 class="footer-column-heading">Contact Us</h4>
