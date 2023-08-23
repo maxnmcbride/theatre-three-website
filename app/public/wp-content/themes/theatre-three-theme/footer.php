@@ -20,7 +20,7 @@
   <div class="footer-column">
     <h4 class="footer-column-heading">Hours</h4>
     <pre class="footer-column-paragraph">
-      Box Office:
+    <h4>Box Office:</h4>
       Mon - Sat: 10 am - 5 pm
       Sun: Two hours before showtime
       
