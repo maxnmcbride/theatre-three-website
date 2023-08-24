@@ -50,7 +50,7 @@ Version: 1.0
   }
   
   .main-div-text {
-    position: absolute; /* Add position absolute */
+    position: absolute; 
     top: 0; /* Position at the bottom */
     left: 0; /* Position at the left */
     margin: 0;
@@ -152,7 +152,7 @@ Version: 1.0
     color: white;
     text-align: left;
     margin-left: 5%;
-
+    font-size: 3rem;
 }
 
 .theatre-three-font a{
@@ -180,6 +180,7 @@ Version: 1.0
 .nav-list a{
     color: white;
     text-decoration: none;
+    font-size: 1rem;
 }
 .nav-list a:hover{
     color: skyblue;
