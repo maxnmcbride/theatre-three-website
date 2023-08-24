@@ -143,6 +143,12 @@ Version: 1.0
     font-size: 3rem;
 }
 
+.slogan-font{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
 .theatre-three-font a{
     color: white;
     text-decoration: none;
