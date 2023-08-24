@@ -29,7 +29,7 @@ Version: 1.0
       background-size: 100% 100%;
       background-repeat: no-repeat;
       background-position: center center;
-      transition: none;
+      transition-delay: 3s;    
     }
   
     0%, 100% {
@@ -75,18 +75,6 @@ Version: 1.0
     color: white;
     font-family: Futura,Trebuchet MS,Arial,sans-serif;
 }
-
-/* .div-one{
-    flex: 1;
-    background-color: navy;
-    max-height: 100%;
-}
-
-.div-two{
-    flex: 1;
-    background-color: green;
-    max-height: 100%;
-} */
 
 .div-container{
     display: flex;
@@ -172,6 +160,7 @@ Version: 1.0
     display: flex; /* Use flexbox to align items horizontally */
     justify-content: flex-end; /* Distribute items to the right side of the page */
     padding: 0; /* Remove default padding */
+    text-align: center;
 }
 
 .nav-list li{
@@ -185,6 +174,8 @@ Version: 1.0
 .nav-list a:hover{
     color: skyblue;
 }
+
+/* body */
 
 .body{
     background-color: black;

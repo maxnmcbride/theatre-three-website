@@ -9,6 +9,7 @@
     <header class="site-header">
       <div class="container">
         <h1 class="theatre-three-font"><a href="<?php echo site_url('/')?>">Theatre<i>Three</i></a></h1>
+        <div class="navigation-li-container">
         <nav class="main-navigation">
             <!-- <?php
             wp_nav_menu(array(

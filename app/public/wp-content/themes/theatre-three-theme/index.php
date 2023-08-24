@@ -15,24 +15,6 @@
   </div>
 </div>
 
-<!-- <div class="div-container-two">
-  <div class="div-three">
-    <h1 class="div-one-text">Engage with the Theater</h1>
-  </div>
-  <div class="div-four">
-    <h1 class="div-one-text">Sign Up</h1>
-  </div>
-</div>
-
-<div class="div-container-three">
-  <div class="div-five">
-    <h1>Block 5</h1>
-  </div>
-  <div class="div-six">
-    <h1>Block 6</h1>
-  </div>
-</div> -->
-
 <div class="container container--narrow page-section">
   <!-- <?php
     while(have_posts()){
