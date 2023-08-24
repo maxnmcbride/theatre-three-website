@@ -21,3 +21,7 @@ Stack trace:
 #4 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/max/Loca...')
 #5 {main}
   thrown in /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php on line 441
+[24-Aug-2023 06:08:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/index.php on line 1

@@ -1,4 +1,11 @@
 <?php get_header(); ?>
+
+<div class="main-div-container">
+  <div class="main-div-one">
+    <h1 class="main-div-text">Explore Theatre Three</h1>
+  </div>
+</div>
+
 <div class="div-container">
   <div class="div-one">
     <h1 class="div-one-text">Upcoming Shows</h1>
@@ -8,7 +15,7 @@
   </div>
 </div>
 
-<div class="div-container-two">
+<!-- <div class="div-container-two">
   <div class="div-three">
     <h1 class="div-one-text">Engage with the Theater</h1>
   </div>
@@ -24,7 +31,7 @@
   <div class="div-six">
     <h1>Block 6</h1>
   </div>
-</div>
+</div> -->
 
 <div class="container container--narrow page-section">
   <!-- <?php
