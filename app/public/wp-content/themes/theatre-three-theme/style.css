@@ -5,7 +5,6 @@ Version: 1.0
  */
 
 /* main index */
-
 .main-div-container {
     display: flex;
     justify-content: center;
@@ -21,15 +20,15 @@ Version: 1.0
     height: 100%;
     width: 100%;
     background-color: black;
-    animation: imageCycle 15s infinite;
+    animation: imageCycle 30s infinite;
+    transition-delay: 6s;
   }
   
   @keyframes imageCycle {
     0%, 100%, 20%, 40%, 60%, 80% {
       background-size: 100% 100%;
       background-repeat: no-repeat;
-      background-position: center center;
-      transition-delay: 3s;    
+      background-position: center center;  
     }
   
     0%, 100% {
@@ -82,24 +81,24 @@ Version: 1.0
     overflow: hidden; 
 }
   
-  .div-one{
+.div-one{
     flex: 1; /* Take up available space */
     height: 100%;
     width: 100%;
     background-color: black; /* Initial background color */
     transition: background-color 0.3s; /* Add a transition effect */
-  }
+}
   
-  .div-two{
-    width: 0; /* Initially hidden width */
-    height: 100%;
-    background-color: black; /* Background color on hover */
-    transition: width 0.3s; /* Add a transition effect */
-  }
+.div-two{
+  width: 0; /* Initially hidden width */
+  height: 100%;
+  background-color: black; /* Background color on hover */
+  transition: width 0.3s; /* Add a transition effect */
+}
   
-  .div-container:hover .div-two {
-    width: 30%;
-  }
+.div-container:hover .div-two {
+  width: 30%;
+}
 
 .div-three{
     flex: 1;
@@ -182,13 +181,31 @@ Version: 1.0
 }
 
 /* body */
-
 .body{
     background-color: black;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-width: 100vw;
+}
+
+/* post */
+.post-title{
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+
+.generic-post-content{
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+
+.post-image-container{
+/* need to create css so that image is centered in page and has padding or margin of 25% on each side */
+}
+  
+.post-image{
+/* need to create css so that image is centered in page and has padding or margin of 25% on each side */
 }
 
 /* footer */
