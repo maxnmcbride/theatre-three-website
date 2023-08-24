@@ -33,11 +33,11 @@
     <h4 class="footer-column-heading">Hours</h4>
     <pre class="footer-column-paragraph">
     <h5 class="footer-column-heading">Box Office</h5>
-      Mon - Sat 10AM - 5PM
-      Sun Two hours before showtime
+      <i>Mon - Sat</i> 10AM - 5PM
+      <i>Sun</i> Two hours before showtime
 
     <h5 class="footer-column-heading">Business Office</h5>
-      Tue - Fri 10AM - 4PM
+      <i>Tue - Fri</i> 10AM - 4PM
     </pre>
   </div>
   <div class="footer-column">
