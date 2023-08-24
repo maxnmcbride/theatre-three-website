@@ -4,6 +4,85 @@ Author: Max McBride
 Version: 1.0
  */
 
+/* main index */
+
+/* .div-one{
+    flex: 1;
+    background-color: navy;
+    max-height: 100%;
+}
+
+.div-two{
+    flex: 1;
+    background-color: green;
+    max-height: 100%;
+} */
+
+.div-container{
+    display: flex;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+  
+  .div-one{
+    flex: 1; /* Take up available space */
+    height: 100%;
+    width: 100%;
+    background-color: #ff0000; /* Initial background color */
+    transition: background-color 0.3s; /* Add a transition effect */
+  }
+  
+  .div-two{
+    width: 0; /* Initially hidden width */
+    height: 100%;
+    background-color: goldenrod; /* Background color on hover */
+    transition: width 0.3s; /* Add a transition effect */
+  }
+  
+  .div-container:hover .div-two {
+    width: 30%; /* Expand width on hover */
+  }
+
+
+
+
+
+
+.div-three{
+    flex: 1;
+    background-color: green;
+    max-height: 100%;
+}
+.div-four{
+    flex: 1;
+    background-color: navy;
+    max-height: 100%;
+}
+
+
+.div-container-two{
+    display: flex;
+    height: 100vh;
+}
+
+.div-five{
+    flex: 1;
+    background-color: navy;
+    max-height: 100%;
+}
+
+.div-six{
+    flex: 1;
+    background-color: green;
+    max-height: 100%;
+}
+
+.div-container-three{
+    display: flex;
+    height: 100vh;
+}
+
  /* header */
 .theatre-three-font{
     font-family: Futura,Trebuchet MS,Arial,sans-serif;
