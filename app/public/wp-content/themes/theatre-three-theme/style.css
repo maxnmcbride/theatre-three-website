@@ -4,15 +4,16 @@ Author: Max McBride
 Version: 1.0
  */
 
-/* main index */
+/* MAIN INDEX */
+
 .main-div-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+}
     
-  .main-div-one {
+.main-div-one {
     position: relative; /* Add position relative */
     display: flex;
     justify-content: center;
@@ -21,14 +22,15 @@ Version: 1.0
     width: 100%;
     background-color: black;
     animation: imageCycle 30s infinite;
-    transition-delay: 6s;
-  }
+}
+
   
-  @keyframes imageCycle {
+@keyframes imageCycle {
     0%, 100%, 20%, 40%, 60%, 80% {
       background-size: 100% 100%;
       background-repeat: no-repeat;
-      background-position: center center;  
+      background-position: center center;
+      /* transition-delay: 3s;     */
     }
   
     0%, 100% {
@@ -46,9 +48,9 @@ Version: 1.0
     80% {
       background-image: url('./images/theatre-three-img3.jpeg');
     }
-  }
+}
   
-  .main-div-text {
+.main-div-text {
     position: absolute; 
     top: 0; /* Position at the bottom */
     left: 0; /* Position at the left */
@@ -57,8 +59,7 @@ Version: 1.0
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     transform: translateY(calc(100% + 10px));
-  }
-
+}
 
 .div-one-text{
     margin-left: 3%;
@@ -90,14 +91,14 @@ Version: 1.0
 }
   
 .div-two{
-  width: 0; /* Initially hidden width */
-  height: 100%;
-  background-color: black; /* Background color on hover */
-  transition: width 0.3s; /* Add a transition effect */
+    width: 0; /* Initially hidden width */
+    height: 100%;
+    background-color: black; /* Background color on hover */
+    transition: width 0.3s; /* Add a transition effect */
 }
   
 .div-container:hover .div-two {
-  width: 30%;
+    width: 30%;
 }
 
 .div-three{
@@ -105,6 +106,7 @@ Version: 1.0
     background-color: green;
     max-height: 100%;
 }
+
 .div-four{
     flex: 1;
     background-color: navy;
@@ -133,54 +135,63 @@ Version: 1.0
     height: 100vh;
 }
 
- /* header */
-.theatre-three-font{
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
-    color: white;
-    text-align: left;
-    margin-left: 5%;
-    font-size: 3rem;
+/* HEADER */
+
+.site-header{
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-.slogan-font{
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
-    color: white;
-    font-size: 1rem;
+.title-container{
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.theatre-three-font a{
+.title-font{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.title-font a{
     color: white;
     text-decoration: none;
 }
 
-/* navigation bar */
-.main-navigation{
+.subtitle-font{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* NAV BAR */
+
+.nav-bar{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
-.nav-list{
-    list-style-type: none;
-    list-style: none; /* Remove default list bullet points */
-    display: flex; /* Use flexbox to align items horizontally */
-    justify-content: flex-end; /* Distribute items to the right side of the page */
-    padding: 0; /* Remove default padding */
-    text-align: center;
-}
-
-.nav-list li{
-    padding-right: 5%;
-}
-.nav-list a{
-    color: white;
+.nav-bar a{
+    margin-left: 40px;
     text-decoration: none;
-    font-size: 1rem;
+    color: white;
 }
-.nav-list a:hover{
+
+.nav-bar a:hover{
     color: skyblue;
 }
 
-/* body */
+/* BODY */
 .body{
     background-color: black;
     display: flex;
@@ -189,7 +200,7 @@ Version: 1.0
     max-width: 100vw;
 }
 
-/* post */
+/* POST */
 .post-title{
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
@@ -208,7 +219,7 @@ Version: 1.0
 /* need to create css so that image is centered in page and has padding or margin of 25% on each side */
 }
 
-/* footer */
+/* FOOTER */
 .site-footer{
     display: flex;
     justify-content: space-between;
@@ -258,6 +269,7 @@ Version: 1.0
 }
 
 /* Page Styling */
+
 .page-title{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
