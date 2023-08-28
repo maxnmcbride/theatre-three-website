@@ -176,9 +176,50 @@ Version: 1.0
 .nav-bar{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    position: relative;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .sub-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    list-style: none;
+    padding: 10px;
+    width: 150px;
+  }
+
+  .sub-links li {
+    margin-right: 30px; /* Adjust the spacing between sublinks */
+}
+  
+  /* .nav-item:hover .sub-links {
+    display: block;
+  } */
+
+  .nav-item:hover .sub-links {
+    display: flex; /* Display sublinks when hovering over the main link */
+    justify-content: center;
+}
+
 
 .nav-bar a{
     margin-left: 40px;
@@ -189,6 +230,7 @@ Version: 1.0
 .nav-bar a:hover{
     color: skyblue;
 }
+
 
 /* BODY */
 
@@ -217,8 +259,6 @@ Version: 1.0
   
 /* .post-image{} */
 /* need to create css so that image is centered in page and has padding or margin of 25% on each side */
-
-
 
 /* FOOTER */
 
