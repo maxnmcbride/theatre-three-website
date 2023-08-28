@@ -1,5 +1,4 @@
 <?php
-
 function custom_post_types(){
     register_post_type('show', array(
         'rewrite' => array('slug' => 'shows'),
