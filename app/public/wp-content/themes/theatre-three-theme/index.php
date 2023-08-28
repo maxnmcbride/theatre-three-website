@@ -15,7 +15,8 @@
 
 $homepageShows = new WP_Query(array(
   'posts_per_page' => -1,
-  'post_type' => 'show'
+  'post_type' => 'show',
+  'orderby' => 'title',
 ));
 
 while($homepageShows->have_posts()){
