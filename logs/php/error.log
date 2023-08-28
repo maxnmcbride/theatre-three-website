@@ -50,3 +50,24 @@ Stack trace:
 [28-Aug-2023 16:20:07 UTC] PHP Parse error:  syntax error, unexpected token "echo", expecting "," or ";" in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/index.php on line 31
 [28-Aug-2023 19:42:26 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
 [28-Aug-2023 19:42:51 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[28-Aug-2023 19:52:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-content/themes/theatre-three-theme/index.php:29
+Stack trace:
+#0 /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-blog-header.php(19): require_once('/Users/christop...')
+#2 /Users/christophercardoz/Local Sites/theatre-three-website/app/public/index.php(17): require('/Users/christop...')
+#3 {main}
+  thrown in /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-content/themes/theatre-three-theme/index.php on line 29
+[28-Aug-2023 19:52:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-content/themes/theatre-three-theme/index.php:29
+Stack trace:
+#0 /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-blog-header.php(19): require_once('/Users/christop...')
+#2 /Users/christophercardoz/Local Sites/theatre-three-website/app/public/index.php(17): require('/Users/christop...')
+#3 {main}
+  thrown in /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-content/themes/theatre-three-theme/index.php on line 29
+[28-Aug-2023 19:54:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-content/themes/theatre-three-theme/index.php:29
+Stack trace:
+#0 /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-blog-header.php(19): require_once('/Users/christop...')
+#2 /Users/christophercardoz/Local Sites/theatre-three-website/app/public/index.php(17): require('/Users/christop...')
+#3 {main}
+  thrown in /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-content/themes/theatre-three-theme/index.php on line 29
