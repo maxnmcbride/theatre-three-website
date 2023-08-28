@@ -2,7 +2,8 @@
 Theme Name: Theatre Three
 Author: Max McBride
 Version: 1.0
- */
+*/
+
 /* MAIN INDEX */
 .main-div-container {
     display: flex;
@@ -10,9 +11,10 @@ Version: 1.0
     align-items: center;
     height: 100vh;
 }
-    
+
 .main-div-one {
-    position: relative; /* Add position relative */
+    position: relative;
+    /* Add position relative */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,120 +25,162 @@ Version: 1.0
 }
 
 @keyframes imageCycle {
-    0%, 100%, 20%, 40%, 60%, 80% {
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-position: center center;
-      /* transition-delay: 3s;     */
-    }  
-    0%, 100% {
-      background-image: url('./images/theatre-three-img1.jpeg');
-    }
-    20% {
-      background-image: url('./images/theatre-three-img4.jpeg');
-    }
-    40% {
-      background-image: url('./images/theatre-three-img5.jpeg');
-    }
-    60% {
-      background-image: url('./images/theatre-three-img2.jpeg');
-    }
+
+    0%,
+    100%,
+    20%,
+    40%,
+    60%,
     80% {
-      background-image: url('./images/theatre-three-img3.jpeg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        /* transition-delay: 3s;     */
+    }
+
+    0%,
+    100% {
+        background-image: url('./images/theatre-three-img1.jpeg');
+    }
+
+    20% {
+        background-image: url('./images/theatre-three-img4.jpeg');
+    }
+
+    40% {
+        background-image: url('./images/theatre-three-img5.jpeg');
+    }
+
+    60% {
+        background-image: url('./images/theatre-three-img2.jpeg');
+    }
+
+    80% {
+        background-image: url('./images/theatre-three-img3.jpeg');
     }
 }
-  
+
 .main-div-text {
-    position: absolute; 
-    top: 0; /* Position at the bottom */
-    left: 0; /* Position at the left */
+    position: absolute;
+    top: 0;
+    /* Position at the bottom */
+    left: 0;
+    /* Position at the left */
     margin: 0;
-    padding: 10px; /* Add some padding for spacing */
+    padding: 10px;
+    /* Add some padding for spacing */
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     transform: translateY(calc(100% + 10px));
 }
 
-.div-one-text{
+.div-one-text {
     margin-left: 3%;
     text-align: left;
     color: white;
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
-.div-two-text a{
+.div-two-text a {
     margin-left: 3%;
     text-align: left;
     text-decoration: none;
     color: white;
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
-.div-container{
+/* UPCOMING SHOWS LIST*/
+.upcoming-stage-titles a{
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.upcoming-show-titles a{
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    margin-left: 5%;
+}
+
+
+
+.div-container {
     display: flex;
     height: 100vh;
-    overflow: hidden; 
+    overflow: hidden;
 }
-  
-.div-one{
-    flex: 1; /* Take up available space */
+
+.div-one {
+    flex: 1;
+    /* Take up available space */
     height: 100%;
     width: 100%;
-    background-color: black; /* Initial background color */
-    transition: background-color 0.3s; /* Add a transition effect */
+    background-color: black;
+    /* Initial background color */
+    transition: background-color 0.3s;
+    /* Add a transition effect */
 }
-  
-.div-two{
-    width: 0; /* Initially hidden width */
+
+.div-two {
+    width: 0;
+    /* Initially hidden width */
     height: 100%;
-    background-color: black; /* Background color on hover */
-    transition: width 0.3s; /* Add a transition effect */
+    background-color: black;
+    /* Background color on hover */
+    transition: width 0.3s;
+    /* Add a transition effect */
 }
-  
+
 .div-container:hover .div-two {
     width: 30%;
     height: 100%;
-    background-color: black; /* Background color on hover */
-    transition: width 0.3s; /* Add a transition effect */
+    background-color: black;
+    /* Background color on hover */
+    transition: width 0.3s;
+    /* Add a transition effect */
 }
 
-.div-three{
+.div-three {
     flex: 1;
     background-color: green;
     max-height: 100%;
 }
 
-.div-four{
+.div-four {
     flex: 1;
     background-color: navy;
     max-height: 100%;
 }
 
-.div-container-two{
+.div-container-two {
     display: flex;
     height: 100vh;
 }
 
-.div-five{
+.div-five {
     flex: 1;
     background-color: navy;
     max-height: 100%;
 }
 
-.div-six{
+.div-six {
     flex: 1;
     background-color: green;
     max-height: 100%;
 }
 
-.div-container-three{
+.div-container-three {
     display: flex;
     height: 100vh;
 }
 
 /* HEADER */
 
-.site-header{
+.site-header {
     margin: 0%;
     display: flex;
     justify-content: space-between;
@@ -144,7 +188,7 @@ Version: 1.0
     padding: 20px;
 }
 
-.title-container{
+.title-container {
     flex: 1;
     margin-right: 20px;
     display: flex;
@@ -152,20 +196,20 @@ Version: 1.0
     align-items: flex-start;
 }
 
-.title-font{
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+.title-font {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
     color: white;
     font-size: 2rem;
     margin: 0;
 }
 
-.title-font a{
+.title-font a {
     color: white;
     text-decoration: none;
 }
 
-.subtitle-font{
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+.subtitle-font {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
     color: white;
     font-size: 1rem;
     margin: 0;
@@ -173,7 +217,7 @@ Version: 1.0
 
 /* NAV BAR */
 
-.nav-bar{
+.nav-bar {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     /* display: flex;
@@ -188,15 +232,15 @@ Version: 1.0
 
 .nav-item {
     position: relative;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
     color: #fff;
     text-decoration: none;
     padding: 10px;
-  }
-  
-  .sub-links {
+}
+
+.sub-links {
     display: none;
     position: absolute;
     top: 100%;
@@ -205,36 +249,38 @@ Version: 1.0
     list-style: none;
     padding: 10px;
     width: 150px;
-  }
-
-  .sub-links li {
-    margin-right: 30px; /* Adjust the spacing between sublinks */
 }
-  
-  /* .nav-item:hover .sub-links {
+
+.sub-links li {
+    margin-right: 30px;
+    /* Adjust the spacing between sublinks */
+}
+
+/* .nav-item:hover .sub-links {
     display: block;
   } */
 
-  .nav-item:hover .sub-links {
-    display: flex; /* Display sublinks when hovering over the main link */
+.nav-item:hover .sub-links {
+    display: flex;
+    /* Display sublinks when hovering over the main link */
     justify-content: center;
 }
 
 
-.nav-bar a{
+.nav-bar a {
     margin-left: 40px;
     text-decoration: none;
     color: white;
 }
 
-.nav-bar a:hover{
+.nav-bar a:hover {
     color: skyblue;
 }
 
 
 /* BODY */
 
-.body{
+.body {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -244,25 +290,25 @@ Version: 1.0
 
 /* POST */
 
-.post-title{
+.post-title {
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
-.generic-post-content{
+.generic-post-content {
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
 /* .post-image-container{} */
 /* need to create css so that image is centered in page and has padding or margin of 25% on each side */
-  
+
 /* .post-image{} */
 /* need to create css so that image is centered in page and has padding or margin of 25% on each side */
 
 /* FOOTER */
 
-.site-footer{
+.site-footer {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
@@ -270,62 +316,84 @@ Version: 1.0
     bottom: 0;
 }
 
-.footer-column{
+.footer-column {
     flex: 1;
     padding: 5%;
 }
 
-.footer-column-heading{
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+.footer-column-heading {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
     color: white;
     text-align: center;
 }
 
-.footer-column-paragraph{
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+.footer-column-paragraph {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
     color: white;
     text-align: left;
     margin: 0;
 }
 
-.phone-numbers{
+.phone-numbers {
     text-decoration: none;
     color: white;
 }
 
-.address{
+.address {
     text-decoration: none;
     color: white;
 }
 
-.footer-title{
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+.footer-title {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
     color: white;
     text-align: left;
     margin-left: 5%;
 }
 
-.footer-title a{
+.footer-title a {
     color: white;
     text-decoration: none;
 }
 
 /* Page Styling */
 
-.page-title{
+.page-title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     margin-left: 10%;
 }
 
-.page-content{
+.page-content {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     margin-left: 20%;
 }
 
-/* ARCHIVE */
+/* ARCHIVE-SHOW */
+.single-show-div-container{
+    border: 10px solid red;
+}
 
-.archive-div-one{
-    background-color: black;
+.single-show-title-container{
+    border: 1px solid red;
+}
+
+.single-show-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-left: 10%;
+}
+
+.single-show-description-container{
+    border: 1px solid yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-left: 20%;
+}
+
+.single-show-description{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-left: 20%;
 }
