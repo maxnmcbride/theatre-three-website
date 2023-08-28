@@ -212,13 +212,12 @@ Version: 1.0
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
-.post-image-container{
+/* .post-image-container{} */
 /* need to create css so that image is centered in page and has padding or margin of 25% on each side */
-}
   
-.post-image{
+/* .post-image{} */
 /* need to create css so that image is centered in page and has padding or margin of 25% on each side */
-}
+
 
 
 /* FOOTER */
@@ -283,4 +282,10 @@ Version: 1.0
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     margin-left: 20%;
+}
+
+/* ARCHIVE */
+
+.archive-div-one{
+    background-color: black;
 }
