@@ -1,9 +1,9 @@
 <footer class="site-footer">
-  <h3 class="footer-title"><a href="<?php echo site_url('/')?>">Theatre <i>Three</i></a></h3>
+  <h3 class="footer-title"><a href="<?php echo site_url('/') ?>">Theatre <i>Three</i></a></h3>
   <div class="footer-column">
 
     <h4 class="footer-column-heading">Contact Us</h4>
-    
+
     <h5 class="footer-column-heading">Location</h5>
     <pre class="footer-column-paragraph">
       <a class="address" href="https://www.google.com/maps/search/412-main-street-port-jefferson-ny" target="_blank">
@@ -49,7 +49,8 @@
 </footer>
 
 
-<?php wp_footer();?>
+<?php wp_footer(); ?>
 </body>
+
 </html>
 <!-- these are closed out in this file as opposed to the header tag because they are generated at the bottom of the page -->
