@@ -48,3 +48,5 @@ Stack trace:
 #4 {main}
   thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/index.php on line 30
 [28-Aug-2023 16:20:07 UTC] PHP Parse error:  syntax error, unexpected token "echo", expecting "," or ";" in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/index.php on line 31
+[28-Aug-2023 19:42:26 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[28-Aug-2023 19:42:51 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905

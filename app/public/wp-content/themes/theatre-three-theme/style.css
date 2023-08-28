@@ -370,8 +370,30 @@ Version: 1.0
     margin-left: 20%;
 }
 
-/* ARCHIVE */
+/* ARCHIVE-SHOW */
+.single-show-div-container{
+    border: 10px solid red;
+}
 
-.archive-div-one {
-    background-color: black;
+.single-show-title-container{
+    border: 1px solid red;
+}
+
+.single-show-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-left: 10%;
+}
+
+.single-show-description-container{
+    border: 1px solid yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-left: 20%;
+}
+
+.single-show-description{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-left: 20%;
 }
