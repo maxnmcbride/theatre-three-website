@@ -25,3 +25,9 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/index.php on line 1
+[26-Aug-2023 14:36:37 UTC] PHP Parse error:  syntax error, unexpected single-quoted string "view_", expecting ")" in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php on line 13
+[27-Aug-2023 03:36:49 UTC] PHP Parse error:  syntax error, unexpected single-quoted string "supports", expecting ")" in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php on line 6
+[27-Aug-2023 13:05:01 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[27-Aug-2023 14:07:17 UTC] PHP Fatal error:  Cannot redeclare custom_post_types() (previously declared in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php:4) in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/functions.php on line 14
+[27-Aug-2023 14:07:17 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-recovery-mode-email-service.php on line 367
+[27-Aug-2023 14:07:17 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-recovery-mode-email-service.php on line 368
