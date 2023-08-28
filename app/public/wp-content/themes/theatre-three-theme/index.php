@@ -13,7 +13,7 @@
     <!-- this is querying the show data from the custom post type of shows -->
     <!-- this logic is handling displaying shows that end after todays date -->
     <div>
-      <a href="<?php echo get_post_type_archive_link('show')?>"><h2>View All Mainstage Shows</h2>
+    <h2 class="upcoming-stage-titles"><a href="<?php echo get_post_type_archive_link('show')?>">Mainstage Shows</a></h2>
     <?php
     $today = date('Ymd');
     $homepageShows = new WP_Query(
@@ -37,11 +37,11 @@
     while ($homepageShows->have_posts()) {
       $homepageShows->the_post(); ?>
       <div>
-        <a href="<?php the_permalink(); ?>" class="div-one-text">
-          <li>
+        <h3 class="upcoming-show-titles">
+        <a href="<?php the_permalink(); ?>">
             <?php the_title(); ?>
-          </li>
-        </a>
+          </a>
+    </h3>
         <div>
           <span class="div-one-text">
             <?php

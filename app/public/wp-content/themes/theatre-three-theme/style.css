@@ -2,7 +2,8 @@
 Theme Name: Theatre Three
 Author: Max McBride
 Version: 1.0
- */
+*/
+
 /* MAIN INDEX */
 .main-div-container {
     display: flex;
@@ -87,6 +88,25 @@ Version: 1.0
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
+
+/* UPCOMING SHOWS LIST*/
+.upcoming-stage-titles a{
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.upcoming-show-titles a{
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    margin-left: 5%;
+}
+
+
 
 .div-container {
     display: flex;
