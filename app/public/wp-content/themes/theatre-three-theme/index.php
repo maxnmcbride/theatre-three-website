@@ -12,11 +12,13 @@
 
     <!-- this is querying the show data from the custom post type of shows -->
     <!-- this logic is handling displaying shows that end after todays date -->
+    <div>
+      <a href="<?php echo get_post_type_archive_link('show')?>"><h2>View All Mainstage Shows</h2>
     <?php
     $today = date('Ymd');
     $homepageShows = new WP_Query(
       array(
-        'posts_per_page' => -1,
+        'posts_per_page' => 3,
         'post_type' => 'show',
         'meta_key' => 'start_date',
         'orderby' => 'meta_value_num',
@@ -59,6 +61,8 @@
     <?php }
 
     ?>
+    </div>
+
     <a class="div-one-text"></a>
   </div>
 
