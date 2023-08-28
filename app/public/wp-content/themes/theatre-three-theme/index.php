@@ -16,7 +16,9 @@
 $homepageShows = new WP_Query(array(
   'posts_per_page' => -1,
   'post_type' => 'show',
-  'orderby' => 'title',
+  'meta_key' => 'start_date',
+  'orderby' => 'meta_value_num',
+  'order' => 'ASC'
 ));
 
 while($homepageShows->have_posts()){
@@ -27,11 +29,11 @@ while($homepageShows->have_posts()){
       <div>
         <span class="div-one-text"><?php 
           $startDate = new DateTime(get_field('start_date'));
-          echo $startDate->format('M')
+          echo $startDate->format('M Y');
         ?></span>
         <span class="div-one-text"><?php 
          $endDate = new DateTime(get_field('end_date'));
-         echo $endDate->format('M')
+         echo $endDate->format('M Y');
         ?></span>
       </div>
     </div>
