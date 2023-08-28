@@ -10,11 +10,14 @@ function site_features(){
 }
 add_action('after_setup_theme', 'site_features');
 
+// creating custom post type found in mu-plugins
 
-// chat gpt logic
-function enqueue_custom_scripts() {
-    wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/js/custom-scripts.js', array('jquery'), null, true);
-  }
-  add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+add_action('init', 'custom_post_types');
+
+
+// chat gpt logic to try and get the explore the theater heading to scroll
+// function enqueue_custom_scripts() {
+//     wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/js/custom-scripts.js', array('jquery'), null, true);
+//   }
+//   add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 ?>
-
