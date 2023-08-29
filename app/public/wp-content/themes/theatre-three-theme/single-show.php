@@ -27,7 +27,7 @@ get_header();
                             alt="<?php echo esc_attr($image_alt); ?>">
                     </div>
 
-                <?php
+                    <?php
                 }
                 ?>
             </div>
