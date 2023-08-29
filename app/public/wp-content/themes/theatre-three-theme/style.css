@@ -186,6 +186,7 @@ Version: 1.0
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    /* width: 100%; */
 }
 
 .title-container {
@@ -220,40 +221,66 @@ Version: 1.0
 .nav-bar {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    /* display: flex;
-    align-items: center; */
 }
 
 .nav-list {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
 }
 
 .nav-item {
     position: relative;
+    margin-left: 30px;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: all ease 0.3s;
 }
 
+.nav-item a:hover {
+    color: skyblue;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Use the default text color */
+  }
+
 .nav-link {
-    color: #fff;
+    color: white;
     text-decoration: none;
     padding: 10px;
+    /* display: inline-block;
+    margin: 0; */
 }
 
 .sub-links {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #555;
     list-style: none;
-    padding: 10px;
-    width: 150px;
+    /* width: 200px; */
+    box-shadow: 0 20px 45px #00000020;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
 }
 
-.sub-links li {
-    margin-right: 30px;
-    /* Adjust the spacing between sublinks */
+.sub-links li:hover {
+    /* margin-top: 0;
+    opacity: 1;
+    z-index: 99; */
+
+    /* margin-left: 30px; */
+    /* Adjust the spacing between sub-links */
 }
 
 /* .nav-item:hover .sub-links {
@@ -262,19 +289,10 @@ Version: 1.0
 
 .nav-item:hover .sub-links {
     display: flex;
-    /* Display sublinks when hovering over the main link */
-    justify-content: center;
-}
-
-
-.nav-bar a {
-    margin-left: 40px;
-    text-decoration: none;
-    color: white;
-}
-
-.nav-bar a:hover {
-    color: skyblue;
+    /* Display sub-links horizontally when hovering over the main link */
+    margin-top: 0;
+    opacity: 1;
+    z-index: 99;
 }
 
 
