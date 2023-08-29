@@ -4,7 +4,7 @@ function custom_post_types(){
         'rewrite' => array('slug' => 'shows'),
         'has_archive' => true,
         'show_in_rest' => true,
-        'supports' => array('title', 'editor', 'excerpt'),
+        'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
         'public' => true,
         'menu_icon' => 'dashicons-calendar',
         'labels' => array(
