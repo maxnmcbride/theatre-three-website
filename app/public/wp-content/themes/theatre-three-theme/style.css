@@ -90,7 +90,7 @@ Version: 1.0
 }
 
 /* UPCOMING SHOWS LIST*/
-.upcoming-stage-titles a{
+.upcoming-stage-titles a {
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     text-align: left;
     text-decoration: none;
@@ -98,7 +98,7 @@ Version: 1.0
     font-size: 1.5rem;
 }
 
-.upcoming-show-titles a{
+.upcoming-show-titles a {
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     text-align: left;
     text-decoration: none;
@@ -371,11 +371,11 @@ Version: 1.0
 }
 
 /* ARCHIVE-SHOW */
-.single-show-div-container{
+.single-show-div-container {
     border: 10px solid red;
 }
 
-.single-show-title-container{
+.single-show-title-container {
     border: 1px solid red;
 }
 
@@ -385,15 +385,23 @@ Version: 1.0
     margin-left: 10%;
 }
 
-.single-show-description-container{
+.single-show-description-container {
     border: 1px solid yellow;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     margin-left: 20%;
 }
 
-.single-show-description{
+.single-show-description {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     margin-left: 20%;
+}
+
+/* SINGLE SHOW */
+.custom-image {
+    border-radius: 1rem;
+    width: 33.3%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
