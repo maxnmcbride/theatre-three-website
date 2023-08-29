@@ -106,8 +106,6 @@ Version: 1.0
     margin-left: 5%;
 }
 
-
-
 .div-container {
     display: flex;
     height: 100vh;
@@ -185,8 +183,8 @@ Version: 1.0
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    /* width: 100%; */
+    padding: 20px 20px 25px 20px;
+    position: relative;
 }
 
 .title-container {
@@ -217,10 +215,10 @@ Version: 1.0
 }
 
 /* NAV BAR */
-
 .nav-bar {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    position: relative;
 }
 
 .nav-list {
@@ -229,17 +227,23 @@ Version: 1.0
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
+    position: relative;
+    padding-left: 0;
+    
 }
 
+/* .nav-item:last-child {
+    margin-right: 10px;
+} */
+
 .nav-item {
-    position: relative;
-    margin-left: 30px;
     list-style: none;
     display: inline-block;
     text-decoration: none;
     color: white;
-    display: inline-block;
     transition: all ease 0.3s;
+    padding: 10px 0px 5px 10px;
+    margin-right: 50px;
 }
 
 .nav-item a:hover {
@@ -249,55 +253,42 @@ Version: 1.0
 a {
     text-decoration: none;
     color: inherit; /* Use the default text color */
-  }
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    /* display: inline-block;
-    margin: 0; */
 }
 
 .sub-links {
-    /* display: none; */
+    display: flex;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #555;
+    background-color: #49494ba3;
     list-style: none;
-    /* width: 200px; */
-    box-shadow: 0 20px 45px #00000020;
-    margin-top: -50px;
+    height: 38px;
+    margin-top: -10px;
     opacity: 0;
     z-index: -999;
     transition: all ease 0.5s;
+    gap: 50px; /* Add gap between sub-links */
+    flex-direction: row;
+    /* padding: 10px; */
+    font-style: italic;
+    width: 100%;
 }
 
-.sub-links li:hover {
-    /* margin-top: 0;
-    opacity: 1;
-    z-index: 99; */
-
-    /* margin-left: 30px; */
-    /* Adjust the spacing between sub-links */
-}
-
-/* .nav-item:hover .sub-links {
-    display: block;
-  } */
+.sub-links a {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap; /* Prevent sub-link text from breaking */
+} 
 
 .nav-item:hover .sub-links {
-    display: flex;
-    /* Display sub-links horizontally when hovering over the main link */
+    display: flex; /* Display sub-links horizontally when hovering over the main link */
     margin-top: 0;
     opacity: 1;
     z-index: 99;
+    padding: 10px 10px 10px 10px;
 }
 
-
 /* BODY */
-
 .body {
     background-color: black;
     display: flex;
