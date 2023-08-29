@@ -72,3 +72,26 @@ Stack trace:
 #3 {main}
   thrown in /Users/christophercardoz/Local Sites/theatre-three-website/app/public/wp-content/themes/theatre-three-theme/index.php on line 29
 [29-Aug-2023 14:37:06 UTC] PHP Parse error:  Unclosed '{' on line 41 in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single-show.php on line 47
+[29-Aug-2023 20:56:15 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "adjust_queries" not found or invalid function name in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php:310
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-query.php(1881): do_action_ref_array('pre_get_posts', Array)
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-query.php(3800): WP_Query->get_posts()
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/post.php(2441): WP_Query->query(Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/advanced-custom-fields/includes/class-acf-internal-post-type.php(401): get_posts(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/advanced-custom-fields/includes/class-acf-internal-post-type.php(359): ACF_Internal_Post_Type->get_raw_posts()
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/advanced-custom-fields/includes/post-types/class-acf-taxonomy.php(126): ACF_Internal_Post_Type->get_posts(Array)
+#8 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): ACF_Taxonomy->register_taxonomies(6)
+#9 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#10 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#11 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/advanced-custom-fields/acf.php(394): do_action('acf/init', 6)
+#12 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): ACF->init('')
+#13 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#14 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#15 /Users/max/Local Sites/theatre-three/app/public/wp-settings.php(632): do_action('init')
+#16 /Users/max/Local Sites/theatre-three/app/public/wp-config.php(103): require_once('/Users/max/Loca...')
+#17 /Users/max/Local Sites/theatre-three/app/public/wp-load.php(50): require_once('/Users/max/Loca...')
+#18 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/max/Loca...')
+#19 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php on line 310
