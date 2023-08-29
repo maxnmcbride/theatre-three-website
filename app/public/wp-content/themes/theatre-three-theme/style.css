@@ -399,9 +399,56 @@ Version: 1.0
 }
 
 /* SINGLE SHOW */
+/* Style for the main layout container */
+.show-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: black;
+    border: 10px solid #ccc;
+}
+
+/* Style for the header section containing title and image */
+.show-header {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style for the title */
+.post-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Style for the image */
+.single-show-custom-image-div {
+    max-width: 100%;
+    border: 10px solid #ccc;
+}
+
 .custom-image {
-    border-radius: 1rem;
-    width: 33.3%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the content section */
+.show-content {
+    width: 33%;
+    margin: 0 20px;
+}
+
+.generic-post-content {
+    font-size: 16px;
+}
+
+/* Style for the metabox section */
+.show-metabox {
+    width: 33%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
