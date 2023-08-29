@@ -108,74 +108,51 @@ Version: 1.0
 
 
 
-.div-container {
+.main-div-events-container {
     display: flex;
+    justify-content: space-between;
+    padding: 20px;
     height: 100vh;
-    overflow: hidden;
 }
 
 .div-one {
-    flex: 1;
-    /* Take up available space */
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    /* Initial background color */
-    transition: background-color 0.3s;
-    /* Add a transition effect */
+    padding: 20px;
 }
 
-.div-two {
-    width: 0;
-    /* Initially hidden width */
-    height: 100%;
-    background-color: black;
-    /* Background color on hover */
-    transition: width 0.3s;
-    /* Add a transition effect */
-}
-
-.div-container:hover .div-two {
-    width: 30%;
-    height: 100%;
-    background-color: black;
-    /* Background color on hover */
-    transition: width 0.3s;
-    /* Add a transition effect */
-}
-
-.div-three {
-    flex: 1;
-    background-color: green;
-    max-height: 100%;
-}
-
-.div-four {
-    flex: 1;
-    background-color: navy;
-    max-height: 100%;
-}
-
-.div-container-two {
+.main-div-events-container {
     display: flex;
-    height: 100vh;
 }
 
-.div-five {
+.main-div-events-mainstage-shows {
     flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: blue;
+}
+
+.main-div-events-secondstage-shows {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: blueviolet;
+}
+
+.main-div-events-childrens-theater-shows {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: purple;
+}
+
+.main-div-events-acting-classes {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
     background-color: navy;
-    max-height: 100%;
-}
-
-.div-six {
-    flex: 1;
-    background-color: green;
-    max-height: 100%;
-}
-
-.div-container-three {
-    display: flex;
-    height: 100vh;
 }
 
 /* HEADER */
@@ -247,8 +224,6 @@ Version: 1.0
     left: 0;
     background-color: #555;
     list-style: none;
-    padding: 10px;
-    width: 150px;
 }
 
 .sub-links li {
@@ -264,11 +239,11 @@ Version: 1.0
     display: flex;
     /* Display sublinks when hovering over the main link */
     justify-content: center;
+    padding-bottom: 10px;
 }
 
-
 .nav-bar a {
-    margin-left: 40px;
+    margin-left: 10px;
     text-decoration: none;
     color: white;
 }
