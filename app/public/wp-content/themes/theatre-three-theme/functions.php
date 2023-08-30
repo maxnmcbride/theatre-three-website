@@ -24,4 +24,20 @@ add_action('after_setup_theme', 'site_features');
 // add_action('pre_get_posts', 'adjust_queries');
 
 // creating custom post type found in mu-plugins
+
+// working on getting fields returned
+// function get_acf_field_count()
+// {
+//     $field_count = 0;
+//     if (is_singular('second_stage_shows')) {
+//         $post_id = get_the_ID();
+//         $fields = get_field_objects($post_id);
+//         if ($fields) {
+//             $field_count = count($fields);
+//         }
+//     }
+//     return $field_count;
+// }
+
+// add_action('pre_get_posts', 'get_acf_field_count');
 ?>

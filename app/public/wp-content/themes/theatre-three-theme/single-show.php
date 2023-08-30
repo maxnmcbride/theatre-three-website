@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<h1 class="post-title">THIS IS MADE BY THE SINGLE_SHOW</h1>
+<!-- <h1 class="post-title">THIS IS MADE BY THE SINGLE_SHOW</h1> -->
 
 <div class="show-layout">
     <?php
@@ -34,16 +34,32 @@ get_header();
             </div>
 
             <div class="show-content">
+                <h2 class="post-title">About the Show</h2>
                 <div class="generic-post-content">
                     <?php the_content(); ?>
                 </div>
             </div>
 
             <div class="show-metabox">
-                <!-- Your metabox content will go here -->
+                <h2 class="post-title">Ticket Information</h2>
+                <div class="metabox-ticket-information-header">
+                    <?php
+                    $ticket_information = get_field('show_ticket_information');
+                    if ($ticket_information) {
+                        ?>
+                        <div class="metabox-ticket-information-container">
+                            <p class="metabox-ticket-information-text">
+                                <?php echo htmlspecialchars_decode($ticket_information) ?>
+                            </p>
+                        </div>
+                        <?php
+                    }
+                    ?>
+                </div>
             </div>
+        </div>
 
-            <?php
+        <?php
         }
     }
     ?>

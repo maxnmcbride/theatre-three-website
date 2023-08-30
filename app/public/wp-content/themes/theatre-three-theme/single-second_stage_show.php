@@ -1,7 +1,10 @@
 <?php
 get_header();
 ?>
-<h1 class="post-title">THIS IS MADE BY THE SINGLE_SECOND_STAGE_SHOW</h1>
+
+<h1 class="post-title"><?php 
+ echo get_acf_field_count();
+?></h1>
 
 <div class="show-layout">
     <?php
