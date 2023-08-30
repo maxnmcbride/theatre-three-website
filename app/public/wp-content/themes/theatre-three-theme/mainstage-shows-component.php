@@ -41,7 +41,7 @@
                         <?php echo $startDate->format('M j Y'); ?>
                     </span>
                     <span class="div-one-text">
-                        <i>For One Night Only</i>
+                        <i>One Night Only!</i>
                     </span>
                 </div>
                 <?php
@@ -52,7 +52,7 @@
                         <?php echo $startDate->format('M j Y'); ?>
                     </span>
                     <span class="div-one-text">
-                        <i>Through</i>
+                        <b>-</b>
                     </span>
                     <span class="div-one-text">
                         <?php echo $endDate->format('M j Y'); ?>
