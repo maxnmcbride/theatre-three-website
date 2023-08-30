@@ -35,6 +35,15 @@
             <li>
               <a href="<?php echo site_url('/tickets') ?>">Events Calendar</a>
             </li>
+            <li>
+              <a href="<?php echo site_url('/tickets') ?>">Main Stage</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('/tickets') ?>">Second Stage</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('/tickets') ?>">Children's Theatre</a>
+            </li>
           </ul>
         </li>
         <li class="nav-item">
