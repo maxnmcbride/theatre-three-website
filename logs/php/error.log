@@ -95,3 +95,10 @@ Stack trace:
 #18 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/max/Loca...')
 #19 {main}
   thrown in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php on line 310
+[30-Aug-2023 13:33:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_acf_field_count() in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single-second_stage_show.php:5
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-blog-header.php(19): require_once('/Users/max/Loca...')
+#2 /Users/max/Local Sites/theatre-three/app/public/index.php(17): require('/Users/max/Loca...')
+#3 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single-second_stage_show.php on line 5
