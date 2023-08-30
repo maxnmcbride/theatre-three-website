@@ -1,4 +1,5 @@
 <?php
+// this gets the styling
 function enqueue_my_stylesheet()
 {
     wp_enqueue_style('my_theme_stylesheet', get_theme_file_uri('/style.css'));
@@ -12,14 +13,31 @@ function site_features()
 }
 add_action('after_setup_theme', 'site_features');
 
+// creating a custom query to paginate pages
+// !is_admin() is to make sure that only the front end is being effected.
+// function adjust_queries($query)
+// {
+//     if (!is_admin() && is_post_type_archive('show') && $query->main_query()) {
+//     $query->set('posts_per_page', '1');
+//     }
+// }
+// add_action('pre_get_posts', 'adjust_queries');
+
 // creating custom post type found in mu-plugins
 
-add_action('init', 'custom_post_types');
+// working on getting fields returned
+// function get_acf_field_count()
+// {
+//     $field_count = 0;
+//     if (is_singular('second_stage_shows')) {
+//         $post_id = get_the_ID();
+//         $fields = get_field_objects($post_id);
+//         if ($fields) {
+//             $field_count = count($fields);
+//         }
+//     }
+//     return $field_count;
+// }
 
-
-// chat gpt logic to try and get the explore the theater heading to scroll
-// function enqueue_custom_scripts() {
-//     wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/js/custom-scripts.js', array('jquery'), null, true);
-//   }
-//   add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+// add_action('pre_get_posts', 'get_acf_field_count');
 ?>
