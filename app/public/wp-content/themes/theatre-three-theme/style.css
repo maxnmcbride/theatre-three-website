@@ -216,7 +216,9 @@ Version: 1.0
 
 /* NAV BAR */
 .nav-bar {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     color: white;
     position: relative;
 }
@@ -265,10 +267,10 @@ a {
     content: '';
     height: 2px;
     width: 100%;
-    background: skyblue;
+    background: white;
     position: absolute;
     left: 0;  
-    bottom: -4px;
+    bottom: -5px;
     opacity: 0;
     transition: all 0.2s;
     pointer-events: none;
@@ -290,7 +292,10 @@ a {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #49494ba3;
+    /* background-color: #49494ba3; */
+    background: linear-gradient(to right, #043effa3, rgba(255,0,0,0));
+    /* linear-gradient(to top, #49494ba3, transparent), linear-gradient(to right, #97979ba3, transparent),  */
+    border-radius: 2px;
     list-style: none;
     height: 30px;
     transition: all ease 0.4s;
