@@ -218,7 +218,6 @@ Version: 1.0
 .nav-bar {
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     color: white;
     position: relative;
 }
@@ -244,13 +243,14 @@ Version: 1.0
     color: white;
     transition: all ease 0.3s;
     padding: 10px 0px 5px 10px;
-    margin-right: 50px;
+    margin-right: 40px;
     /* position: relative; */
     align-items: flex-start;
 }
 
 .nav-item a:hover {
-    color: skyblue;
+    /* color: white; */
+    font-weight: bolder;
 }
 
 a {
