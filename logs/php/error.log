@@ -122,3 +122,4 @@ Stack trace:
   thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/event-tickets/common/src/Common/Contracts/Container.php on line 27
 [30-Aug-2023 20:17:40 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [30-Aug-2023 21:34:30 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[31-Aug-2023 16:59:04 UTC] PHP Parse error:  Unmatched '}' in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/about_us.php on line 22
