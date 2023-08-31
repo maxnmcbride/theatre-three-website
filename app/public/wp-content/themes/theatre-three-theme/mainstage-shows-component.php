@@ -23,26 +23,44 @@
 
     while ($homepageShows->have_posts()) {
         $homepageShows->the_post(); ?>
+
         <div>
             <h3 class="upcoming-show-titles">
                 <a href="<?php the_permalink(); ?>">
                     <?php the_title(); ?>
                 </a>
             </h3>
-            <div>
-                <span class="div-one-text">
-                    <?php
-                    $startDate = new DateTime(get_field('start_date'));
-                    echo $startDate->format('M Y');
-                    ?>
-                </span>
-                <span class="div-one-text">
-                    <?php
-                    $endDate = new DateTime(get_field('end_date'));
-                    echo $endDate->format('M Y');
-                    ?>
-                </span>
-            </div>
+            <?php
+            $startDate = new DateTime(get_field('start_date'));
+            $endDate = new DateTime(get_field('end_date'));
+
+            if ($startDate == $endDate) {
+                ?>
+                <div>
+                    <span class="div-one-text">
+                        <?php echo $startDate->format('M j Y'); ?>
+                    </span>
+                    <span class="div-one-text">
+                        <i>One Night Only!</i>
+                    </span>
+                </div>
+                <?php
+            } else {
+                ?>
+                <div>
+                    <span class="div-one-text">
+                        <?php echo $startDate->format('M j Y'); ?>
+                    </span>
+                    <span class="div-one-text">
+                        <b>-</b>
+                    </span>
+                    <span class="div-one-text">
+                        <?php echo $endDate->format('M j Y'); ?>
+                    </span>
+                </div>
+                <?php
+            }
+            ?>
         </div>
 
     <?php }

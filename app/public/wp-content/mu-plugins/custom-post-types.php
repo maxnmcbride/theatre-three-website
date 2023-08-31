@@ -35,6 +35,22 @@ function custom_post_types()
         )
     )
     );
+
+// ABOUT POST TYPE
+register_post_type('about_us', array(
+    'rewrite' => array('slug' => 'about_us'),
+    'has_archive' => true,
+    'show_in_rest' => true,
+    'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+    'public' => true,
+    'menu_icon' => 'dashicons-media-document',
+    'labels' => array(
+        'name' => 'About Us',
+        'singular_name' => 'About Us',
+        'edit_item' => 'About Us',
+    )
+)
+);
 }
 
 add_action('init', 'custom_post_types');
