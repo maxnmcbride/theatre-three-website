@@ -286,16 +286,36 @@ Version: 1.0
     margin: 2rem;
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    display: flex; /* Add flex container */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.about-us-section-title{
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-align: center;
+}
+
+.horizontal-rule{
+    width: 100%;
 }
 
 .about-us-history-content {
     margin-bottom: 1rem;
 }
 
+.staff-table-container {
+    display: flex;
+    justify-content: center;
+    /* Remove height: 100%; */
+}
+
 .staff-table {
+    width: auto;
+    display: table;
     border-collapse: collapse;
-    margin: 0 auto;
-    width: 100%;
+    box-sizing: border-box;
+    text-indent: initial;
 }
 
 .staff-position, .staff-name {
@@ -307,6 +327,7 @@ Version: 1.0
 .staff-position {
     font-weight: normal;
     text-align: right;
+    width: 50%;
 }
 
 .staff-name {
@@ -314,18 +335,12 @@ Version: 1.0
     text-align: left;
     padding-top: 2px;
     padding-bottom: 0;
+    width: 50%;
 }
 
 .staff-table-spacing {
     width: 1rem;
-    height: 2rem;
-}
-
-/* Optional: You can adjust these styles to better fit your design */
-.post-title {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 1rem;
+    /* Remove height property */
 }
 
 /* FOOTER */
