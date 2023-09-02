@@ -3,12 +3,14 @@
 get_header();
 ?>
 <div class="about-us-body-container">
-    <h1 class="post-title">About Us</h1>
+    <h1 class="about-us-section-title">About Us</h1>
+    <hr class="horizontal-rule">
     <div class="about-us-history-content">
         <?php the_content(); ?>
     </div>
 
-    <h1 class="post-title">Our History</h1>
+    <h1 class="about-us-section-title">Our History</h1>
+    <hr class="horizontal-rule">
     <p class="about-us-history-content">
         THEATRE THREE, located in Port Jefferson, New York, is a year-round not-for-profit professional regional
         theatre that was founded in 1969. For over fifty years, Theatre Three has occupied Athena Hall, a late
@@ -48,144 +50,183 @@ get_header();
         LONG ISLAND COMEDY FESTIVAL; THE DUPREES, THE BROOKLYN BRIDGE; TED VIGIL AS JOHN DENVER; ELLEN
         MICHELMORE'S WOODSTOCKMANIA; and many more.
     </p>
-    <h1 class="post-title">Staff</h1>
-    <table class="staff-table">
-        <tr>
-            <td class="staff-position">EXECUTIVE ARTISTIC DIRECTOR</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Jeffrey Sanzel</td>
-        </tr>
-        <tr>
-            <td class="staff-position">MANAGING DIRECTOR</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Vivian Koutrakos</td>
-        </tr>
-        <tr>
-            <td class="staff-position">ARTISTIC ASSOCIATE/DIRECTOR OF DEVELOPMENT</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Douglas Quattrock</td>
-        </tr>
-        <tr>
-            <td class="staff-position">RESIDENT STAGE MANAGER</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Melissa Troxler</td>
-        </tr>
-        <tr>
-            <td class="staff-position">PRODUCTION DESIGNER</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Randall Parsons</td>
-        </tr>
-        <tr>
-            <td class="staff-position">TECHNICAL DIRECTOR</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Steven Barile</td>
-        </tr>
-        <tr>
-            <td class="staff-position">FRONT OF HOUSE COORDINATOR</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Russ Pulick</td>
-        </tr>
-        <tr>
-            <td class="staff-position">COMPTROLLER</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Lois Endsley</td>
-        </tr>
-        <tr>
-            <td class="staff-position">ADMINISTRATIVE AND MARKETING ASSOCIATE</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Tara Grippe</td>
-        </tr>
-        <tr>
-            <td class="staff-position">GROUP SALES/EDUCATIONAL TOURING COORDINATOR</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Marci Bing</td>
-        </tr>
-        <tr>
-            <td class="staff-position">ADMINISTRATIVE ASSISTANTS</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Anne Lennstrom</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Tara Ebrahimian</td>
-        </tr>
-        <tr>
-            <td class="staff-position">SOCIAL MEDIA COORDINATOR</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Steven Uihlein</td>
-        </tr>
-        <tr>
-            <td class="staff-position">WARDROBE SHOP SUPERVISOR/CHILDREN'S THEATRE COSTUME DESIGNER</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Jason Allyn</td>
-        </tr>
-        <tr>
-            <td class="staff-position">CHILDREN'S THEATRE TOURING COORDINATOR</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Marci Bing</td>
-        </tr>
-        <tr>
-            <td class="staff-position">COMPUTER/WEB COORDINATOR</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Max McBride</td>
-        </tr>
-        <tr>
-            <td class="staff-position">SUBSCRIPTIONS</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Michelle Johnson</td>
-        </tr>
-        <tr>
-            <td class="staff-position">BOX OFFICE</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Tara Ebrahimian</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Jenna Eichenger</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Michelle Johnson</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Cathy Rodgers</td>
-        </tr>
-        <tr>
-            <td class="staff-position">CONCESSION</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Bob Caggiano</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Carol D'Accordo</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Alan Schelp</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Jameson Wessels</td>
-        </tr>
-        <tr>
-            <td class="staff-position">GRAPHIC DESIGN</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Creative FX</td>
-        </tr>
-        <tr>
-            <td class="staff-position">PHOTOGRAPHER-IN-RESIDENCE</td>
-            <td class="staff-table-spacing">&nbsp;</td>
-            <td class="staff-name">Peter Lanscombe</td>
-        </tr>
-    </table>
+    <h1 class="about-us-section-title">Staff</h1>
+    <hr class="horizontal-rule">
+    <div class="staff-table-container">
+        <table class="staff-table">
+            <tr>
+                <td class="staff-position">EXECUTIVE ARTISTIC DIRECTOR</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Jeffrey Sanzel</td>
+            </tr>
+            <tr>
+                <td class="staff-position">MANAGING DIRECTOR</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Vivian Koutrakos</td>
+            </tr>
+            <tr>
+                <td class="staff-position">ARTISTIC ASSOCIATE/DIRECTOR OF DEVELOPMENT</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Douglas Quattrock</td>
+            </tr>
+            <tr>
+                <td class="staff-position">RESIDENT STAGE MANAGER</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Melissa Troxler</td>
+            </tr>
+            <tr>
+                <td class="staff-position">PRODUCTION DESIGNER</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Randall Parsons</td>
+            </tr>
+            <tr>
+                <td class="staff-position">TECHNICAL DIRECTOR</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Steven Barile</td>
+            </tr>
+            <tr>
+                <td class="staff-position">FRONT OF HOUSE COORDINATOR</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Russ Pulick</td>
+            </tr>
+            <tr>
+                <td class="staff-position">COMPTROLLER</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Lois Endsley</td>
+            </tr>
+            <tr>
+                <td class="staff-position">ADMINISTRATIVE AND MARKETING ASSOCIATE</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Tara Grippe</td>
+            </tr>
+            <tr>
+                <td class="staff-position">GROUP SALES/EDUCATIONAL TOURING COORDINATOR</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Marci Bing</td>
+            </tr>
+            <tr>
+                <td class="staff-position">ADMINISTRATIVE ASSISTANTS</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Anne Lennstrom</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Tara Ebrahimian</td>
+            </tr>
+            <tr>
+                <td class="staff-position">SOCIAL MEDIA COORDINATOR</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Steven Uihlein</td>
+            </tr>
+            <tr>
+                <td class="staff-position">WARDROBE SHOP SUPERVISOR/CHILDREN'S THEATRE COSTUME DESIGNER</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Jason Allyn</td>
+            </tr>
+            <tr>
+                <td class="staff-position">CHILDREN'S THEATRE TOURING COORDINATOR</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Marci Bing</td>
+            </tr>
+            <tr>
+                <td class="staff-position">COMPUTER/WEB COORDINATOR</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Max McBride</td>
+            </tr>
+            <tr>
+                <td class="staff-position">SUBSCRIPTIONS</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Michelle Johnson</td>
+            </tr>
+            <tr>
+                <td class="staff-position">BOX OFFICE</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Tara Ebrahimian</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Jenna Eichenger</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Michelle Johnson</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Cathy Rodgers</td>
+            </tr>
+            <tr>
+                <td class="staff-position">CONCESSION</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Bob Caggiano</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Carol D'Accordo</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Alan Schelp</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Jameson Wessels</td>
+            </tr>
+            <tr>
+                <td class="staff-position">GRAPHIC DESIGN</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Creative FX</td>
+            </tr>
+            <tr>
+                <td class="staff-position">PHOTOGRAPHER-IN-RESIDENCE</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Peter Lanscombe</td>
+            </tr>
+        </table>
+    </div>
+    <h1 class="about-us-section-title">Board of Directors</h1>
+    <hr class="horizontal-rule">
+    <div class="staff-table-container">
+        <table class="staff-table">
+            <tr>
+                <td class="staff-position">PRESIDENT</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Andrew Markowitz</td>
+            </tr>
+            <tr>
+                <td class="staff-position">VICE PRESIDENT</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Doug Firestone</td>
+            </tr>
+            <tr>
+                <td class="staff-position">TREASURER</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Bradlee E. Bing</td>
+            </tr>
+            <tr>
+                <td class="staff-position">SECRETARY</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Neil Block</td>
+            </tr>
+            <tr>
+                <td class="staff-position">MEMBERS</td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Nick Acompora</td>
+            </tr>
+            <tr>
+                <td class="staff-position"></td>
+                <td class="staff-table-spacing">&nbsp;</td>
+                <td class="staff-name">Don Lippencott</td>
+            </tr>
+        </table>
+    </div>
 </div>
 <?php
 get_footer();
