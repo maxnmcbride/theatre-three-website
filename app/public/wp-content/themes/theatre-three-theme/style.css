@@ -231,10 +231,6 @@ Version: 1.0
     /* Adjust the spacing between sublinks */
 }
 
-/* .nav-item:hover .sub-links {
-    display: block;
-  } */
-
 .nav-item:hover .sub-links {
     display: flex;
     /* Display sublinks when hovering over the main link */
@@ -501,4 +497,32 @@ Version: 1.0
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     text-align: center;
+}
+
+/* SECOND STAGE */
+
+/* Style for all <p> tags within .second-stage-cast-images */
+.second-stage-cast-images p {
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+
+/* Style for .second-stage-cast-images container */
+.second-stage-cast-images {
+    display: flex;
+    flex-wrap: wrap; /* Wrap the spans to the next line if necessary */
+    gap: 20px; /* Add space between spans */
+}
+
+/* Style for each span */
+.second-stage-cast-images span {
+    display: flex;
+    flex-direction: column; /* Display the image and text in a column layout */
+    align-items: center; /* Vertically align content */
+}
+
+/* Style for the image within each span */
+.second-stage-cast-images img.second-stage-cast {
+    max-width: 100px; /* Adjust the max-width as needed */
+    margin-bottom: 10px; /* Add space between the image and text */
 }
