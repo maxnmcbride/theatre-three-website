@@ -1,7 +1,9 @@
 <?php
 function custom_post_types()
 {
+
 // MAIN STAGE POST TYPE
+
     register_post_type(
         'show',
         array(
@@ -34,6 +36,26 @@ function custom_post_types()
             'labels' => array(
                 'name' => 'Second Stage Shows',
                 'singular_name' => 'Second Stage Show',
+                'add_new_item' => 'Add New Show',
+                'edit_item' => 'Edit Show',
+            )
+        )
+    );
+
+// CHILDRENS THEATRE POST TYPE
+
+    register_post_type(
+        'childrens_show',
+        array(
+            'rewrite' => array('slug' => 'childrens_theatre_shows'),
+            'has_archive' => true,
+            'show_in_rest' => true,
+            'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
+            'public' => true,
+            'menu_icon' => 'dashicons-buddicons-activity',
+            'labels' => array(
+                'name' => 'Childrens Theatre Shows',
+                'singular_name' => 'Childrens Theatre Show',
                 'add_new_item' => 'Add New Show',
                 'edit_item' => 'Edit Show',
             )
