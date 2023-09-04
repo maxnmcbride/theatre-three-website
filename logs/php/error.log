@@ -123,3 +123,12 @@ Stack trace:
 [30-Aug-2023 20:17:40 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [30-Aug-2023 21:34:30 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [31-Aug-2023 16:59:04 UTC] PHP Parse error:  Unmatched '}' in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/about_us.php on line 22
+[04-Sep-2023 17:29:13 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[04-Sep-2023 17:32:33 UTC] PHP Parse error:  syntax error, unexpected identifier "register_post_type" in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php on line 50
+[04-Sep-2023 17:34:13 UTC] PHP Parse error:  syntax error, unexpected identifier "register_post_type" in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php on line 62
+[04-Sep-2023 17:36:21 UTC] PHP Parse error:  syntax error, unexpected identifier "register_post_type" in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php on line 34
+[04-Sep-2023 17:37:50 UTC] PHP Parse error:  syntax error, unexpected identifier "register_post_type" in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php on line 38
+[04-Sep-2023 17:37:52 UTC] PHP Parse error:  syntax error, unexpected identifier "register_post_type" in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php on line 38
+[04-Sep-2023 17:37:52 UTC] PHP Parse error:  syntax error, unexpected identifier "register_post_type" in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php on line 38
+[04-Sep-2023 17:41:53 UTC] PHP Parse error:  Unmatched '}' in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php on line 62
+[04-Sep-2023 17:41:54 UTC] PHP Parse error:  Unmatched '}' in /Users/max/Local Sites/theatre-three/app/public/wp-content/mu-plugins/custom-post-types.php on line 62
