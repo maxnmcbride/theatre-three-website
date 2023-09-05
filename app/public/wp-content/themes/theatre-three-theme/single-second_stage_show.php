@@ -1,6 +1,7 @@
 <?php
 get_header();
 ?>
+
 <?php
 if (have_posts()) {
     while (have_posts()) {
@@ -40,14 +41,12 @@ if (have_posts()) {
                 }
                 ?>
             </div>
-
             <div class="second-stage-middle-column">
                 <h2 class="post-title">About the Show</h2>
                 <hr class="second-stage-title-line-break">
                 <div class="generic-post-content">
                     <?php the_content(); ?>
                 </div>
-
                 <div class="second-stage-cast-container">
                     <?php foreach ($castImages as $index => $castImage): ?>
                         <div class="second-stage-cast-images">
@@ -87,6 +86,50 @@ if (have_posts()) {
             </div>
         </div>
         <?php
+            <div class="show-metabox">
+                <h2 class="post-title">Ticket Information</h2>
+                <div class="metabox-ticket-information-header">
+                    <?php
+                    $ticket_information = get_field('show_ticket_information');
+                    if ($ticket_information) {
+                        ?>
+                        <div class="metabox-ticket-information-container">
+                            <p class="metabox-ticket-information-text">
+                                <?php echo htmlspecialchars_decode($ticket_information) ?>
+                            </p>
+                        </div>
+                        <?php
+                    }
+                    ?>
+                </div>
+            </div>
+
+            <div class="second-stage-cast-images">
+                <?php
+                foreach ($castImages as $index => $castImage) {
+                    $castImage_url = $castImage['url'];
+                    $castImage_alt = $castImage['alt'];
+                    $castImage_caption = $castImage['caption'];
+                    $castImage_description = $castImage['description'];
+                    ?>
+
+                    <span>
+                        <img class="second-stage-cast" src="<?php echo esc_url($castImage_url); ?>"
+                            alt="<?php echo esc_attr($castImage_alt); ?>">
+                        <p class="second-stage-cast-caption">
+                            <?php echo esc_attr($castImage_caption); ?>
+                        </p>
+                        <p class="second-stage-cast-description">
+                            <?php echo esc_attr($castImage_description); ?>
+                        </p>
+                    </span>
+                    <?php
+                }
+                ?>
+            </div>
+        </div>
+        <?php
+        }
     }
 }
 ?>
