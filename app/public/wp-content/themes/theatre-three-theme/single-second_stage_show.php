@@ -40,14 +40,12 @@ if (have_posts()) {
                 }
                 ?>
             </div>
-
             <div class="second-stage-middle-column">
                 <h2 class="post-title">About the Show</h2>
                 <hr class="second-stage-title-line-break">
                 <div class="generic-post-content">
                     <?php the_content(); ?>
                 </div>
-
                 <div class="second-stage-cast-container">
                     <?php foreach ($castImages as $index => $castImage): ?>
                         <div class="second-stage-cast-images">

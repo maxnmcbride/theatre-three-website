@@ -154,11 +154,17 @@ Stack trace:
 #3 {main}
   thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single-second_stage_show.php on line 6
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d4acbb54f018fcc904e9e42f3968c33488b99915
 [05-Sep-2023 14:22:38 UTC] PHP Warning:  Undefined variable $castImage_description in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single-second_stage_show.php on line 65
 [05-Sep-2023 14:22:38 UTC] PHP Warning:  Undefined variable $castImage_description in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single-second_stage_show.php on line 65
 [05-Sep-2023 14:22:39 UTC] PHP Warning:  Undefined variable $castImage_description in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single-second_stage_show.php on line 65
 [05-Sep-2023 14:22:39 UTC] PHP Warning:  Undefined variable $castImage_description in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single-second_stage_show.php on line 65
 [05-Sep-2023 14:22:41 UTC] PHP Warning:  Undefined variable $castImage_description in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single-second_stage_show.php on line 65
 [05-Sep-2023 14:22:41 UTC] PHP Warning:  Undefined variable $castImage_description in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single-second_stage_show.php on line 65
+<<<<<<< HEAD
 =======
 >>>>>>> c48cfa3512655f8ca3745425adad1f66e53b60ce
+=======
+>>>>>>> d4acbb54f018fcc904e9e42f3968c33488b99915
