@@ -432,7 +432,6 @@ Version: 1.0
 }
 
 /* SINGLE SHOW */
-/* Style for the main layout container */
 .show-layout {
     display: flex;
     justify-content: space-between;
@@ -440,10 +439,8 @@ Version: 1.0
     padding: 20px;
     background-color: black;
     height: 100vh;
-    /* border: 10px solid #ccc; */
 }
 
-/* Style for the header section containing title and image */
 .show-header {
     width: 33%;
     display: flex;
@@ -452,16 +449,13 @@ Version: 1.0
     gap: 10px;
 }
 
-/* Style for the title */
 .post-title {
     font-size: 24px;
     margin: 0;
 }
 
-/* Style for the image */
 .single-show-custom-image-div {
     max-width: 100%;
-    /* border: 10px solid #ccc; */
 }
 
 .custom-image {
@@ -469,7 +463,6 @@ Version: 1.0
     height: auto;
 }
 
-/* Style for the content section */
 .show-content {
     width: 33%;
     margin: 0 20px;
@@ -501,28 +494,69 @@ Version: 1.0
 
 /* SECOND STAGE */
 
-/* Style for all <p> tags within .second-stage-cast-images */
-.second-stage-cast-images p {
+.second-stage-title-line-break{
     color: white;
+    width: 100%;
+}
+
+.second-stage-content-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Allow columns to grow in height */
+    min-height: 100vh; /* Set a minimum height to ensure the footer is pushed down */
+    padding-bottom: 100px; /* Add padding to make space for the footer */
+    box-sizing: border-box; /* Include padding in the total height calculation */
+}
+
+.second-stage-left-column, .second-stage-middle-column, .second-stage-right-column {
+    flex: 1; /* Allow columns to grow */
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Add padding to the columns */
+    box-sizing: border-box; /* Include padding in the total height calculation */
+    display: flex;
+    flex-direction: column;
+}
+
+.second-stage-cast-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-stage-cast-images p {
+    color: black;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-align: center;
+    margin: 0;
 }
 
-/* Style for .second-stage-cast-images container */
 .second-stage-cast-images {
-    display: flex;
-    flex-wrap: wrap; /* Wrap the spans to the next line if necessary */
-    gap: 20px; /* Add space between spans */
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    margin: 0 auto; 
 }
 
-/* Style for each span */
-.second-stage-cast-images span {
+.second-stage-cast-content {
     display: flex;
-    flex-direction: column; /* Display the image and text in a column layout */
-    align-items: center; /* Vertically align content */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-/* Style for the image within each span */
-.second-stage-cast-images img.second-stage-cast {
-    max-width: 100px; /* Adjust the max-width as needed */
-    margin-bottom: 10px; /* Add space between the image and text */
+.second-stage-cast-content img.second-stage-cast {
+    max-width: 150px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.second-stage-cast-caption, .second-stage-cast-description {
+    text-align: center;
 }
