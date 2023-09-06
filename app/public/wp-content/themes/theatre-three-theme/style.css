@@ -6,48 +6,25 @@ Version: 1.0
 
 /* MAIN INDEX */
 .main-div-container {
-    position: relative; /* Add position relative */
+    position: relative;
     height: 100vh;
-    overflow: hidden;  /* Hide overflow content */
+    overflow: hidden;
 }
 
 .video-container {
-    position: absolute;
+    background-color: black;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    z-index: -1; /* Position it behind the text */
+    z-index: -1; 
 }
 
 .video-container video {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover; /* Cover the whole container */
-}
-
-.main-div-one {
-    position: relative;  /* No change here */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    z-index: 1;  /* Position it above the video */
-}
-
-.main-div-text {
-    position: absolute;
-    top: 0;
-    /* Position at the bottom */
-    left: 0;
-    /* Position at the left */
-    margin: 0;
-    padding: 10px;
-    /* Add some padding for spacing */
-    color: white;
-    font-family: Futura, Trebuchet MS, Arial, sans-serif;
-    transform: translateY(calc(100% + 10px));
 }
 
 .div-one-text {
@@ -82,21 +59,21 @@ Version: 1.0
     margin-left: 5%;
 }
 
-
-
-.main-div-events-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    height: 100vh;
-}
-
 .div-one {
     padding: 20px;
 }
 
 .main-div-events-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: relative;
+    width: 100vw; 
     display: flex;
+    background-color: black;
+    z-index: 2;
+    height: 100vh;
 }
 
 .main-div-events-mainstage-shows {
@@ -133,12 +110,22 @@ Version: 1.0
 
 /* HEADER */
 
+/* .site-header {
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+} */
+
 .site-header {
     margin: 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    z-index: 1; /* Added to appear above video */
+    position: relative; /* Added to enable z-index */
 }
 
 .title-container {
@@ -228,6 +215,8 @@ Version: 1.0
 /* BODY */
 
 .body {
+    margin: 0;
+    overflow-x: hidden;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -318,10 +307,12 @@ Version: 1.0
 /* FOOTER */
 
 .site-footer {
+    z-index: 2;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
 }
 

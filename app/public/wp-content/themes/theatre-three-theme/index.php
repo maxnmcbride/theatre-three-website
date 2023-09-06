@@ -8,12 +8,10 @@
       Your browser does not support the video tag.
     </video>
   </div>
-  <div class="main-div-one">
-    <h1 class="main-div-text">Explore Theatre Three</h1>
-  </div>
 </div>
 
 <h1 class="div-one-text">Upcoming Events</h1>
+
 <div class="main-div-events-container">
   <div class="main-div-events-mainstage-shows">
     
