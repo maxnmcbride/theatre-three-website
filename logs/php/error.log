@@ -172,3 +172,9 @@ Stack trace:
 [07-Sep-2023 20:44:30 UTC] PHP Warning:  Undefined array key "data" in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 175
 [07-Sep-2023 21:05:51 UTC] PHP Warning:  Undefined array key "data" in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 175
 [07-Sep-2023 21:07:05 UTC] PHP Warning:  Undefined array key "data" in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 175
+[07-Sep-2023 22:05:52 UTC] PHP Warning:  Undefined array key 0 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[07-Sep-2023 22:05:52 UTC] PHP Warning:  Undefined array key 1 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[07-Sep-2023 22:05:58 UTC] PHP Warning:  Undefined array key 0 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[07-Sep-2023 22:05:58 UTC] PHP Warning:  Undefined array key 1 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[07-Sep-2023 22:07:31 UTC] PHP Warning:  Undefined array key 0 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-text.php on line 33
+[07-Sep-2023 22:07:31 UTC] PHP Warning:  Undefined array key 1 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-text.php on line 33
