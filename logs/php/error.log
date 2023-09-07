@@ -168,3 +168,7 @@ Stack trace:
 >>>>>>> c48cfa3512655f8ca3745425adad1f66e53b60ce
 =======
 >>>>>>> d4acbb54f018fcc904e9e42f3968c33488b99915
+[07-Sep-2023 20:38:50 UTC] PHP Warning:  Undefined array key "score" in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/forms/classes/recaptcha-v3-handler.php on line 124
+[07-Sep-2023 20:44:30 UTC] PHP Warning:  Undefined array key "data" in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 175
+[07-Sep-2023 21:05:51 UTC] PHP Warning:  Undefined array key "data" in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 175
+[07-Sep-2023 21:07:05 UTC] PHP Warning:  Undefined array key "data" in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 175
