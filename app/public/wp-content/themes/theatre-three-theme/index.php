@@ -14,51 +14,12 @@
 
 <div class="main-div-events-container">
   <div class="main-div-events-mainstage-shows">
-    
-  <?php get_template_part('mainstage-shows-component'); ?>
 
-
-    <!-- <?php
-    $today = date('Ymd');
-    $homepageShows = new WP_Query(
-      array(
-        'posts_per_page' => 1,
-        'post_type' => 'show',
-        'meta_key' => 'start_date',
-        'orderby' => 'meta_value_num',
-        'order' => 'ASC',
-        'meta_query' => array(
-          array(
-            'key' => 'end_date',
-            'compare' => '>=',
-            'value' => $today,
-            'type' => 'numeric'
-          )
-        )
-      )
-    );
-
-    if ($homepageShows->have_posts()) {
-      $homepageShows->the_post();
-
-      $show_image = get_field('promotional_image');
-
-      if (is_array($show_image) && !empty($show_image['url'])) {
-        $show_image_url = $show_image['url'];
-      } else {
-        $show_image_url = 'default-image-url.jpg';
-      }
-
-      echo '<style>.main-div-events-mainstage-shows { background-image: url(' . esc_url($show_image_url) . '); }</style>';
-      rewind_posts();
-    }
-    ?> -->
-
+    <?php get_template_part('mainstage-shows-component'); ?>
 
   </div>
 
   <div class="main-div-events-secondstage-shows">
-
     <div class="div-one">
       <h2 class="upcoming-stage-titles"><a href="<?php echo get_post_type_archive_link('show') ?>">Second Stage
           Shows</a>
