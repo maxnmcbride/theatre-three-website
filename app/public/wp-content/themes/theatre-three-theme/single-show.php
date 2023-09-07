@@ -1,7 +1,6 @@
 <?php
 get_header();
 ?>
-<h1 class="post-title">THIS IS MADE BY THE SINGLE_SHOW</h1>
 
 <div class="show-layout">
     <?php

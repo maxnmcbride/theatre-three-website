@@ -529,3 +529,8 @@ Version: 1.0
 .second-stage-cast-caption, .second-stage-cast-description {
     text-align: center;
 }
+
+/* CHILDRENS THEATRE */
+.childrens-theatre-content-div{
+    background-color: beige;
+}
