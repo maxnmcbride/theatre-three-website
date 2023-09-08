@@ -84,10 +84,8 @@ Version: 1.0
 
 .main-div-events-mainstage-shows {
     position: relative;
-    /* Make sure the parent has relative positioning */
     flex: 1;
     justify-content: center;
-    /* Aligns horizontally */
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
@@ -115,10 +113,8 @@ Version: 1.0
 
 .main-div-events-secondstage-shows {
     position: relative;
-    /* Make sure the parent has relative positioning */
     flex: 1;
     justify-content: center;
-    /* Aligns horizontally */
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
@@ -168,13 +164,37 @@ Version: 1.0
     filter: grayscale(1) brightness(50%) blur(5px);
 }
 
+.main-div-events-acting-classes>* {
+    z-index: 1;
+    position: relative;
+}
+
 .main-div-events-acting-classes {
+    position: relative;
     flex: 1;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     box-sizing: border-box;
     color: white;
-    background-color: navy;
+    background-color: black;
 }
+
+.main-div-events-acting-classes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(1) brightness(50%) blur(5px);
+}
+
+
+
 
 /* HEADER */
 

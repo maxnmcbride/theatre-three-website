@@ -2,7 +2,7 @@
 function custom_post_types()
 {
 
-// MAIN STAGE POST TYPE
+    // MAIN STAGE POST TYPE
 
     register_post_type(
         'show',
@@ -42,7 +42,7 @@ function custom_post_types()
         )
     );
 
-// CHILDRENS THEATRE POST TYPE
+    // CHILDRENS THEATRE POST TYPE
 
     register_post_type(
         'childrens_show',
@@ -58,6 +58,26 @@ function custom_post_types()
                 'singular_name' => 'Childrens Theatre Show',
                 'add_new_item' => 'Add New Show',
                 'edit_item' => 'Edit Show',
+            )
+        )
+    );
+
+    // ACTING CLASSES
+
+    register_post_type(
+        'acting_class',
+        array(
+            'rewrite' => array('slug' => 'acting_classes'),
+            'has_archive' => true,
+            'show_in_rest' => true,
+            'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
+            'public' => true,
+            'menu_icon' => 'dashicons-groups',
+            'labels' => array(
+                'name' => 'Acting Classes',
+                'singular_name' => 'Acting Class',
+                'add_new_item' => 'Add New Class',
+                'edit_item' => 'Edit Class',
             )
         )
     );
