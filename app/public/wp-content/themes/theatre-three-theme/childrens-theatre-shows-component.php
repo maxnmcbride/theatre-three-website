@@ -3,7 +3,7 @@ $today = date('Ymd');
 $homepageShows = new WP_Query(
   array(
     'posts_per_page' => 1,
-    'post_type' => 'show',
+    'post_type' => 'childrens_show',
     'meta_key' => 'start_date',
     'orderby' => 'meta_value_num',
     'order' => 'ASC',
@@ -21,7 +21,7 @@ $homepageShows = new WP_Query(
 if ($homepageShows->have_posts()) {
   $homepageShows->the_post();
 
-  $show_image = get_field('promotional_image');
+  $show_image = get_field('show_image');
 
   if (is_array($show_image) && !empty($show_image['url'])) {
     $show_image_url = $show_image['url'];
@@ -29,19 +29,19 @@ if ($homepageShows->have_posts()) {
     $show_image_url = 'default-image-url.jpg';
   }
 
-  echo '<style>.main-div-events-mainstage-shows::before { background-image: url(' . esc_url($show_image_url) . '); }</style>';
+  echo '<style>.main-div-events-childrens-theater-shows::before { background-image: url(' . esc_url($show_image_url) . '); }</style>';
   wp_reset_postdata();
 }
 ?>
 
 <div class="div-one">
-    <h2 class="upcoming-stage-titles"><a href="<?php echo get_post_type_archive_link('show') ?>">Mainstage Shows</a></h2>
+    <h2 class="upcoming-stage-titles"><a href="<?php echo get_post_type_archive_link('childrens_show') ?>">Children's Theatre</a></h2>
 
     <?php
     $homepageShowsThree = new WP_Query(
         array(
             'posts_per_page' => 5,
-            'post_type' => 'show',
+            'post_type' => 'childrens_show',
             'meta_key' => 'start_date',
             'orderby' => 'meta_value_num',
             'order' => 'ASC',
