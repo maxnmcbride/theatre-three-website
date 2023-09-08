@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 $today = date('Ymd');
 $homepageShows = new WP_Query(
   array(
@@ -29,8 +29,7 @@ if ($homepageShows->have_posts()) {
     $show_image_url = 'default-image-url.jpg';
   }
 
-  echo '<style>.main-div-events-mainstage-shows::before { background-image: url(' . esc_url($show_image_url) . '); }</style>';
-  // reset the post data so we can run another loop below
+  echo '<style>.main-div-events-secondstage-shows::before { background-image: url(' . esc_url($show_image_url) . '); }</style>';
   wp_reset_postdata();
 }
 ?>
@@ -101,4 +100,4 @@ if ($homepageShows->have_posts()) {
     <?php 
     } 
     ?>
-</div> -->
+</div>
