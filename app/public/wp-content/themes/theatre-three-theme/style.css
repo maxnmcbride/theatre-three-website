@@ -18,13 +18,14 @@ Version: 1.0
     left: 0;
     width: 100vw;
     height: 100%;
-    z-index: -1; 
+    z-index: -1;
 }
 
 .video-container video {
     width: 100vw;
     height: 100vh;
-    object-fit: cover; /* Cover the whole container */
+    object-fit: cover;
+    /* Cover the whole container */
 }
 
 .div-one-text {
@@ -69,23 +70,25 @@ Version: 1.0
     box-sizing: border-box;
     justify-content: space-between;
     position: relative;
-    width: 100vw; 
+    width: 100vw;
     display: flex;
     background-color: black;
     z-index: 2;
     height: 100vh;
 }
 
-.main-div-events-mainstage-shows > * {
+.main-div-events-mainstage-shows>* {
     z-index: 1;
     position: relative;
 }
 
 .main-div-events-mainstage-shows {
-    position: relative;  /* Make sure the parent has relative positioning */
+    position: relative;
+    /* Make sure the parent has relative positioning */
     flex: 1;
-    justify-content: center;  /* Aligns horizontally */
-    align-items: center; 
+    justify-content: center;
+    /* Aligns horizontally */
+    align-items: center;
     padding: 20px;
     box-sizing: border-box;
     color: white;
@@ -105,20 +108,64 @@ Version: 1.0
     filter: grayscale(1) brightness(50%) blur(5px);
 }
 
+.main-div-events-secondstage-shows>* {
+    z-index: 1;
+    position: relative;
+}
+
 .main-div-events-secondstage-shows {
+    position: relative;
+    /* Make sure the parent has relative positioning */
     flex: 1;
+    justify-content: center;
+    /* Aligns horizontally */
+    align-items: center;
     padding: 20px;
     box-sizing: border-box;
     color: white;
-    background-color: blueviolet;
+    background-color: black;
+}
+
+.main-div-events-secondstage-shows::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(1) brightness(50%) blur(5px);
+}
+
+.main-div-events-childrens-theater-shows>* {
+    z-index: 1;
+    position: relative;
 }
 
 .main-div-events-childrens-theater-shows {
+    position: relative;
     flex: 1;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     box-sizing: border-box;
     color: white;
-    background-color: purple;
+    background-color: black;
+}
+
+.main-div-events-childrens-theater-shows::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(1) brightness(50%) blur(5px);
 }
 
 .main-div-events-acting-classes {
@@ -145,8 +192,8 @@ Version: 1.0
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    z-index: 1; /* Added to appear above video */
-    position: relative; /* Added to enable z-index */
+    z-index: 1;
+    position: relative;
 }
 
 .title-container {
@@ -271,17 +318,19 @@ Version: 1.0
     margin: 2rem;
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
-    display: flex; /* Add flex container */
-    flex-direction: column; /* Stack children vertically */
+    display: flex;
+    /* Add flex container */
+    flex-direction: column;
+    /* Stack children vertically */
 }
 
-.about-us-section-title{
+.about-us-section-title {
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     text-align: center;
 }
 
-.horizontal-rule{
+.horizontal-rule {
     width: 100%;
 }
 
@@ -303,7 +352,8 @@ Version: 1.0
     text-indent: initial;
 }
 
-.staff-position, .staff-name {
+.staff-position,
+.staff-name {
     padding: 8px;
     vertical-align: top;
     display: table-cell;
@@ -485,7 +535,7 @@ Version: 1.0
 
 /* SECOND STAGE */
 
-.second-stage-title-line-break{
+.second-stage-title-line-break {
     color: white;
     width: 100%;
 }
@@ -493,18 +543,27 @@ Version: 1.0
 .second-stage-content-columns {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Allow columns to grow in height */
-    min-height: 100vh; /* Set a minimum height to ensure the footer is pushed down */
-    padding-bottom: 100px; /* Add padding to make space for the footer */
-    box-sizing: border-box; /* Include padding in the total height calculation */
+    align-items: stretch;
+    /* Allow columns to grow in height */
+    min-height: 100vh;
+    /* Set a minimum height to ensure the footer is pushed down */
+    padding-bottom: 100px;
+    /* Add padding to make space for the footer */
+    box-sizing: border-box;
+    /* Include padding in the total height calculation */
 }
 
-.second-stage-left-column, .second-stage-middle-column, .second-stage-right-column {
-    flex: 1; /* Allow columns to grow */
+.second-stage-left-column,
+.second-stage-middle-column,
+.second-stage-right-column {
+    flex: 1;
+    /* Allow columns to grow */
     align-items: center;
     text-align: center;
-    padding: 20px; /* Add padding to the columns */
-    box-sizing: border-box; /* Include padding in the total height calculation */
+    padding: 20px;
+    /* Add padding to the columns */
+    box-sizing: border-box;
+    /* Include padding in the total height calculation */
     display: flex;
     flex-direction: column;
 }
@@ -530,7 +589,7 @@ Version: 1.0
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 75%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .second-stage-cast-content {
@@ -548,12 +607,13 @@ Version: 1.0
     border-radius: 10px;
 }
 
-.second-stage-cast-caption, .second-stage-cast-description {
+.second-stage-cast-caption,
+.second-stage-cast-description {
     text-align: center;
 }
 
 /* CHILDRENS THEATRE */
-.childrens-theatre-content-div{
+.childrens-theatre-content-div {
     background-color: beige;
     min-width: 100%;
 }
