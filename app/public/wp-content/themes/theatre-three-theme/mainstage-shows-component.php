@@ -36,11 +36,11 @@ if ($homepageShows->have_posts()) {
 
 <div class="div-one">
     <h2 class="upcoming-stage-titles"><a href="<?php echo get_post_type_archive_link('show') ?>">Mainstage Shows</a></h2>
-
+    <hr class="upcoming-stage-titles-break">
     <?php
     $homepageShowsThree = new WP_Query(
         array(
-            'posts_per_page' => 5,
+            'posts_per_page' => 3,
             'post_type' => 'show',
             'meta_key' => 'start_date',
             'orderby' => 'meta_value_num',
