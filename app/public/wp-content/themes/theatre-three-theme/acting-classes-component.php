@@ -36,6 +36,7 @@ if ($homepageShows->have_posts()) {
 
 <div class="div-one">
     <h2 class="upcoming-stage-titles"><a href="<?php echo get_post_type_archive_link('acting_class') ?>">Acting Classes</a></h2>
+    <hr class="upcoming-stage-titles-break">
 
     <?php
     $homepageShowsThree = new WP_Query(

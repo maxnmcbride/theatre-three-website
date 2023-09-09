@@ -44,20 +44,33 @@ Version: 1.0
 }
 
 /* UPCOMING SHOWS LIST*/
+.upcoming-stage-titles {
+    display: flex;
+    justify-content: center;
+}
 .upcoming-stage-titles a {
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
-    text-align: left;
+    text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+
+.upcoming-stage-titles-break{
+    width: 75%;
+    border: 0;
+    border-top: 1px solid white;
+    margin: 0 auto;
 }
 
 .upcoming-show-titles a {
+    display: inline-block; /* Makes the <a> tag an inline-block element */
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     text-align: left;
     text-decoration: none;
     color: white;
     margin-left: 5%;
+    font-size: 1.75rem;
 }
 
 .div-one {
@@ -103,7 +116,7 @@ Version: 1.0
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    filter: grayscale(1) brightness(50%) blur(5px);
+    filter: grayscale(1) brightness(25%) blur(5px);
 }
 
 .main-div-events-secondstage-shows>* {
@@ -132,7 +145,7 @@ Version: 1.0
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    filter: grayscale(1) brightness(50%) blur(5px);
+    filter: grayscale(1) brightness(25%) blur(5px);
 }
 
 .main-div-events-childrens-theater-shows>* {
@@ -161,7 +174,7 @@ Version: 1.0
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    filter: grayscale(1) brightness(50%) blur(5px);
+    filter: grayscale(1) brightness(25%) blur(5px);
 }
 
 .main-div-events-acting-classes>* {
@@ -190,7 +203,7 @@ Version: 1.0
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    filter: grayscale(1) brightness(50%) blur(5px);
+    filter: grayscale(1) brightness(25%) blur(5px);
 }
 
 
