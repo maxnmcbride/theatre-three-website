@@ -185,3 +185,76 @@ Stack trace:
 [11-Sep-2023 15:48:37 UTC] PHP Warning:  Undefined array key 1 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
 [11-Sep-2023 15:55:20 UTC] PHP Warning:  Undefined array key 0 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
 [11-Sep-2023 15:55:20 UTC] PHP Warning:  Undefined array key 1 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[11-Sep-2023 17:32:02 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "show_description" in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php:17
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-blog-header.php(19): require_once('/Users/max/Loca...')
+#2 /Users/max/Local Sites/theatre-three/app/public/index.php(17): require('/Users/max/Loca...')
+#3 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 17
+[11-Sep-2023 19:28:09 UTC] PHP Warning:  Attempt to read property "title" on null in /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-customize-widgets.php on line 905
+[11-Sep-2023 21:36:05 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:05 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:05 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:05 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:05 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:05 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:44 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:44 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:44 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:44 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:44 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:36:44 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:38:16 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:38:16 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:38:16 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:38:16 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:38:16 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:38:16 UTC] PHP Warning:  Array to string conversion in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 76
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_url in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 73
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_url in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 73
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_url in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 73
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_url in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 73
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_url in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 73
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_url in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 73
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_url in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 73
+[11-Sep-2023 21:40:20 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:51 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:51 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:51 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:51 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:51 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:51 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:51 UTC] PHP Warning:  Undefined variable $image_alt in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:40:59 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php:73
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-blog-header.php(19): require_once('/Users/max/Loca...')
+#2 /Users/max/Local Sites/theatre-three/app/public/index.php(17): require('/Users/max/Loca...')
+#3 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 73
+[11-Sep-2023 21:41:01 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php:73
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-blog-header.php(19): require_once('/Users/max/Loca...')
+#2 /Users/max/Local Sites/theatre-three/app/public/index.php(17): require('/Users/max/Loca...')
+#3 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 73
+[11-Sep-2023 21:44:33 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:44:33 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 75
+[11-Sep-2023 21:46:33 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:46:33 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 75
+[11-Sep-2023 21:48:29 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:48:29 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 75
+[11-Sep-2023 21:48:30 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:48:30 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 75
+[11-Sep-2023 21:48:35 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:48:35 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 75
+[11-Sep-2023 21:49:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
+[11-Sep-2023 21:49:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 75
