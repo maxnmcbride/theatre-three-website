@@ -40,6 +40,12 @@ Version: 1.0
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
+.age-group-text {
+    text-align: right;
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+
 .div-two-text a {
     margin-left: 3%;
     text-align: left;
@@ -103,7 +109,7 @@ Version: 1.0
 }
 
 .main-div-events-mainstage-shows>* {
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 
@@ -131,8 +137,19 @@ Version: 1.0
     filter: grayscale(1) brightness(25%) blur(5px);
 }
 
-.main-div-events-secondstage-shows>* {
+.main-div-events-mainstage-shows::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(47, 79, 79, 0.5);
     z-index: 1;
+}
+
+.main-div-events-secondstage-shows>* {
+    z-index: 2;
     position: relative;
 }
 
@@ -160,8 +177,19 @@ Version: 1.0
     filter: grayscale(1) brightness(25%) blur(5px);
 }
 
-.main-div-events-childrens-theater-shows>* {
+.main-div-events-secondstage-shows::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(80, 50, 120, 0.5);
     z-index: 1;
+}
+
+.main-div-events-childrens-theater-shows>* {
+    z-index: 2;
     position: relative;
 }
 
@@ -189,8 +217,19 @@ Version: 1.0
     filter: grayscale(1) brightness(25%) blur(5px);
 }
 
-.main-div-events-acting-classes>* {
+.main-div-events-childrens-theater-shows::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(150, 120, 180, 0.5);
     z-index: 1;
+}
+
+.main-div-events-acting-classes>* {
+    z-index: 2;
     position: relative;
 }
 
@@ -218,8 +257,16 @@ Version: 1.0
     filter: grayscale(1) brightness(25%) blur(5px);
 }
 
-
-
+.main-div-events-acting-classes::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(173, 216, 230, 0.5);
+    z-index: 1;
+}
 
 /* HEADER */
 
@@ -518,64 +565,9 @@ Version: 1.0
 }
 
 /* SINGLE SHOW */
-.show-layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    background-color: black;
-    height: 100vh;
-}
-
-.show-header {
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.post-title {
-    font-size: 24px;
-    margin: 0;
-}
-
-.single-show-custom-image-div {
-    max-width: 100%;
-}
-
-.custom-image {
-    max-width: 100%;
-    height: auto;
-}
-
-.show-content {
-    width: 33%;
-    margin: 0 20px;
-}
-
-.generic-post-content {
-    font-size: 16px;
-}
-
-/* Style for the metabox section */
-.show-metabox {
-    width: 33%;
-    padding: 10px;
-    /* border: 1px solid #ccc; */
-}
-
-.metabox-ticket-information-header {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-
-.metabox-ticket-information-container {}
-
-.metabox-ticket-information-text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    text-align: center;
+.mainstage-show-content-div {
+    background-color: beige;
+    min-width: 100%;
 }
 
 /* SECOND STAGE */
