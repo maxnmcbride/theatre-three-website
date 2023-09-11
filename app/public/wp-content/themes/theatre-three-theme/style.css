@@ -121,6 +121,7 @@ Version: 1.0
     padding: 20px;
     box-sizing: border-box;
     color: white;
+    border-right: solid 3px gray;
     background-color: black;
 }
 
@@ -150,6 +151,7 @@ Version: 1.0
     padding: 20px;
     box-sizing: border-box;
     color: white;
+    border-right: solid 3px gray;
     background-color: black;
 }
 
@@ -179,6 +181,7 @@ Version: 1.0
     padding: 20px;
     box-sizing: border-box;
     color: white;
+    border-right: solid 3px gray;
     background-color: black;
 }
 
@@ -223,9 +226,6 @@ Version: 1.0
     background-size: cover;
     filter: grayscale(1) brightness(25%) blur(5px);
 }
-
-
-
 
 /* HEADER */
 
