@@ -10,7 +10,7 @@
   </div>
 </div>
 
-<h1 class="div-one-text">Upcoming Events</h1>
+<h1 class="upcoming-show-header">Upcoming Events</h1>
 
 <div class="main-div-events-container">
   <div class="main-div-events-mainstage-shows">

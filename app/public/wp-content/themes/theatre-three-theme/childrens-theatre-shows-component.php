@@ -72,23 +72,23 @@ if ($homepageShows->have_posts()) {
 
             if ($startDate == $endDate) {
             ?>
-                <div>
+                 <div class="upcoming-show-date-span">
                     <span class="div-one-text">
                         <?php echo $startDate->format('M j Y'); ?>
                     </span>
                     <span class="div-one-text">
-                        <i>One Night Only!</i>
+                        <i>&nbsp;&nbsp;One Night Only!</i>
                     </span>
                 </div>
             <?php
             } else {
             ?>
-                <div>
+                <div class="upcoming-show-date-span">
                     <span class="div-one-text">
                         <?php echo $startDate->format('M j Y'); ?>
                     </span>
                     <span class="div-one-text">
-                        <b>-</b>
+                        <b>&nbsp;&nbsp;-&nbsp;&nbsp;</b>
                     </span>
                     <span class="div-one-text">
                         <?php echo $endDate->format('M j Y'); ?>
