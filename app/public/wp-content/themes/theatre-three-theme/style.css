@@ -28,9 +28,14 @@ Version: 1.0
     /* Cover the whole container */
 }
 
-.div-one-text {
+.upcoming-show-header {
     margin-left: 3%;
     text-align: left;
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+
+.div-one-text {
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
@@ -44,10 +49,16 @@ Version: 1.0
 }
 
 /* UPCOMING SHOWS LIST*/
+.upcoming-show-date-span {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .upcoming-stage-titles {
     display: flex;
     justify-content: center;
 }
+
 .upcoming-stage-titles a {
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     text-align: center;
@@ -56,7 +67,7 @@ Version: 1.0
     font-size: 2rem;
 }
 
-.upcoming-stage-titles-break{
+.upcoming-stage-titles-break {
     width: 75%;
     border: 0;
     border-top: 1px solid white;
@@ -64,13 +75,14 @@ Version: 1.0
 }
 
 .upcoming-show-titles a {
-    display: inline-block; /* Makes the <a> tag an inline-block element */
+    display: inline-block;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     text-align: left;
     text-decoration: none;
     color: white;
     margin-left: 5%;
     font-size: 1.75rem;
+    margin-top: 1.5rem;
 }
 
 .div-one {

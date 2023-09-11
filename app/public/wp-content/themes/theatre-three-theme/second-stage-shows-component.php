@@ -1,41 +1,42 @@
 <?php
 $today = date('Ymd');
 $homepageShows = new WP_Query(
-  array(
-    'posts_per_page' => 1,
-    'post_type' => 'second_stage_show',
-    'meta_key' => 'start_date',
-    'orderby' => 'meta_value_num',
-    'order' => 'ASC',
-    'meta_query' => array(
-      array(
-        'key' => 'end_date',
-        'compare' => '>=',
-        'value' => $today,
-        'type' => 'numeric'
-      )
+    array(
+        'posts_per_page' => 1,
+        'post_type' => 'second_stage_show',
+        'meta_key' => 'start_date',
+        'orderby' => 'meta_value_num',
+        'order' => 'ASC',
+        'meta_query' => array(
+            array(
+                'key' => 'end_date',
+                'compare' => '>=',
+                'value' => $today,
+                'type' => 'numeric'
+            )
+        )
     )
-  )
 );
 
 if ($homepageShows->have_posts()) {
-  $homepageShows->the_post();
+    $homepageShows->the_post();
 
-  $show_image = get_field('promotional_image');
+    $show_image = get_field('promotional_image');
 
-  if (is_array($show_image) && !empty($show_image['url'])) {
-    $show_image_url = $show_image['url'];
-  } else {
-    $show_image_url = 'default-image-url.jpg';
-  }
+    if (is_array($show_image) && !empty($show_image['url'])) {
+        $show_image_url = $show_image['url'];
+    } else {
+        $show_image_url = 'default-image-url.jpg';
+    }
 
-  echo '<style>.main-div-events-secondstage-shows::before { background-image: url(' . esc_url($show_image_url) . '); }</style>';
-  wp_reset_postdata();
+    echo '<style>.main-div-events-secondstage-shows::before { background-image: url(' . esc_url($show_image_url) . '); }</style>';
+    wp_reset_postdata();
 }
 ?>
 
 <div class="div-one">
-    <h2 class="upcoming-stage-titles"><a href="<?php echo get_post_type_archive_link('second_stage_show') ?>">Second Stage Shows</a></h2>
+    <h2 class="upcoming-stage-titles"><a href="<?php echo get_post_type_archive_link('second_stage_show') ?>">Second
+            Stage Shows</a></h2>
     <hr class="upcoming-stage-titles-break">
 
     <?php
@@ -58,8 +59,8 @@ if ($homepageShows->have_posts()) {
     );
 
     while ($homepageShowsThree->have_posts()) {
-        $homepageShowsThree->the_post(); 
-    ?>
+        $homepageShowsThree->the_post();
+        ?>
         <div>
             <h3 class="upcoming-show-titles">
                 <a href="<?php the_permalink(); ?>">
@@ -71,34 +72,34 @@ if ($homepageShows->have_posts()) {
             $endDate = new DateTime(get_field('end_date'));
 
             if ($startDate == $endDate) {
-            ?>
-                <div>
+                ?>
+                <div class="upcoming-show-date-span">
                     <span class="div-one-text">
                         <?php echo $startDate->format('M j Y'); ?>
                     </span>
                     <span class="div-one-text">
-                        <i>One Night Only!</i>
+                        <i>&nbsp;&nbsp;One Night Only!</i>
                     </span>
                 </div>
-            <?php
+                <?php
             } else {
-            ?>
-                <div>
+                ?>
+                <div class="upcoming-show-date-span">
                     <span class="div-one-text">
                         <?php echo $startDate->format('M j Y'); ?>
                     </span>
                     <span class="div-one-text">
-                        <b>-</b>
+                        <b>&nbsp;&nbsp;-&nbsp;&nbsp;</b>
                     </span>
                     <span class="div-one-text">
                         <?php echo $endDate->format('M j Y'); ?>
                     </span>
                 </div>
-            <?php
+                <?php
             }
             ?>
         </div>
-    <?php 
-    } 
+    <?php
+    }
     ?>
 </div>
