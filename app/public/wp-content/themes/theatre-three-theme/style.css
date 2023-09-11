@@ -40,6 +40,12 @@ Version: 1.0
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
+.age-group-text{
+    text-align: right;
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+
 .div-two-text a {
     margin-left: 3%;
     text-align: left;

@@ -7,7 +7,6 @@ get_header();
     if (have_posts()) {
         while (have_posts()) {
             the_post();
-            // Get the image URL from the ACF field
             $image = get_field('show_image');
             ?>
 
