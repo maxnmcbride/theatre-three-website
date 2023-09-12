@@ -38,6 +38,7 @@
           <ul class="sub-links">
             <li>
               <a href="<?php echo site_url('/tickets') ?>">Events Calendar</a>
+<<<<<<< HEAD
             </li>
             <li>
               <a href="<?php echo site_url('/tickets') ?>">Main Stage</a>
@@ -47,6 +48,8 @@
             </li>
             <li>
               <a href="<?php echo site_url('/tickets') ?>">Children's Theatre</a>
+=======
+>>>>>>> main
             </li>
           </ul>
         </li>
@@ -62,7 +65,11 @@
           <a href="#" class="nav-link">YOUR VISIT</a>
           <ul class="sub-links">
             <li>
+<<<<<<< HEAD
               <a href="<?php echo site_url('/tickets') ?>">Plan a Tour</a>
+=======
+              <a href="<?php echo site_url('/tickets') ?>">Tours</a>
+>>>>>>> main
             </li>
           </ul>
         </li>

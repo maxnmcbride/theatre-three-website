@@ -6,77 +6,42 @@ Version: 1.0
 
 /* MAIN INDEX */
 .main-div-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.main-div-one {
     position: relative;
-    /* Add position relative */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
     background-color: black;
-    animation: imageCycle 30s infinite;
-}
-
-@keyframes imageCycle {
-
-    0%,
-    100%,
-    20%,
-    40%,
-    60%,
-    80% {
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        /* transition-delay: 3s;     */
-    }
-
-    0%,
-    100% {
-        background-image: url('./images/theatre-three-img1.jpeg');
-    }
-
-    20% {
-        background-image: url('./images/theatre-three-img4.jpeg');
-    }
-
-    40% {
-        background-image: url('./images/theatre-three-img5.jpeg');
-    }
-
-    60% {
-        background-image: url('./images/theatre-three-img2.jpeg');
-    }
-
-    80% {
-        background-image: url('./images/theatre-three-img3.jpeg');
-    }
-}
-
-.main-div-text {
-    position: absolute;
+    position: fixed;
     top: 0;
-    /* Position at the bottom */
     left: 0;
-    /* Position at the left */
-    margin: 0;
-    padding: 10px;
-    /* Add some padding for spacing */
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* Cover the whole container */
+}
+
+.upcoming-show-header {
+    margin-left: 3%;
+    text-align: left;
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
-    transform: translateY(calc(100% + 10px));
 }
 
 .div-one-text {
-    margin-left: 3%;
-    text-align: left;
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+
+.age-group-text {
+    text-align: right;
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
@@ -90,100 +55,228 @@ Version: 1.0
 }
 
 /* UPCOMING SHOWS LIST*/
-.upcoming-stage-titles a{
-    font-family: Futura, Trebuchet MS, Arial, sans-serif;
-    text-align: left;
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
+.upcoming-show-date-span {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.upcoming-show-titles a{
+.upcoming-stage-titles {
+    display: flex;
+    justify-content: center;
+}
+
+.upcoming-stage-titles a {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.upcoming-stage-titles-break {
+    width: 75%;
+    border: 0;
+    border-top: 1px solid white;
+    margin: 0 auto;
+}
+
+.upcoming-show-titles a {
+    display: inline-block;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     text-align: left;
     text-decoration: none;
     color: white;
     margin-left: 5%;
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
 }
+
+
 
 .div-container {
     display: flex;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.div-one {
-    flex: 1;
-    /* Take up available space */
-    height: 100%;
-    width: 100%;
     background-color: black;
-    /* Initial background color */
-    transition: background-color 0.3s;
-    /* Add a transition effect */
-}
-
-.div-two {
-    width: 0;
-    /* Initially hidden width */
-    height: 100%;
-    background-color: black;
-    /* Background color on hover */
-    transition: width 0.3s;
-    /* Add a transition effect */
-}
-
-.div-container:hover .div-two {
-    width: 30%;
-    height: 100%;
-    background-color: black;
-    /* Background color on hover */
-    transition: width 0.3s;
-    /* Add a transition effect */
-}
-
-.div-three {
-    flex: 1;
-    background-color: green;
-    max-height: 100%;
-}
-
-.div-four {
-    flex: 1;
-    background-color: navy;
-    max-height: 100%;
-}
-
-.div-container-two {
-    display: flex;
+    z-index: 2;
     height: 100vh;
 }
 
-.div-five {
-    flex: 1;
-    background-color: navy;
-    max-height: 100%;
+.main-div-events-mainstage-shows>* {
+    z-index: 2;
+    position: relative;
 }
 
-.div-six {
+.main-div-events-mainstage-shows {
+    position: relative;
     flex: 1;
-    background-color: green;
-    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
 }
 
-.div-container-three {
-    display: flex;
-    height: 100vh;
+.main-div-events-mainstage-shows::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(1) brightness(25%) blur(5px);
+}
+
+.main-div-events-mainstage-shows::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(47, 79, 79, 0.5);
+    z-index: 1;
+}
+
+.main-div-events-secondstage-shows>* {
+    z-index: 2;
+    position: relative;
+}
+
+.main-div-events-secondstage-shows {
+    position: relative;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+.main-div-events-secondstage-shows::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(1) brightness(25%) blur(5px);
+}
+
+.main-div-events-secondstage-shows::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(80, 50, 120, 0.5);
+    z-index: 1;
+}
+
+.main-div-events-childrens-theater-shows>* {
+    z-index: 2;
+    position: relative;
+}
+
+.main-div-events-childrens-theater-shows {
+    position: relative;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+.main-div-events-childrens-theater-shows::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(1) brightness(25%) blur(5px);
+}
+
+.main-div-events-childrens-theater-shows::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(150, 120, 180, 0.5);
+    z-index: 1;
+}
+
+.main-div-events-acting-classes>* {
+    z-index: 2;
+    position: relative;
+}
+
+.main-div-events-acting-classes {
+    position: relative;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+.main-div-events-acting-classes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(1) brightness(25%) blur(5px);
+}
+
+.main-div-events-acting-classes::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(173, 216, 230, 0.5);
+    z-index: 1;
 }
 
 /* HEADER */
+
+/* .site-header {
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+} */
 
 .site-header {
     margin: 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 25px 20px;
+    padding: 20px;
+    z-index: 1;
     position: relative;
 }
 
@@ -302,16 +395,9 @@ a {
     /* linear-gradient(to top, #49494ba3, transparent), linear-gradient(to right, #97979ba3, transparent),  */
     border-radius: 2px;
     list-style: none;
-    height: 30px;
-    transition: all ease 0.4s;
-    gap: 50px; 
-    flex-direction: row;
-    font-style: italic;
-    opacity: 0;
-    /* margin-top: -10px; */
-    /* z-index: -999; */
-    /* padding: 10px; */
-    /* align-self: flex-end; */
+/*commenting out due to merge, may need to comment back in*/
+    /* padding: 10px;
+    width: 150px; */
 }
 
 
@@ -334,12 +420,17 @@ a {
 
 /* BODY */
 .body {
+    margin: 0;
+    overflow: auto;
+    overflow-x: hidden;
     background-color: black;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-width: 100vw;
+    overscroll-behavior-y: none;
 }
+
 
 /* POST */
 
@@ -359,13 +450,80 @@ a {
 /* .post-image{} */
 /* need to create css so that image is centered in page and has padding or margin of 25% on each side */
 
+/* ABOUT US */
+.about-us-body-container {
+    margin: 2rem;
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    display: flex;
+    /* Add flex container */
+    flex-direction: column;
+    /* Stack children vertically */
+}
+
+.about-us-section-title {
+    color: white;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-align: center;
+}
+
+.horizontal-rule {
+    width: 100%;
+}
+
+.about-us-history-content {
+    margin-bottom: 1rem;
+}
+
+.staff-table-container {
+    display: flex;
+    justify-content: center;
+    /* Remove height: 100%; */
+}
+
+.staff-table {
+    width: auto;
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-indent: initial;
+}
+
+.staff-position,
+.staff-name {
+    padding: 8px;
+    vertical-align: top;
+    display: table-cell;
+}
+
+.staff-position {
+    font-weight: normal;
+    text-align: right;
+    width: 50%;
+}
+
+.staff-name {
+    font-style: normal;
+    text-align: left;
+    padding-top: 2px;
+    padding-bottom: 0;
+    width: 50%;
+}
+
+.staff-table-spacing {
+    width: 1rem;
+    /* Remove height property */
+}
+
 /* FOOTER */
 
 .site-footer {
+    z-index: 2;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
 }
 
@@ -424,29 +582,199 @@ a {
 }
 
 /* ARCHIVE-SHOW */
-.single-show-div-container{
-    border: 10px solid red;
+.mainstage-archive-page {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: beige;
+    height: 100%;
 }
 
-.single-show-title-container{
-    border: 1px solid red;
+.mainstage-archive-page-title {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.archive-title-content-break1 {
+    width: 75%;
+    color: black;
+}
+
+.archive-title-content-break {
+    width: 65%;
+    color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
 .single-show-title {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    margin-left: 10%;
+    margin-left: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    text-transform: uppercase;
 }
 
-.single-show-description-container{
-    border: 1px solid yellow;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    margin-left: 20%;
+.single-show-title a:hover {
+    color: #51cdc0;
 }
 
-.single-show-description{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+.show-date-span-container {
+    margin-left: 25%;
+    text-align: left;}
+
+.single-show-description-container,
+.single-show-description {
     margin-left: 20%;
+    margin-bottom: 2rem;
+}
+
+.single-show-description {
+    font-size: large;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card {
+    width: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+
+
+.show-image-container {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 20%;
+    overflow: hidden;
+    z-index: 1;
+    background-color: black;
+}
+
+.show-image-container img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    filter: grayscale(1);
+    background-color: black;
+}
+
+.single-show-buttons-container {
+    text-align: center;  /* this will center inline and inline-block elements */
+    margin: 0 auto;      /* this can help with block elements */
+}
+
+.single-show-buttons {
+    display: inline-block;
+    background-color: black;
+    margin: 5px;
+    border: none;
+    padding: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.single-show-buttons a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+
+/* SINGLE SHOW */
+.mainstage-show-content-div {
+    background-color: beige;
+    min-width: 100%;
+}
+
+/* SECOND STAGE */
+
+.second-stage-title-line-break {
+    color: white;
+    width: 100%;
+}
+
+.second-stage-content-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Allow columns to grow in height */
+    min-height: 100vh;
+    /* Set a minimum height to ensure the footer is pushed down */
+    padding-bottom: 100px;
+    /* Add padding to make space for the footer */
+    box-sizing: border-box;
+    /* Include padding in the total height calculation */
+}
+
+.second-stage-left-column,
+.second-stage-middle-column,
+.second-stage-right-column {
+    flex: 1;
+    /* Allow columns to grow */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    /* Add padding to the columns */
+    box-sizing: border-box;
+    /* Include padding in the total height calculation */
+    display: flex;
+    flex-direction: column;
+}
+
+.second-stage-cast-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-stage-cast-images p {
+    color: black;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.second-stage-cast-images {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    margin: 0 auto;
+}
+
+.second-stage-cast-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.second-stage-cast-content img.second-stage-cast {
+    max-width: 150px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.second-stage-cast-caption,
+.second-stage-cast-description {
+    text-align: center;
+}
+
+/* CHILDRENS THEATRE */
+.childrens-theatre-content-div {
+    background-color: beige;
+    min-width: 100%;
 }
