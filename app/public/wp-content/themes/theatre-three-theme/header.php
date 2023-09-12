@@ -5,6 +5,10 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, inital-scale=1">
   <?php wp_head(); ?>
+  <!-- imported custom google fonts: -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,200;1,400&display=swap" rel="stylesheet"> 
 </head>
 
 <body class="body" <?php body_class(); ?>>
@@ -16,7 +20,7 @@
     <nav class="nav-bar">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="<?php echo site_url('/tickets') ?>" class="nav-link">Tickets</a>
+          <a href="<?php echo site_url('/tickets') ?>" class="nav-link">TICKETS</a>
           <ul class="sub-links">
             <li>
               <a href="<?php echo site_url('/tickets') ?>">Buy Tickets</a>
@@ -30,15 +34,27 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Season</a>
+          <a href="#" class="nav-link">SEASON</a>
           <ul class="sub-links">
             <li>
               <a href="<?php echo site_url('/tickets') ?>">Events Calendar</a>
+<<<<<<< HEAD
+            </li>
+            <li>
+              <a href="<?php echo site_url('/tickets') ?>">Main Stage</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('/tickets') ?>">Second Stage</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('/tickets') ?>">Children's Theatre</a>
+=======
+>>>>>>> main
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Engage & Learn</a>
+          <a href="#" class="nav-link">ENGAGE & LEARN</a>
           <ul class="sub-links">
             <li>
               <a href="<?php echo site_url('/tickets') ?>">Acting Classes</a>
@@ -46,15 +62,19 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Your Visit</a>
+          <a href="#" class="nav-link">YOUR VISIT</a>
           <ul class="sub-links">
             <li>
+<<<<<<< HEAD
+              <a href="<?php echo site_url('/tickets') ?>">Plan a Tour</a>
+=======
               <a href="<?php echo site_url('/tickets') ?>">Tours</a>
+>>>>>>> main
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a href="<?php echo site_url('/about-us') ?>" class="nav-link">About Us</a>
+          <a href="<?php echo site_url('/about-us') ?>" class="nav-link">ABOUT US</a>
           <ul class="sub-links">
             <li>
               <a href="<?php echo site_url('/tickets') ?>">Theatre History</a>
@@ -62,7 +82,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Support Us</a>
+          <a href="#" class="nav-link">SUPPORT US</a>
           <ul class="sub-links">
             <li>
               <a href="<?php echo site_url('/tickets') ?>">Donate</a>
@@ -70,11 +90,5 @@
           </ul>
         </li>
       </ul>
-      <!-- <a href="<?php echo site_url('/tickets') ?>">Tickets</a>
-        <a href="#">Season</a>
-        <a href="#">Engage & Learn</a>
-        <a href="#">Your Visit</a>
-        <a href="<?php echo site_url('/about-us') ?>">About Us</a>
-        <a href="#">Support Us</a> -->
     </nav>
   </header>
