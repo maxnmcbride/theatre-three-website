@@ -4,11 +4,19 @@ Author: Max McBride
 Version: 1.0
 */
 
+/* html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} */
+
 /* MAIN INDEX */
 .main-div-container {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .video-container {
@@ -16,14 +24,14 @@ Version: 1.0
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     z-index: -1;
 }
 
 .video-container video {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     /* Cover the whole container */
 }
@@ -101,11 +109,11 @@ Version: 1.0
     box-sizing: border-box;
     justify-content: space-between;
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     background-color: black;
     z-index: 2;
-    height: 100vh;
+    height: 100%;
 }
 
 .main-div-events-mainstage-shows>* {
@@ -268,19 +276,25 @@ Version: 1.0
     z-index: 1;
 }
 
+/* RESPONSIVE FOR TABLET AND CELLPHONE */
+
+@media (max-width: 768px) {
+    .main-div-events-container {
+        flex-direction: column;
+    }
+    .main-div-events-mainstage-shows,
+    .main-div-events-secondstage-shows,
+    .main-div-events-childrens-theater-shows,
+    .main-div-events-acting-classes {
+        width: 100%;
+    }
+}
+
 /* HEADER */
-
-/* .site-header {
-    margin: 0%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-} */
-
 .site-header {
     margin: 0%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -373,7 +387,6 @@ Version: 1.0
 
 
 /* BODY */
-
 .body {
     margin: 0;
     overflow: auto;
@@ -471,14 +484,14 @@ Version: 1.0
 }
 
 /* FOOTER */
-
 .site-footer {
     z-index: 2;
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: auto;
-    width: 100vw;
+    width: 100%;
     bottom: 0;
 }
 
