@@ -549,42 +549,98 @@ Version: 1.0
     font-size: 3rem;
 }
 
-.archive-title-content-break {
+.archive-title-content-break1 {
     width: 75%;
     color: black;
 }
 
-.single-show-title, .single-show-title a {
-    margin-left: 10%;
-    text-decoration: none;
-    color: black; 
+.archive-title-content-break {
+    width: 65%;
+    color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
-.single-show-description-container, .single-show-description {
-    margin-left: 20%;
-}
-
-
-.show-date-span-container {
-    text-align: right;
-}
-
-.card {
-    width: 70%;
-    margin: 20px auto;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: box-shadow 0.3s;
-}
-
-.card:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+.single-show-title {
+    margin-left: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    text-transform: uppercase;
 }
 
 .single-show-title a:hover {
-    color: #333;
+    color: #51cdc0;
+}
+
+.show-date-span-container {
+    margin-left: 25%;
+    text-align: left;}
+
+.single-show-description-container,
+.single-show-description {
+    margin-left: 20%;
+    margin-bottom: 2rem;
+}
+
+.single-show-description {
+    font-size: large;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card {
+    width: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+
+
+.show-image-container {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 20%;
+    overflow: hidden;
+    z-index: 1;
+    background-color: black;
+}
+
+.show-image-container img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    filter: grayscale(1);
+    background-color: black;
+}
+
+.single-show-buttons-container {
+    text-align: center;  /* this will center inline and inline-block elements */
+    margin: 0 auto;      /* this can help with block elements */
+}
+
+.single-show-buttons {
+    display: inline-block;
+    background-color: black;
+    margin: 5px;
+    border: none;
+    padding: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.single-show-buttons a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
 }
 
 /* SINGLE SHOW */
