@@ -258,3 +258,4 @@ Stack trace:
 [11-Sep-2023 21:48:35 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 75
 [11-Sep-2023 21:49:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
 [11-Sep-2023 21:49:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 75
+[12-Sep-2023 20:08:35 UTC] PHP Warning:  Undefined array key "data" in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 175
