@@ -2,7 +2,10 @@
 namespace ElementorPro\Core\Editor;
 
 use Elementor\Core\Base\App;
+<<<<<<< HEAD
 use Elementor\Core\Utils\Assets_Config_Provider;
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 use ElementorPro\License\Admin as License_Admin;
 use ElementorPro\License\API as License_API;
 use ElementorPro\Plugin;
@@ -12,10 +15,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class Editor extends App {
+<<<<<<< HEAD
 	const EDITOR_V2_PACKAGES = [
 		'editor-documents-extended',
 		'editor-site-navigation-extended',
 	];
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 	/**
 	 * Get app name.
@@ -36,11 +42,23 @@ class Editor extends App {
 		add_action( 'elementor/editor/init', [ $this, 'on_elementor_editor_init' ] );
 		add_action( 'elementor/editor/after_enqueue_styles', [ $this, 'enqueue_editor_styles' ] );
 		add_action( 'elementor/editor/before_enqueue_scripts', [ $this, 'enqueue_editor_scripts' ] );
+<<<<<<< HEAD
 		add_filter( 'elementor/editor/localize_settings', [ $this, 'localize_settings' ] );
 
 		add_action( 'elementor/editor/v2/scripts/enqueue', function () {
 			$this->enqueue_editor_v2_scripts();
 		} );
+=======
+
+		add_filter( 'elementor/editor/localize_settings', [ $this, 'localize_settings' ] );
+
+		// Loading elementor packages.
+		$loader = ELEMENTOR_PRO_ASSETS_PATH . 'js/packages/loader.php';
+
+		if ( file_exists( $loader ) ) {
+			require_once $loader;
+		}
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	}
 
 	public function get_init_settings() {
@@ -100,6 +118,7 @@ class Editor extends App {
 		$this->print_config( 'elementor-pro' );
 	}
 
+<<<<<<< HEAD
 	public function enqueue_editor_v2_scripts() {
 		$assets_config = ( new Assets_Config_Provider() )
 			->set_path_resolver( function ( $name ) {
@@ -125,6 +144,8 @@ class Editor extends App {
 		}
 	}
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	public function localize_settings( array $settings ) {
 		$settings['elementPromotionURL'] = Plugin::instance()->license_admin->get_connect_url([
 			'utm_source' => '%s', // Will be replaced in the frontend to the widget name

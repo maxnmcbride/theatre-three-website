@@ -61,7 +61,11 @@ class Module extends Base_Module {
 		$admin_menu->register( 'e-form-submissions', new Form_Submissions_Promotion_Item() );
 		$admin_menu->register( 'elementor_custom_fonts', new Custom_Fonts_Promotion_Item() );
 		$admin_menu->register( 'elementor_custom_icons', new Custom_Icons_Promotion_Item() );
+<<<<<<< HEAD
 		$admin_menu->register( 'elementor_custom_code', new Custom_Code_Promotion_Item() );
+=======
+		$admin_menu->register( 'elementor_custom_custom_code', new Custom_Code_Promotion_Item() );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		$admin_menu->register( 'popup_templates', new Popups_Promotion_Item() );
 	}
 

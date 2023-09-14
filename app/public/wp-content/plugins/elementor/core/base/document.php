@@ -95,6 +95,7 @@ abstract class Document extends Controls_Stack {
 	protected $post;
 
 	/**
+<<<<<<< HEAD
 	 * @param array $internal_elements
 	 *
 	 * @return array[]
@@ -131,6 +132,8 @@ abstract class Document extends Controls_Stack {
 	}
 
 	/**
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 * @since 2.1.0
 	 * @access protected
 	 * @static
@@ -1101,6 +1104,7 @@ abstract class Document extends Controls_Stack {
 		}
 
 		// TODO: Better coding to start template for editor
+<<<<<<< HEAD
 		$converted_blocks = [
 			[
 				'id' => Utils::generate_random_string(),
@@ -1113,6 +1117,28 @@ abstract class Document extends Controls_Stack {
 		return Plugin::$instance->experiments->is_feature_active( 'container' )
 			? $this->get_container_elements_data( $converted_blocks )
 			: $this->get_sections_elements_data( $converted_blocks );
+=======
+		return [
+			[
+				'id' => Utils::generate_random_string(),
+				'elType' => 'section',
+				'elements' => [
+					[
+						'id' => Utils::generate_random_string(),
+						'elType' => 'column',
+						'elements' => [
+							[
+								'id' => Utils::generate_random_string(),
+								'elType' => $widget_type::get_type(),
+								'widgetType' => $widget_type->get_name(),
+								'settings' => $settings,
+							],
+						],
+					],
+				],
+			],
+		];
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	}
 
 	/**

@@ -68,7 +68,11 @@ class ACF_Image extends Data_Tag {
 		}
 
 		if ( empty( $value ) && $this->get_settings( 'fallback' ) ) {
+<<<<<<< HEAD
 			$value = htmlentities( $this->get_settings( 'fallback' ) );
+=======
+			$value = $this->get_settings( 'fallback' );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		}
 
 		if ( ! empty( $value ) && is_array( $value ) ) {

@@ -321,6 +321,7 @@ abstract class Element_Base extends Controls_Stack {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get panel presets.
 	 *
 	 * Used for displaying the widget in the panel multiple times, but with different defaults values,
@@ -336,6 +337,8 @@ abstract class Element_Base extends Controls_Stack {
 	}
 
 	/**
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 * Add new child element.
 	 *
 	 * Register new child element to allow hierarchy.

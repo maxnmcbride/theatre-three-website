@@ -1,5 +1,6 @@
 # Elementor Pro - by Elementor.com
 
+<<<<<<< HEAD
 #### 3.16.0 - 2023-09-12
 
 * Tweak: Implemented accessibility improvements in Menu widget ([#23607](https://github.com/elementor/elementor/issues/23607), [#22554](https://github.com/elementor/elementor/issues/22554))
@@ -21,6 +22,8 @@
 * Fix: Improved code security enforcement in Dynamic Tags
 * Fix: Sticky container incorrectly adjusts its width when transitioning from a smaller breakpoint to a larger one within the Editor
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 #### 3.15.1 - 2023-08-09
 
 * Fix: Improved code security enforcement in Table of Contents widget

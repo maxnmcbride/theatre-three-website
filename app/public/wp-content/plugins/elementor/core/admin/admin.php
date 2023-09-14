@@ -7,7 +7,10 @@ use Elementor\Core\Admin\Menu\Main as MainMenu;
 use Elementor\App\Modules\Onboarding\Module as Onboarding_Module;
 use Elementor\Core\Base\App;
 use Elementor\Core\Upgrade\Manager as Upgrade_Manager;
+<<<<<<< HEAD
 use Elementor\Core\Utils\Assets_Config_Provider;
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 use Elementor\Core\Utils\Collection;
 use Elementor\Plugin;
 use Elementor\Settings;
@@ -76,6 +79,7 @@ class Admin extends App {
 		exit;
 	}
 
+<<<<<<< HEAD
 	private function register_packages() {
 		$assets_config_provider = ( new Assets_Config_Provider() )
 			->set_path_resolver( function ( $name ) {
@@ -95,6 +99,40 @@ class Admin extends App {
 					$config['handle'],
 					ELEMENTOR_ASSETS_URL . "js/packages/{$package}/{$package}{$suffix}.js",
 					$config['deps'],
+=======
+	private function get_package_config( $package_name ) {
+		$asset_file = ELEMENTOR_ASSETS_PATH . "js/packages/$package_name.asset.php";
+
+		if ( ! file_exists( $asset_file ) ) {
+			return [];
+		}
+
+		$data = require $asset_file;
+
+		return [
+			'handle' => $data['handle'],
+			'src' => $data['src'],
+			'deps' => $data['deps'],
+		];
+	}
+
+	private function register_packages() {
+		Collection::make( [ 'ui', 'icons' ] )
+			->map( function( $package_name ) {
+				return $this->get_package_config( $package_name );
+			} )
+			->filter( function( $package_config ) {
+				return ! empty( $package_config );
+			} )
+			->each( function( $package_config ) {
+				$suffix = Utils::is_script_debug() ? '' : '.min';
+				$src = str_replace( '{{MIN_SUFFIX}}', $suffix, $package_config['src'] );
+
+				wp_register_script(
+					$package_config['handle'],
+					$src,
+					$package_config['deps'],
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 					ELEMENTOR_VERSION,
 					true
 				);
@@ -128,8 +166,13 @@ class Admin extends App {
 			$this->get_js_assets_url( 'ai-admin' ),
 			[
 				'elementor-common',
+<<<<<<< HEAD
 				'elementor-v2-ui',
 				'elementor-v2-icons',
+=======
+				'elementor-packages-ui',
+				'elementor-packages-icons',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			],
 			ELEMENTOR_VERSION,
 			true
@@ -148,8 +191,11 @@ class Admin extends App {
 
 		wp_enqueue_script( 'elementor-admin' );
 
+<<<<<<< HEAD
 		wp_set_script_translations( 'elementor-admin', 'elementor' );
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		$this->print_config();
 	}
 
@@ -739,8 +785,11 @@ class Admin extends App {
 			ELEMENTOR_VERSION,
 			true
 		);
+<<<<<<< HEAD
 
 		wp_set_script_translations( 'elementor-new-template', 'elementor' );
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	}
 
 	/**
@@ -764,8 +813,11 @@ class Admin extends App {
 			ELEMENTOR_VERSION,
 			true
 		);
+<<<<<<< HEAD
 
 		wp_set_script_translations( 'elementor-beta-tester', 'elementor' );
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	}
 
 	/**

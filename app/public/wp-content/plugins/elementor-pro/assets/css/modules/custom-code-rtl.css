@@ -13,6 +13,7 @@
   padding: 20px 20px;
 }
 .wrap.elementor-admin-page-license form.elementor-license-box h3 {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,12 +21,24 @@
   padding: 0;
   padding-block-end: 20px;
   border-block-end: 1px solid #eee;
+=======
+  border-block-end: 1px solid #eee;
+  padding: 20px;
+  margin: -20px -20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 }
 .wrap.elementor-admin-page-license form.elementor-license-box h3 span {
   flex-grow: 1;
   padding-inline-start: 5px;
 }
 .wrap.elementor-admin-page-license form.elementor-license-box h3 small {
+<<<<<<< HEAD
+=======
+  float: left;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
   font-size: 13px;
   font-weight: normal;
 }

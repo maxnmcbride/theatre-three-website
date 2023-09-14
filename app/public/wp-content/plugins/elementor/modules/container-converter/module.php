@@ -102,7 +102,11 @@ class Module extends \Elementor\Core\Base\Module {
 	 * @return void
 	 */
 	protected function add_page_convert_button( Controls_Stack $controls_stack ) {
+<<<<<<< HEAD
 		if ( ! Plugin::$instance->editor->is_edit_mode() || ! $this->page_contains_sections( $controls_stack ) || ! Plugin::$instance->role_manager->user_can( 'design' ) ) {
+=======
+		if ( ! Plugin::$instance->editor->is_edit_mode() || ! $this->page_contains_sections( $controls_stack ) ) {
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			return;
 		}
 

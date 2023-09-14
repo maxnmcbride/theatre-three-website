@@ -44,7 +44,10 @@ class Elementor_Related_Query extends Elementor_Post_Query {
 	protected function get_fallback_query( $original_query ) {
 		$this->set_fallback_query_args();
 		$this->set_fallback_arg_by_settings( 'posts_per_page', $original_query->query_vars['posts_per_page'] );
+<<<<<<< HEAD
 		$this->set_fallback_arg_by_settings( 'post__not_in', $original_query->query_vars['post__not_in'] );
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 		/**
 		 * Fallback query arguments.
@@ -57,6 +60,11 @@ class Elementor_Related_Query extends Elementor_Post_Query {
 		 */
 		$this->fallback_args = apply_filters( 'elementor/query/fallback_query_args', $this->fallback_args, $this->widget );
 
+<<<<<<< HEAD
+=======
+		$this->fallback_args['no_found_rows'] = true;
+
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		return new \WP_Query( $this->fallback_args );
 	}
 
@@ -143,6 +151,7 @@ class Elementor_Related_Query extends Elementor_Post_Query {
 		}
 	}
 
+<<<<<<< HEAD
 	/**
 	 * @return string|array
 	 */
@@ -157,6 +166,16 @@ class Elementor_Related_Query extends Elementor_Post_Query {
 		$this->set_fallback_arg_by_settings( 'ignore_sticky_posts', true );
 		$this->set_fallback_arg_by_settings( 'post_status', 'publish' );
 		$this->set_fallback_arg_by_settings( 'post_type', $this->get_post_types() );
+=======
+	protected function set_fallback_query_args() {
+		$this->set_fallback_arg_by_settings( 'ignore_sticky_posts', true );
+		$this->set_fallback_arg_by_settings( 'post_status', 'publish' );
+
+		$post_types = Utils::get_public_post_types();
+		$post_types = array_keys( $post_types );
+
+		$this->set_fallback_arg_by_settings( 'post_type', $post_types );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 		if ( 'fallback_by_id' === $this->get_widget_settings( 'related_fallback' ) ) {
 			$this->set_fallback_arg_by_settings( 'post__in', [ 0 ], 'fallback_ids' );

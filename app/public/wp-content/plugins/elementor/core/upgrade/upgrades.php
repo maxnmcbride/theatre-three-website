@@ -7,11 +7,17 @@ use Elementor\Core\Experiments\Manager as Experiments_Manager;
 use Elementor\Core\Settings\Manager as SettingsManager;
 use Elementor\Core\Settings\Page\Manager as SettingsPageManager;
 use Elementor\Icons_Manager;
+<<<<<<< HEAD
 use Elementor\Includes\Elements\Container;
 use Elementor\Modules\Usage\Module;
 use Elementor\Plugin;
 use Elementor\Tracker;
 use Elementor\App\Modules\ImportExport\Utils;
+=======
+use Elementor\Modules\Usage\Module;
+use Elementor\Plugin;
+use Elementor\Tracker;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -26,6 +32,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.0.0
  */
 class Upgrades {
+<<<<<<< HEAD
+=======
+	const ELEMENTOR_CONTAINER_GAP_UPDATES_REVERSED = 'elementor_container_gap_updates_reversed';
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 	public static function _on_each_version( $updater ) {
 		self::recalc_usage_data( $updater );
@@ -835,6 +845,7 @@ class Upgrades {
 		}
 	}
 
+<<<<<<< HEAD
 	public static function _v_3_16_0_container_updates( $updater ) {
 		$post_ids = self::get_post_ids_by_element_type( $updater, 'container' );
 
@@ -888,6 +899,8 @@ class Upgrades {
 		update_post_meta( (int) $kit_id, '_elementor_page_settings', $kit_data_array );
 	}
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	public static function remove_remote_info_api_data() {
 		global $wpdb;
 
@@ -940,6 +953,7 @@ class Upgrades {
 		$logger = Plugin::$instance->logger->get_logger();
 		$logger->notice( $message );
 	}
+<<<<<<< HEAD
 
 	/**
 	 * @param \wpdb $wpdb
@@ -1020,4 +1034,6 @@ class Upgrades {
 
 		update_metadata( 'post', $post_id, '_elementor_data', $json_value );
 	}
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 }

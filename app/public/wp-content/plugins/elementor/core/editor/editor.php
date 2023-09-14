@@ -4,8 +4,12 @@ namespace Elementor\Core\Editor;
 use Elementor\Core\Breakpoints\Manager as Breakpoints_Manager;
 use Elementor\Core\Common\Modules\Ajax\Module;
 use Elementor\Core\Debug\Loading_Inspection_Manager;
+<<<<<<< HEAD
 use Elementor\Core\Editor\Loader\Editor_Loader_Factory;
 use Elementor\Core\Editor\Loader\Editor_Loader_Interface;
+=======
+use Elementor\Core\Editor\Config_Providers\Config_Provider_Factory;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 use Elementor\Core\Experiments\Manager as Experiments_Manager;
 use Elementor\Core\Settings\Manager as SettingsManager;
 use Elementor\Plugin;
@@ -69,7 +73,11 @@ class Editor {
 	public $promotion;
 
 	/**
+<<<<<<< HEAD
 	 * @var Editor_Loader_Interface
+=======
+	 * @var Editor_Loader
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	private $loader;
 
@@ -355,7 +363,13 @@ class Editor {
 		// Tweak for WP Admin menu icons
 		wp_print_styles( 'editor-buttons' );
 
+<<<<<<< HEAD
 		$this->get_loader()->enqueue_scripts();
+=======
+		$this->get_loader()->print_client_env();
+		$this->get_loader()->enqueue_scripts();
+		$this->get_loader()->load_scripts_translations();
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 		Plugin::$instance->controls_manager->enqueue_control_scripts();
 
@@ -586,6 +600,7 @@ class Editor {
 	/**
 	 * Get loader.
 	 *
+<<<<<<< HEAD
 	 * @return Editor_Loader_Interface
 	 */
 	private function get_loader() {
@@ -593,6 +608,14 @@ class Editor {
 			$this->loader = Editor_Loader_Factory::create();
 
 			$this->loader->init();
+=======
+	 * @return Editor_Loader
+	 */
+	private function get_loader() {
+		if ( ! $this->loader ) {
+			$this->loader = new Editor_Loader( Config_Provider_Factory::create() );
+			$this->loader->register_hooks();
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		}
 
 		return $this->loader;
@@ -619,6 +642,7 @@ class Editor {
 			'status' => Experiments_Manager::RELEASE_STATUS_ALPHA,
 		] );
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Get elements presets.
@@ -667,4 +691,6 @@ class Editor {
 		return isset( $preset['replacements']['custom']['originalWidget'] )
 			&& $el_type === $preset['replacements']['custom']['originalWidget'];
 	}
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 }

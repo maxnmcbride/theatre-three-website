@@ -12,31 +12,51 @@ if ( ! defined( 'ABSPATH' ) ) {
  * colors.
  *
  * @since 1.0.0
+<<<<<<< HEAD
  * @deprecated 3.0.0 Use `Global_Colors` instead.
+=======
+ * @deprecated 3.15.0 Use Global_Colors instead
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
  */
 class Color {
 
 	/**
 	 * 1st color scheme.
+<<<<<<< HEAD
 	 * @deprecated 3.0.0 Use `Global_Colors::COLOR_PRIMARY` instead.
+=======
+	 * @deprecated 3.15.0 Use Global_Colors::COLOR_PRIMARY instead
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	const COLOR_1 = '1';
 
 	/**
 	 * 2nd color scheme.
+<<<<<<< HEAD
 	 * @deprecated 3.0.0 Use `Global_Colors::COLOR_SECONDARY` instead.
+=======
+	 * @deprecated 3.15.0 Use Global_Colors::COLOR_SECONDARY instead
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	const COLOR_2 = '2';
 
 	/**
 	 * 3rd color scheme.
+<<<<<<< HEAD
 	 * @deprecated 3.0.0 Use `Global_Colors::COLOR_TEXT` instead.
+=======
+	 * @deprecated 3.15.0 Use Global_Colors::COLOR_TEXT instead
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	const COLOR_3 = '3';
 
 	/**
 	 * 4th color scheme.
+<<<<<<< HEAD
 	 * @deprecated 3.0.0 Use `Global_Colors::COLOR_ACCENT` instead.
+=======
+	 * @deprecated 3.15.0 Use Global_Colors::COLOR_ACCENT instead
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	const COLOR_4 = '4';
 
@@ -48,7 +68,11 @@ class Color {
 	 * @since 1.0.0
 	 * @access public
 	 * @static
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 *
 	 * @return string Color scheme type.
 	 */
@@ -63,7 +87,11 @@ class Color {
 	 *
 	 * @since 1.0.0
 	 * @access public
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 *
 	 * @return string Color scheme title.
 	 */
@@ -78,7 +106,11 @@ class Color {
 	 *
 	 * @since 1.0.0
 	 * @access public
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 *
 	 * @return string Color scheme disabled title.
 	 */
@@ -93,7 +125,11 @@ class Color {
 	 *
 	 * @since 1.0.0
 	 * @access public
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 *
 	 * @return array Color scheme titles.
 	 */
@@ -108,7 +144,11 @@ class Color {
 	 *
 	 * @since 1.0.0
 	 * @access public
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 *
 	 * @return array Default color scheme.
 	 */
@@ -124,7 +164,11 @@ class Color {
 	 *
 	 * @since 1.0.0
 	 * @access public
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	public function print_template_content() {}
 }

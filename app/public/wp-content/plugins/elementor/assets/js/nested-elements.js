@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.16.0 - 13-09-2023 */
+=======
+/*! elementor - v3.15.0 - 20-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -250,10 +254,17 @@ module.exports = _typeof, module.exports.__esModule = true, module.exports["defa
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
+<<<<<<< HEAD
 /******/ 			if (chunkId === "modules_nested-elements_assets_js_editor_module_js") return "f9b37afff6a65f7b9541.bundle.js";
 /******/ 			if (chunkId === "vendors-node_modules_prop-types_index_js-node_modules_babel_runtime_helpers_slicedToArray_js") return "6ed74dd3befaff90b65c.bundle.js";
 /******/ 			if (chunkId === "modules_nested-elements_assets_js_editor_nested-element-types-base_js") return "e8a7573e654d921656ab.bundle.js";
 /******/ 			if (chunkId === "modules_nested-elements_assets_js_editor_views_view_js") return "46e544e5863270fc32f2.bundle.js";
+=======
+/******/ 			if (chunkId === "modules_nested-elements_assets_js_editor_module_js") return "bed68029fb022da5f97e.bundle.js";
+/******/ 			if (chunkId === "vendors-node_modules_prop-types_index_js-node_modules_babel_runtime_helpers_slicedToArray_js") return "6ed74dd3befaff90b65c.bundle.js";
+/******/ 			if (chunkId === "modules_nested-elements_assets_js_editor_nested-element-types-base_js") return "1268ff89b5a9b9f27951.bundle.js";
+/******/ 			if (chunkId === "modules_nested-elements_assets_js_editor_views_view_js") return "96124ada3ba05750eec1.bundle.js";
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
@@ -301,7 +312,10 @@ module.exports = _typeof, module.exports.__esModule = true, module.exports["defa
 /******/ 					script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 				}
 /******/ 				script.setAttribute("data-webpack", dataWebpackPrefix + key);
+<<<<<<< HEAD
 /******/ 		
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ 				script.src = url;
 /******/ 			}
 /******/ 			inProgress[url] = [done];
@@ -332,10 +346,14 @@ module.exports = _typeof, module.exports.__esModule = true, module.exports["defa
 /******/ 				scriptUrl = document.currentScript.src;
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
+<<<<<<< HEAD
 /******/ 				if(scripts.length) {
 /******/ 					var i = scripts.length - 1;
 /******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
 /******/ 				}
+=======
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -390,7 +408,11 @@ module.exports = _typeof, module.exports.__esModule = true, module.exports["defa
 /******/ 								}
 /******/ 							};
 /******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
+<<<<<<< HEAD
 /******/ 						}
+=======
+/******/ 						} else installedChunks[chunkId] = 0;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ 					}
 /******/ 				}
 /******/ 		};

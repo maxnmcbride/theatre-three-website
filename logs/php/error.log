@@ -259,6 +259,7 @@ Stack trace:
 [11-Sep-2023 21:49:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 74
 [11-Sep-2023 21:49:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/archive-show.php on line 75
 [12-Sep-2023 20:08:35 UTC] PHP Warning:  Undefined array key "data" in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 175
+<<<<<<< HEAD
 [14-Sep-2023 15:41:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Elementor\Core\get_plugins() in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/wp-api.php:26
 Stack trace:
 #0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/modules/compatibility-tag/base-module.php(96): Elementor\Core\Wp_Api->get_plugins()
@@ -379,3 +380,12 @@ Stack trace:
 #36 /Users/max/Local Sites/theatre-three/app/public/index.php(17): require('/Users/max/Loca...')
 #37 {main}
   thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 71
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
+[14-Sep-2023 16:46:22 UTC] PHP Parse error:  syntax error, unexpected token "<<", expecting end of file in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/elementor-pro.php on line 23
+[14-Sep-2023 16:47:22 UTC] PHP Parse error:  syntax error, unexpected token "<<", expecting end of file in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/elementor-pro.php on line 23
+[14-Sep-2023 16:48:23 UTC] PHP Parse error:  syntax error, unexpected token "<<", expecting end of file in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/elementor-pro.php on line 23
+[14-Sep-2023 16:49:23 UTC] PHP Parse error:  syntax error, unexpected token "<<", expecting end of file in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/elementor-pro.php on line 23
+[14-Sep-2023 16:50:24 UTC] PHP Parse error:  syntax error, unexpected token "<<", expecting end of file in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/elementor-pro.php on line 23
+[14-Sep-2023 16:51:24 UTC] PHP Parse error:  syntax error, unexpected token "<<", expecting end of file in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/elementor-pro.php on line 23
+[14-Sep-2023 16:53:25 UTC] PHP Parse error:  syntax error, unexpected token "<<", expecting end of file in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/elementor-pro.php on line 23

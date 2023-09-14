@@ -48,8 +48,11 @@ class Module extends BaseApp {
 			'tipsy',
 		], ELEMENTOR_VERSION, true );
 
+<<<<<<< HEAD
 		wp_set_script_translations( 'elementor-admin-top-bar', 'elementor' );
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		$min_suffix = Utils::is_script_debug() ? '' : '.min';
 
 		wp_enqueue_script( 'tipsy', ELEMENTOR_ASSETS_URL . 'lib/tipsy/tipsy' . $min_suffix . '.js', [

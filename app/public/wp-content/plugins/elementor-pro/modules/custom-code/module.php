@@ -295,8 +295,13 @@ class Module extends Module_Base {
 				'custom-code-metabox',
 				ELEMENTOR_PRO_ASSETS_URL . 'js/custom-code' . $min_suffix . '.js',
 				[
+<<<<<<< HEAD
 					'elementor-v2-ui',
 					'elementor-v2-icons',
+=======
+					'elementor-packages-ui',
+					'elementor-packages-icons',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 					'react',
 					'select2',
 					// Temporary dependency until we will have a better way to load AI app in the admin.

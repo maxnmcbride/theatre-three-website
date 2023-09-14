@@ -19,12 +19,15 @@ class Utils {
 	 * @return IsFlexContainerInactive|false
 	 */
 	public static function get_trigger_object( $trigger ) {
+<<<<<<< HEAD
 		$object_trigger = apply_filters( 'elementor/announcements/trigger_object', false, $trigger );
 
 		if ( false !== $object_trigger ) {
 			return $object_trigger;
 		}
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		//@TODO - replace with trigger manager
 		switch ( $trigger['action'] ) {
 			case 'isFlexContainerInactive':

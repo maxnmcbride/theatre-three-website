@@ -115,6 +115,7 @@ class Utils {
 
 		return $import_sessions;
 	}
+<<<<<<< HEAD
 
 	public static function update_space_between_widgets_values( $space_between_widgets ) {
 		$setting_exist = isset( $space_between_widgets['size'] );
@@ -131,4 +132,6 @@ class Utils {
 
 		return $space_between_widgets;
 	}
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 }

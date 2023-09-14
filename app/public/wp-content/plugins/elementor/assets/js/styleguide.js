@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.16.0 - 13-09-2023 */
+=======
+/*! elementor - v3.15.0 - 20-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1137,6 +1141,10 @@ ControlBaseView = Marionette.CompositeView.extend({
     return Marionette.TemplateCache.get('#tmpl-elementor-control-' + this.model.get('type') + '-content');
   },
   initialize: function initialize(options) {
+<<<<<<< HEAD
+=======
+    var _this = this;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
     var label = this.model.get('label');
 
     // TODO: Temp backwards compatibility. since 2.8.0.
@@ -1187,6 +1195,7 @@ ControlBaseView = Marionette.CompositeView.extend({
     var settings = this.container ? this.container.settings : this.elementSettingsModel;
     this.listenTo(settings, 'change', this.onAfterChange);
     if (this.model.attributes.responsive) {
+<<<<<<< HEAD
       this.onDeviceModeChange = this.onDeviceModeChange.bind(this);
       elementor.listenTo(elementor.channels.deviceMode, 'change', this.onDeviceModeChange);
     }
@@ -1194,6 +1203,13 @@ ControlBaseView = Marionette.CompositeView.extend({
   onDestroy: function onDestroy() {
     elementor.stopListening(elementor.channels.deviceMode, 'change', this.onDeviceModeChange);
   },
+=======
+      elementor.listenTo(elementor.channels.deviceMode, 'change', function () {
+        return _this.onDeviceModeChange();
+      });
+    }
+  },
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
   onDeviceModeChange: function onDeviceModeChange() {
     this.toggleControlVisibility();
   },

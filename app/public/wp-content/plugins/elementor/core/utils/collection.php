@@ -22,7 +22,11 @@ class Collection implements \ArrayAccess, \Countable, \IteratorAggregate {
 	 *
 	 * @param array $items
 	 */
+<<<<<<< HEAD
 	public function __construct( array $items = [] ) {
+=======
+	public function __construct( array $items ) {
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		$this->items = $items;
 	}
 
@@ -31,7 +35,11 @@ class Collection implements \ArrayAccess, \Countable, \IteratorAggregate {
 	 *
 	 * @return static
 	 */
+<<<<<<< HEAD
 	public static function make( array $items = [] ) {
+=======
+	public static function make( array $items ) {
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		return new static( $items );
 	}
 
@@ -131,7 +139,11 @@ class Collection implements \ArrayAccess, \Countable, \IteratorAggregate {
 	 * Run a callback over each of the items.
 	 *
 	 * @param callable $callback
+<<<<<<< HEAD
 	 * @return $this
+=======
+	 * @return void
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	public function each( callable $callback ) {
 		foreach ( $this->items as $key => $value ) {
@@ -311,6 +323,7 @@ class Collection implements \ArrayAccess, \Countable, \IteratorAggregate {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * @param callable|string|int $value
 	 *
 	 * @return bool
@@ -332,6 +345,8 @@ class Collection implements \ArrayAccess, \Countable, \IteratorAggregate {
 	}
 
 	/**
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 * Make sure all the values inside the array are uniques.
 	 *
 	 * @param null|string|string[] $keys

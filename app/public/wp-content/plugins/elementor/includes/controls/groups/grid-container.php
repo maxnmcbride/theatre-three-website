@@ -95,7 +95,11 @@ class Group_Control_Grid_Container extends Group_Control_Base {
 		$fields['gaps'] = [
 			'label' => esc_html__( 'Gaps', 'elementor' ),
 			'type' => Controls_Manager::GAPS,
+<<<<<<< HEAD
 			'size_units' => [ 'px', '%', 'em', 'rem', 'vw', 'custom' ],
+=======
+			'size_units' => [ 'px', '%', 'em', 'rem', 'vm', 'custom' ],
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			'default' => [
 				'unit' => 'px',
 			],
@@ -104,11 +108,14 @@ class Group_Control_Grid_Container extends Group_Control_Base {
 				'{{SELECTOR}}' => '--gap: {{ROW}}{{UNIT}} {{COLUMN}}{{UNIT}}',
 			],
 			'responsive' => true,
+<<<<<<< HEAD
 			'validators' => [
 				'Number' => [
 					'min' => 0,
 				],
 			],
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		];
 
 		$fields['auto_flow'] = [
@@ -124,8 +131,12 @@ class Group_Control_Grid_Container extends Group_Control_Base {
 				'{{SELECTOR}}' => '--grid-auto-flow: {{VALUE}}',
 			],
 			'responsive' => true,
+<<<<<<< HEAD
 			'frontend_available' => true,
 		] + $this->get_responsive_autoflow_defaults();
+=======
+		];
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 		$fields['justify_items'] = [
 			'label' => esc_html_x( 'Justify Items', 'Grid Container Control', 'elementor' ),
@@ -301,6 +312,7 @@ class Group_Control_Grid_Container extends Group_Control_Base {
 		return $responsive_unit_defaults;
 	}
 
+<<<<<<< HEAD
 	protected function get_responsive_autoflow_defaults() {
 		$responsive_autoflow_defaults = [];
 		$active_breakpoints = Plugin::$instance->breakpoints->get_active_breakpoints();
@@ -312,6 +324,8 @@ class Group_Control_Grid_Container extends Group_Control_Base {
 		return $responsive_autoflow_defaults;
 	}
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	protected function get_default_options() {
 		return [
 			'popover' => false,

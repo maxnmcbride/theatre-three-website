@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor-pro - v3.16.0 - 12-09-2023 */
+=======
+/*! elementor-pro - v3.15.0 - 09-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -1551,9 +1555,13 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.BulkActionSelect = BulkActionSelect;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+<<<<<<< HEAD
 var PropTypes = _interopRequireWildcard(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+=======
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 const {
   useState,
   useCallback
@@ -1594,11 +1602,19 @@ function BulkActionSelect(props) {
   }));
 }
 BulkActionSelect.propTypes = {
+<<<<<<< HEAD
   className: PropTypes.string,
   actions: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
     onApply: PropTypes.func.isRequired
+=======
+  className: _propTypes.default.string,
+  actions: _propTypes.default.arrayOf(_propTypes.default.shape({
+    label: _propTypes.default.string.isRequired,
+    value: _propTypes.default.string.isRequired,
+    onApply: _propTypes.default.func.isRequired
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
   })).isRequired
 };
 BulkActionSelect.defaultProps = {
@@ -1622,9 +1638,13 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = Bulk;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+<<<<<<< HEAD
 var PropTypes = _interopRequireWildcard(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+=======
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 const {
   useCallback
 } = _react.default;
@@ -1640,9 +1660,15 @@ function Bulk(props) {
   });
 }
 Bulk.propTypes = {
+<<<<<<< HEAD
   checkedGroup: PropTypes.array.isRequired,
   allValues: PropTypes.array.isRequired,
   onChange: PropTypes.func.isRequired
+=======
+  checkedGroup: _propTypes.default.array.isRequired,
+  allValues: _propTypes.default.array.isRequired,
+  onChange: _propTypes.default.func.isRequired
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 };
 
 /***/ }),
@@ -1663,9 +1689,13 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = Checkbox;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _bulk = _interopRequireDefault(__webpack_require__(/*! ./bulk */ "../modules/forms/submissions/assets/js/admin/components/checkbox/bulk.js"));
+<<<<<<< HEAD
 var PropTypes = _interopRequireWildcard(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+=======
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 const {
   useCallback
 } = _react.default;
@@ -1681,9 +1711,15 @@ function Checkbox(props) {
   });
 }
 Checkbox.propTypes = {
+<<<<<<< HEAD
   checkedGroup: PropTypes.array.isRequired,
   value: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired
+=======
+  checkedGroup: _propTypes.default.array.isRequired,
+  value: _propTypes.default.number.isRequired,
+  onChange: _propTypes.default.func.isRequired
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 };
 Checkbox.Bulk = _bulk.default;
 

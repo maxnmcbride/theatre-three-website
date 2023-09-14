@@ -22,7 +22,11 @@ class Admin_Apps_Page {
 				<?php self::render_plugins_list(); ?>
 			</div>
 			<div class="e-a-page-footer">
+<<<<<<< HEAD
 				<p><?php echo esc_html__( 'Please note that certain services on this page are developed by third-party companies. When you click on their action button, you may be redirected to an external website.', 'elementor' ); ?></p>
+=======
+				<p><?php echo esc_html__( 'Please note that certain services on this page are developed by third-party companies. When you click on the their action button, you may be redirected to an external website.', 'elementor' ); ?></p>
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			</div>
 		</div>
 		<?php
@@ -59,7 +63,11 @@ class Admin_Apps_Page {
 				'offering' => 'Use coupon code: onlyforelementor',
 				'action_label' => 'Let\'s Go',
 				'action_url' => 'https://go.elementor.com/wp-dash-apps-go-to-crocoblock/',
+<<<<<<< HEAD
 				'image' => $images_url . 'crocoblock.png',
+=======
+				'image' => $images_url . 'crocoblock.svg',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			],
 			[
 				'name' => 'Unlimited Elements',
@@ -88,8 +96,12 @@ class Admin_Apps_Page {
 				'author' => 'BdThemes Ltd',
 				'author_url' => 'https://go.elementor.com/wp-dash-apps-author-uri-element-pack-pro/',
 				'description' => 'Revolutionize your web design experience with 250+ powerful features, tailored for designers of all skill levels. Create websites without breaking a sweat!',
+<<<<<<< HEAD
 				'badge' => '10% Off',
 				'offering' => 'Discount is automatically applied',
+=======
+				'badge' => 'Premium',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				'action_label' => 'Let\'s Go',
 				'action_url' => 'https://go.elementor.com/wp-dash-apps-go-to-element-pack-pro/',
 				'image' => $images_url . 'element-pack.gif',
@@ -105,6 +117,7 @@ class Admin_Apps_Page {
 				'action_url' => 'https://go.elementor.com/wp-dash-apps-go-to-ultimate-elementor/',
 				'image' => $images_url . 'uae.svg',
 			],
+<<<<<<< HEAD
 			[
 				'name' => 'Fiverr Logo Maker',
 				'author' => 'Fiverr',
@@ -126,6 +139,8 @@ class Admin_Apps_Page {
 				'action_url' => 'https://go.elementor.com/wp-dash-apps-go-to-hover/',
 				'image' => $images_url . 'hover.svg',
 			],
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		];
 
 		$wporg_plugins = [

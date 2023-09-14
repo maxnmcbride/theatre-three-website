@@ -642,7 +642,11 @@ class Testimonial_Carousel extends Base {
 				$img_attribute['src'] = $img_src;
 			}
 
+<<<<<<< HEAD
 			$img_attribute['alt'] = ! empty( $slide['image']['alt'] ) ? $slide['image']['alt'] : $slide['name'];
+=======
+			$img_attribute['alt'] = $this->get_slide_image_alt_attribute( $slide );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 			$this->add_render_attribute( $element_key . '-image', $img_attribute );
 		}

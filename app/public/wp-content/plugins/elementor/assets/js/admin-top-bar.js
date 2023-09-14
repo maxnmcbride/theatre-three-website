@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.16.0 - 13-09-2023 */
+=======
+/*! elementor - v3.15.0 - 20-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -104,7 +108,11 @@ function AdminTopBar() {
   var finderAction = function finderAction() {
     $e.route('finder');
   };
+<<<<<<< HEAD
   var controlSign = _environment.default.mac ? "\u2318" : '^';
+=======
+  var controlSign = _environment.default.mac ? '&#8984;' : '^';
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
   var finderTooltipText = __('Search or do anything in Elementor', 'elementor') + " ".concat(controlSign, "+E");
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "e-admin-top-bar"

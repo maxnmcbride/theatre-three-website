@@ -10,8 +10,11 @@ use Elementor\Group_Control_Typography;
 use ElementorPro\Base\Base_Widget;
 use ElementorPro\Modules\LoopFilter\Traits\Hierarchical_Taxonomy_Trait;
 use ElementorPro\Plugin;
+<<<<<<< HEAD
 use Elementor\Utils;
 use ElementorPro\Modules\ThemeBuilder\Module as ThemeBuilderModule;
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
@@ -633,6 +636,7 @@ class Taxonomy_Filter extends Base_Widget {
 		return false;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * @return array
 	 */
@@ -680,6 +684,8 @@ class Taxonomy_Filter extends Base_Widget {
 			|| $loop_filter_module->should_exclude_term_by_manual_selection( $loop_widget_settings, $term, $this->get_settings_for_display( 'taxonomy' ), $skin );
 	}
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	public function render() {
 		$settings = $this->get_settings_for_display();
 		$selected_element = $settings['selected_element'];
@@ -692,8 +698,12 @@ class Taxonomy_Filter extends Base_Widget {
 		}
 
 		$active_filter = [];
+<<<<<<< HEAD
 		$loop_filter_module = Plugin::instance()->modules_manager->get_modules( 'loop-filter' );
 		$query_string_filters = $loop_filter_module->get_query_string_filters();
+=======
+		$query_string_filters = Plugin::instance()->modules_manager->get_modules( 'loop-filter' )->get_query_string_filters();
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 		if ( array_key_exists( $selected_element, $query_string_filters ) ) {
 			$active_filter = $query_string_filters[ $selected_element ]['taxonomy'];
@@ -714,7 +724,11 @@ class Taxonomy_Filter extends Base_Widget {
 				$total_taxonomies++;
 				$aria_pressed_value = 'false';
 
+<<<<<<< HEAD
 				if ( ! isset( $term->taxonomy ) || $this->is_term_excluded_by_query_control( $term, $loop_filter_module ) ) {
+=======
+				if ( ! isset( $term->taxonomy ) ) {
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 					continue;
 				}
 
@@ -728,11 +742,16 @@ class Taxonomy_Filter extends Base_Widget {
 				if ( ! empty( $number_of_taxonomies ) && $total_taxonomies > $number_of_taxonomies ) {
 					continue;
 				}
+<<<<<<< HEAD
 
 				// This filter allows us to write the slug with non-latin characters as well, such as Hebrew.
 				$slug = apply_filters( 'editable_slug', $term->slug, $term );
 				?>
 				<button class="e-filter-item" data-filter="<?php echo esc_attr( $slug ); ?>" aria-pressed="<?php echo esc_html( $aria_pressed_value ); ?>"><?php echo esc_html( $term->name ); ?></button>
+=======
+				?>
+				<button class="e-filter-item" data-filter="<?php echo esc_attr( $term->slug ); ?>" aria-pressed="<?php echo esc_html( $aria_pressed_value ); ?>"><?php echo esc_html( $term->name ); ?></button>
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			<?php } ?>
 
 			<?php

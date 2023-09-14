@@ -48,6 +48,12 @@ class Module extends Module_Base {
 			),
 			'release_status' => Manager::RELEASE_STATUS_ALPHA,
 			'default' => Manager::STATE_INACTIVE,
+<<<<<<< HEAD
+=======
+			'dependencies' => [
+				'loop',
+			],
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		];
 
 		return $experiment_data;
@@ -100,6 +106,7 @@ class Module extends Module_Base {
 
 		foreach ( $filter_types as $filters ) {
 			// The $filters array contains all filters of a specific type. For example, for the taxonomy filter type,
+<<<<<<< HEAD
 			// it would contain all taxonomies to be filtered - e.g. 'category', 'tag', 'product-cat', etc.
 			foreach ( $filters as $filter_taxonomy => $filter ) {
 				// Sanitize request data.
@@ -109,6 +116,15 @@ class Module extends Module_Base {
 				foreach ( $filter as $term ) {
 					$terms[] = sanitize_title( $term );
 				}
+=======
+			// it would contain all  taxonomies to be filtered - e.g. 'category', 'tag', 'product-cat', etc.
+			foreach ( $filters as $filter_taxonomy => $filter ) {
+				// Sanitize request data.
+				$taxonomy = sanitize_key( $filter_taxonomy );
+				$terms = array_filter( $filter, function ( $term ) {
+					return preg_match( '/[^a-z0-9_\-]/', $term ) === 0;
+				} );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 				if ( empty( $terms ) ) {
 					continue;
@@ -218,6 +234,7 @@ class Module extends Module_Base {
 		return $link;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * @return boolean
 	 */
@@ -317,6 +334,8 @@ class Module extends Module_Base {
 		}
 	}
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	public function __construct() {
 		parent::__construct();
 

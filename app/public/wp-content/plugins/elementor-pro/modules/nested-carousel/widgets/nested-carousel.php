@@ -241,6 +241,7 @@ class Nested_Carousel extends Widget_Nested_Base {
 			]
 		);
 
+<<<<<<< HEAD
 		$logical_dimensions_inline_start = is_rtl() ? '{{RIGHT}}{{UNIT}}' : '{{LEFT}}{{UNIT}}';
 		$logical_dimensions_inline_end = is_rtl() ? '{{LEFT}}{{UNIT}}' : '{{RIGHT}}{{UNIT}}';
 
@@ -248,6 +249,8 @@ class Nested_Carousel extends Widget_Nested_Base {
 		// Remove together with support for physical properties inside the container widget.
 		$padding_physical_properties = '--padding-top: {{TOP}}{{UNIT}}; --padding-right: {{RIGHT}}{{UNIT}}; --padding-bottom: {{BOTTOM}}{{UNIT}}; --padding-left: {{LEFT}}{{UNIT}};';
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		$this->add_responsive_control(
 			'content_padding',
 			[
@@ -255,7 +258,11 @@ class Nested_Carousel extends Widget_Nested_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'vw', 'custom' ],
 				'selectors' => [
+<<<<<<< HEAD
 					$low_specificity_slider_container_selector => "$padding_physical_properties --padding-block-start: {{TOP}}{{UNIT}}; --padding-inline-end: $logical_dimensions_inline_end; --padding-block-end: {{BOTTOM}}{{UNIT}}; --padding-inline-start: $logical_dimensions_inline_start;",
+=======
+					$low_specificity_slider_container_selector => '--padding-top: {{TOP}}{{UNIT}}; --padding-right: {{RIGHT}}{{UNIT}}; --padding-bottom: {{BOTTOM}}{{UNIT}}; --padding-left: {{LEFT}}{{UNIT}};',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				],
 				'separator' => 'before',
 			]
@@ -283,6 +290,7 @@ class Nested_Carousel extends Widget_Nested_Base {
 		$swiper_wrapper_class = Plugin::elementor()->experiments->is_feature_active( 'e_swiper_latest' ) ? 'swiper' : 'swiper-container';
 		$direction = $settings['direction'];
 		$has_autoplay_enabled = 'yes' === $settings['autoplay'];
+<<<<<<< HEAD
 		$outside_wrapper_classes = [ 'e-n-carousel', $swiper_wrapper_class ];
 		$core_version_class = $this->get_core_version_css_class();
 
@@ -293,6 +301,12 @@ class Nested_Carousel extends Widget_Nested_Base {
 		$this->add_render_attribute( [
 			'carousel-outside-wrapper' => [
 				'class' => $outside_wrapper_classes,
+=======
+
+		$this->add_render_attribute( [
+			'carousel-outside-wrapper' => [
+				'class' => 'e-n-carousel ' . $swiper_wrapper_class,
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			],
 			'carousel-inside-wrapper' => [
 				'class' => 'swiper-wrapper',
@@ -338,6 +352,7 @@ class Nested_Carousel extends Widget_Nested_Base {
 				carouselOutsideWrapperKey = 'carousel-' + elementUid,
 				carouselInsideWrapperKey = 'carousel-inside-' + elementUid,
 				swiperWrapperClass = elementorFrontend.config.swiperClass,
+<<<<<<< HEAD
 				coreVersionClass = '<?php echo esc_attr( $this->get_core_version_css_class() ); ?>',
 				hasAutoplayEnabled = 'yes' === settings['autoplay'],
 				outsideWrapperClasses = ['e-n-carousel',swiperWrapperClass];
@@ -348,6 +363,12 @@ class Nested_Carousel extends Widget_Nested_Base {
 
 			view.addRenderAttribute( carouselOutsideWrapperKey, {
 				'class': outsideWrapperClasses,
+=======
+				hasAutoplayEnabled = 'yes' === settings['autoplay'];
+
+			view.addRenderAttribute( carouselOutsideWrapperKey, {
+				'class': ['e-n-carousel',swiperWrapperClass],
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			} );
 
 			view.addRenderAttribute( carouselInsideWrapperKey, {
@@ -378,10 +399,17 @@ class Nested_Carousel extends Widget_Nested_Base {
 						<# } ); #>
 					</div>
 				</div>
+<<<<<<< HEAD
 				<# if ( 'yes' === settings['arrows'] && 1 < settings['carousel_items'].length ) { #>
 					<?php $this->content_template_navigation_arrows(); ?>
 				<# } #>
 				<# if ( settings['pagination'] && 1 < settings['carousel_items'].length ) { #>
+=======
+				<# if ( 'yes' === settings['arrows'] ) { #>
+					<?php $this->content_template_navigation_arrows(); ?>
+				<# } #>
+				<# if ( settings['pagination']  ) { #>
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 					<div class="swiper-pagination"></div>
 				<# } #>
 			<# } #>

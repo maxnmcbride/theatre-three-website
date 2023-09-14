@@ -34,8 +34,11 @@ class Manager extends Base_Object {
 
 	const TYPE_HIDDEN = 'hidden';
 
+<<<<<<< HEAD
 	const OPTION_PREFIX = 'elementor_experiment-';
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	private $states;
 
 	private $release_statuses;
@@ -311,7 +314,11 @@ class Manager extends Base_Object {
 	 * @return string
 	 */
 	public function get_feature_option_key( $feature_name ) {
+<<<<<<< HEAD
 		return static::OPTION_PREFIX . $feature_name;
+=======
+		return 'elementor_experiment-' . $feature_name;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	}
 
 	private function add_default_features() {
@@ -347,7 +354,14 @@ class Manager extends Base_Object {
 				. ' <a href="https://go.elementor.com/wp-dash-improved-css-loading/" target="_blank">'
 				. esc_html__( 'Learn More', 'elementor' ) . '</a>',
 			'release_status' => self::RELEASE_STATUS_STABLE,
+<<<<<<< HEAD
 			'default' => self::STATE_ACTIVE,
+=======
+			'new_site' => [
+				'default_active' => true,
+				'minimum_installation_version' => '3.3.0-beta',
+			],
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			'generator_tag' => true,
 		] );
 
@@ -388,12 +402,17 @@ class Manager extends Base_Object {
 				Sections, Inner Sections and Columns and be able to edit them. Ready to give it a try? Check out the %3$sFlexbox playground%4$s.',
 				'elementor'
 			), '<a target="_blank" href="https://go.elementor.com/wp-dash-flex-container/">', '</a>', '<a target="_blank" href="https://go.elementor.com/wp-dash-flex-container-playground/">', '</a>'),
+<<<<<<< HEAD
 			'release_status' => self::RELEASE_STATUS_STABLE,
 			'default' => self::STATE_INACTIVE,
 			'new_site' => [
 				'default_active' => true,
 				'minimum_installation_version' => '3.16.0',
 			],
+=======
+			'release_status' => self::RELEASE_STATUS_RC,
+			'default' => self::STATE_INACTIVE,
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			'messages' => [
 				'on_deactivate' => esc_html__(
 					'If you deactivate Flexbox Container, you will permanently delete all content created with containers and lose access to container-based features like Tabs and Menu widgets',
@@ -424,7 +443,11 @@ class Manager extends Base_Object {
 				'elementor'
 			), '<a target="_blank" href="https://go.elementor.com/wp-dash-grid-container/">', '</a>'),
 
+<<<<<<< HEAD
 			'release_status' => self::RELEASE_STATUS_BETA,
+=======
+			'release_status' => self::RELEASE_STATUS_ALPHA,
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			'default' => self::STATE_INACTIVE,
 			'hidden' => false,
 			'dependencies' => [
@@ -884,6 +907,7 @@ class Manager extends Base_Object {
 		return new Non_Existing_Dependency( $dependency_name );
 	}
 
+<<<<<<< HEAD
 	/**
 	 * The experiments page is a WordPress options page, which means all the experiments are registered via WordPress' register_settings(),
 	 * and their states are being sent in the POST request when saving.
@@ -952,6 +976,8 @@ class Manager extends Base_Object {
 		return $allowed_options;
 	}
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	public function __construct() {
 		$this->init_states();
 
@@ -974,10 +1000,13 @@ class Manager extends Base_Object {
 			add_action( "elementor/admin/after_create_settings/{$page_id}", function( Settings $settings ) {
 				$this->register_settings_fields( $settings );
 			}, 11 );
+<<<<<<< HEAD
 
 			add_filter( 'allowed_options', function ( $allowed_options ) {
 				return $this->sort_allowed_options_by_dependencies( $allowed_options );
 			}, 11 );
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		}
 
 		// Register CLI commands.

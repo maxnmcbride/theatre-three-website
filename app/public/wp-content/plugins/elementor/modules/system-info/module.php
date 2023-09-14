@@ -155,6 +155,7 @@ class Module extends BaseModule {
 		$reports = $this->load_reports( $reports_info );
 		?>
 		<div id="elementor-system-info">
+<<<<<<< HEAD
 			<div class="elementor-system-info-header">
 				<h3 class="wp-heading-inline"><?php echo esc_html__( 'System Info', 'elementor' ); ?></h3>
 				<form action="<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>" method="post">
@@ -162,6 +163,9 @@ class Module extends BaseModule {
 					<input type="submit" class="button button-primary" value="<?php echo esc_attr__( 'Download System Info', 'elementor' ); ?>">
 				</form>
 			</div>
+=======
+			<h3 class="wp-heading-inline"><?php echo esc_html__( 'System Info', 'elementor' ); ?></h3>
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			<div><?php $this->print_report( $reports, 'html' ); ?></div>
 			<h3><?php echo esc_html__( 'Copy & Paste Info', 'elementor' ); ?></h3>
 			<div id="elementor-system-info-raw">

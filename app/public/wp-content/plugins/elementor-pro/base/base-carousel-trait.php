@@ -1076,19 +1076,32 @@ trait Base_Carousel_Trait {
 		$this->end_controls_section();
 	}
 
+<<<<<<< HEAD
 	public function render_carousel_footer( $settings ) {
 		if ( 'yes' === $settings['arrows'] && 1 < $this->get_num_of_carousel_items( $settings ) ) : ?>
+=======
+	public function render_carousel_footer( $settings ) { ?>
+		<?php if ( 'yes' === $settings['arrows'] ) { ?>
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
 				<?php $this->render_swiper_button( 'previous' ); ?>
 			</div>
 			<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
 				<?php $this->render_swiper_button( 'next' ); ?>
 			</div>
+<<<<<<< HEAD
 		<?php endif;
 
 		if ( $settings['pagination'] && 1 < $this->get_num_of_carousel_items( $settings ) ) : ?>
 			<div class="swiper-pagination"></div>
 		<?php endif;
+=======
+		<?php }
+
+		if ( $settings['pagination'] ) { ?>
+			<div class="swiper-pagination"></div>
+		<?php }
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	}
 
 	private function render_swiper_button( $type ) {
@@ -1376,6 +1389,7 @@ trait Base_Carousel_Trait {
 
 		return is_rtl() ? array_reverse( $navigation_controls ) : $navigation_controls;
 	}
+<<<<<<< HEAD
 
 	/**
 	 * @param array $settings
@@ -1384,4 +1398,6 @@ trait Base_Carousel_Trait {
 	private function get_num_of_carousel_items( $settings ) {
 		return ! empty( $settings['posts_per_page'] ) ? $settings['posts_per_page'] : count( $settings['carousel_items'] );
 	}
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 }

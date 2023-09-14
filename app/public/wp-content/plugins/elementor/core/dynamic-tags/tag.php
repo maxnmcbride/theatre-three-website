@@ -51,7 +51,11 @@ abstract class Tag extends Base_Tag {
 			endif;
 
 		} elseif ( ! Utils::is_empty( $settings, 'fallback' ) ) {
+<<<<<<< HEAD
 			$value = htmlentities( $settings['fallback'] );
+=======
+			$value = $settings['fallback'];
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		}
 
 		return $value;

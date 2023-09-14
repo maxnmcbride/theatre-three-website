@@ -175,6 +175,10 @@ class Widget_Social_Icons extends Widget_Base {
 				'dynamic' => [
 					'active' => true,
 				],
+<<<<<<< HEAD
+=======
+				'placeholder' => esc_html__( 'https://your-link.com', 'elementor' ),
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			]
 		);
 

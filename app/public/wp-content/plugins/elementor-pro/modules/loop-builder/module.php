@@ -8,6 +8,10 @@ use ElementorPro\Base\Module_Base;
 use ElementorPro\Plugin;
 use Elementor\Core\Base\Document;
 use ElementorPro\Modules\LoopBuilder\Documents\Loop as LoopDocument;
+<<<<<<< HEAD
+=======
+use Elementor\Core\Experiments\Manager;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 use ElementorPro\Core\Utils;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -20,6 +24,10 @@ class Module extends Module_Base {
 	 * Elementor template-library taxonomy slug.
 	 */
 	const TEMPLATE_LIBRARY_TYPE_SLUG = 'loop-item';
+<<<<<<< HEAD
+=======
+	const EXPERIMENT_NAME = 'loop';
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	const LOOP_BASE_SKIN_ID = 'base';
 	const LOOP_POST_SKIN_ID = 'post';
 	const QUERY_ID = 'query';
@@ -111,6 +119,28 @@ class Module extends Module_Base {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * Add to the experiments
+	 *
+	 * @return array
+	 */
+	public static function get_experimental_data() {
+		return [
+			'name' => static::EXPERIMENT_NAME,
+			'title' => esc_html__( 'Loop', 'elementor-pro' ),
+			'description' => sprintf(
+				esc_html__( 'Create powerful & repeating templates and populate each one with dynamic content like text or images. Great for listings, posts, portfolios and more! %1$sLearn More%2$s', 'elementor-pro' ),
+				'<a href="https://go.elementor.com/wp-dash-loop/" target="_blank">',
+				'</a>'
+			),
+			'release_status' => Manager::RELEASE_STATUS_STABLE,
+			'default' => Manager::STATE_ACTIVE,
+		];
+	}
+
+	/**
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 * Filter content data.
 	 *
 	 * Determine whether we are in the Editor and are trying to Edit an empty loop template.
@@ -141,6 +171,13 @@ class Module extends Module_Base {
 		return $data;
 	}
 
+<<<<<<< HEAD
+=======
+	public static function is_active(): bool {
+		return Plugin::elementor()->experiments->is_feature_active( static::EXPERIMENT_NAME );
+	}
+
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	public function add_finder_items( array $categories ) {
 		$categories['create']['items']['loop-template'] = [
 			'title' => esc_html__( 'Add New Loop Template', 'elementor-pro' ),

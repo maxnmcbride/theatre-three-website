@@ -581,7 +581,11 @@ class Skin_Cards extends Skin_Base {
 		$optional_attributes_html = $this->get_optional_link_attributes_html();
 
 		?>
+<<<<<<< HEAD
 		<a class="elementor-post__thumbnail__link" href="<?php echo esc_url( get_permalink() ); ?>" tabindex="-1" <?php Utils::print_unescaped_internal_string( $optional_attributes_html ); ?>><div class="elementor-post__thumbnail"><?php Utils::print_unescaped_internal_string( $thumbnail_html ); ?></div></a>
+=======
+		<a class="elementor-post__thumbnail__link" href="<?php echo esc_url( get_permalink() ); ?>" <?php Utils::print_unescaped_internal_string( $optional_attributes_html ); ?>><div class="elementor-post__thumbnail"><?php Utils::print_unescaped_internal_string( $thumbnail_html ); ?></div></a>
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		<?php
 		if ( $this->get_instance_value( 'show_badge' ) ) {
 			$this->render_badge();

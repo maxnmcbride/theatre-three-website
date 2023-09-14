@@ -3,7 +3,10 @@
 namespace Elementor\Modules\SiteNavigation;
 
 use Elementor\Core\Base\Module as Module_Base;
+<<<<<<< HEAD
 use Elementor\Core\Experiments\Manager as Experiments_Manager;
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 use Elementor\Modules\SiteNavigation\Data\Controller;
 use Elementor\Plugin;
 use Elementor\Utils;
@@ -13,16 +16,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class Module extends Module_Base {
+<<<<<<< HEAD
 	const PAGES_PANEL_EXPERIMENT_NAME = 'pages_panel';
 
 	/**
 	 * Initialize the Container-Converter module.
 	 * @return void
 	 * @throws \Exception
+=======
+
+	/**
+	 * Initialize the Container-Converter module.
+	 *
+	 * @return void
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	public function __construct() {
 		Plugin::$instance->data_manager_v2->register_controller( new Controller() );
 
+<<<<<<< HEAD
 		$this->register_pages_panel_experiment();
 
 		if ( Plugin::$instance->experiments->is_feature_active( self::PAGES_PANEL_EXPERIMENT_NAME ) ) {
@@ -34,6 +46,8 @@ class Module extends Module_Base {
 				return $env;
 			} );
 		}
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	}
 
 	/**
@@ -57,6 +71,7 @@ class Module extends Module_Base {
 
 		return Plugin::$instance->experiments->is_feature_active( 'editor_v2' );
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Register Experiment
@@ -78,4 +93,6 @@ class Module extends Module_Base {
 			],
 		] );
 	}
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 }

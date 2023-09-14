@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.16.0 - 13-09-2023 */
+=======
+/*! elementor - v3.15.0 - 20-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -304,7 +308,11 @@ function AnnouncementsHeader(props) {
     "aria-hidden": "true"
   }), /*#__PURE__*/_react.default.createElement("span", {
     className: "heading-title"
+<<<<<<< HEAD
   }, __('Notifications', 'elementor')), /*#__PURE__*/_react.default.createElement("button", {
+=======
+  }, __('What’s New', 'elementor')), /*#__PURE__*/_react.default.createElement("button", {
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
     className: "close-button",
     onClick: function onClick() {
       return onClose('close');

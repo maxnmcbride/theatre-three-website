@@ -4,7 +4,10 @@ namespace Elementor\App\Modules\ImportExport\Runners\Import;
 
 use Elementor\Plugin;
 use Elementor\Core\Settings\Page\Manager as PageManager;
+<<<<<<< HEAD
 use Elementor\App\Modules\ImportExport\Utils;
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 class Site_Settings extends Import_Runner_Base {
 
@@ -60,10 +63,13 @@ class Site_Settings extends Import_Runner_Base {
 			$new_site_settings['custom_typography'] = array_merge( $old_settings['custom_typography'], $new_site_settings['custom_typography'] );
 		}
 
+<<<<<<< HEAD
 		if ( ! empty( $new_site_settings['space_between_widgets'] ) ) {
 			$new_site_settings['space_between_widgets'] = Utils::update_space_between_widgets_values( $new_site_settings['space_between_widgets'] );
 		}
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		$new_site_settings = array_replace_recursive( $old_settings, $new_site_settings );
 
 		$new_kit = Plugin::$instance->kits_manager->create_new_kit( $title, $new_site_settings );

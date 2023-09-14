@@ -2,7 +2,11 @@
 namespace Elementor\Modules\NestedTabs;
 
 use Elementor\Plugin;
+<<<<<<< HEAD
 use Elementor\Modules\NestedElements\Module as NestedElementsModule;
+=======
+use  Elementor\Modules\NestedElements\Module as NestedElementsModule;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

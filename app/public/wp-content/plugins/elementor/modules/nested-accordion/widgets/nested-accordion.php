@@ -428,7 +428,11 @@ class Nested_Accordion extends Widget_Nested_Base {
 
 	private function add_content_style_section() {
 
+<<<<<<< HEAD
 		$low_specificity_accordion_item_selector = ':where( {{WRAPPER}} > .elementor-widget-container > .e-n-accordion > .e-n-accordion-item ) > .e-con';
+=======
+		$low_specificity_accordion_item_selector = ':where( {{WRAPPER}} .e-n-accordion-item ) > .e-con';
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 		$this->start_controls_section(
 			'section_content_style',
@@ -471,14 +475,21 @@ class Nested_Accordion extends Widget_Nested_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'vw', 'custom' ],
 				'selectors' => [
+<<<<<<< HEAD
 					$low_specificity_accordion_item_selector  => '--border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+=======
+					$low_specificity_accordion_item_selector  => '--border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}; --border-top-left-radius: {{TOP}}{{UNIT}}; --border-top-right-radius: {{RIGHT}}{{UNIT}}; --border-bottom-right-radius: {{BOTTOM}}{{UNIT}}; --border-bottom-left-radius: {{LEFT}}{{UNIT}};',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				],
 			]
 		);
 
+<<<<<<< HEAD
 		$logical_dimensions_inline_start = is_rtl() ? '{{RIGHT}}{{UNIT}}' : '{{LEFT}}{{UNIT}}';
 		$logical_dimensions_inline_end = is_rtl() ? '{{LEFT}}{{UNIT}}' : '{{RIGHT}}{{UNIT}}';
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		$this->add_responsive_control(
 			'content_padding',
 			[
@@ -486,7 +497,11 @@ class Nested_Accordion extends Widget_Nested_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
+<<<<<<< HEAD
 					$low_specificity_accordion_item_selector => "--padding-block-start: {{TOP}}{{UNIT}}; --padding-inline-end: $logical_dimensions_inline_end; --padding-block-end: {{BOTTOM}}{{UNIT}}; --padding-inline-start: $logical_dimensions_inline_start;",
+=======
+					$low_specificity_accordion_item_selector => '--padding-top: {{TOP}}{{UNIT}}; --padding-right: {{RIGHT}}{{UNIT}}; --padding-bottom: {{BOTTOM}}{{UNIT}}; --padding-left: {{LEFT}}{{UNIT}};',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				],
 			]
 		);
@@ -516,7 +531,11 @@ class Nested_Accordion extends Widget_Nested_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'title_typography',
+<<<<<<< HEAD
 				'selector' => ':where( {{WRAPPER}} > .elementor-widget-container > .e-n-accordion > .e-n-accordion-item > .e-n-accordion-item-title > .e-n-accordion-item-title-header ) > .e-n-accordion-item-title-text',
+=======
+				'selector' => '{{WRAPPER}} .e-n-accordion-item-title-text',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				'fields_options' => [
 					'font_size' => [
 						'selectors' => [
@@ -621,6 +640,7 @@ class Nested_Accordion extends Widget_Nested_Base {
 		switch ( $state ) {
 			case 'hover':
 				$translated_tab_text = esc_html__( 'Hover', 'elementor' );
+<<<<<<< HEAD
 				$translated_tab_css_selector = ':where( {{WRAPPER}} > .elementor-widget-container > .e-n-accordion > .e-n-accordion-item:not([open]) > .e-n-accordion-item-title:hover > .e-n-accordion-item-title-header ) > .e-n-accordion-item-title-text';
 				break;
 			case 'active':
@@ -630,6 +650,17 @@ class Nested_Accordion extends Widget_Nested_Base {
 			default:
 				$translated_tab_text = esc_html__( 'Normal', 'elementor' );
 				$translated_tab_css_selector = ':where( {{WRAPPER}} > .elementor-widget-container > .e-n-accordion > .e-n-accordion-item:not([open]) > .e-n-accordion-item-title:not(hover) > .e-n-accordion-item-title-header ) > .e-n-accordion-item-title-text';
+=======
+				$translated_tab_css_selector = '.e-n-accordion-item:not([open]) .e-n-accordion-item-title:hover:not(.e-n-accordion-item-title-icon) .e-n-accordion-item-title-text';
+				break;
+			case 'active':
+				$translated_tab_text = esc_html__( 'Active', 'elementor' );
+				$translated_tab_css_selector = '.e-n-accordion-item[open] .e-n-accordion-item-title .e-n-accordion-item-title-text';
+				break;
+			default:
+				$translated_tab_text = esc_html__( 'Normal', 'elementor' );
+				$translated_tab_css_selector = '.e-n-accordion-item:not([open]) .e-n-accordion-item-title:not(:hover) .e-n-accordion-item-title-text';
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				break;
 		}
 
@@ -681,7 +712,11 @@ class Nested_Accordion extends Widget_Nested_Base {
 	 * @string $state
 	 */
 	private function add_border_and_radius_style( $state ) {
+<<<<<<< HEAD
 		$selector = '{{WRAPPER}} > .elementor-widget-container > .e-n-accordion > .e-n-accordion-item > .e-n-accordion-item-title';
+=======
+		$selector = '{{WRAPPER}}  .e-n-accordion-item-title';
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		$translated_tab_text = esc_html__( 'Normal', 'elementor' );
 
 		switch ( $state ) {
@@ -690,7 +725,11 @@ class Nested_Accordion extends Widget_Nested_Base {
 				$translated_tab_text = esc_html__( 'Hover', 'elementor' );
 				break;
 			case 'active':
+<<<<<<< HEAD
 				$selector = '{{WRAPPER}} > .elementor-widget-container > .e-n-accordion > .e-n-accordion-item[open] > .e-n-accordion-item-title';
+=======
+				$selector = '{{WRAPPER}} .e-n-accordion-item[open] .e-n-accordion-item-title';
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				$translated_tab_text = esc_html__( 'Active', 'elementor' );
 				break;
 		}
@@ -781,6 +820,7 @@ class Nested_Accordion extends Widget_Nested_Base {
 
 			ob_start();
 			?>
+<<<<<<< HEAD
 			<details <?php echo wp_kses_post( $title_render_attributes ); ?>>
 				<summary class='e-n-accordion-item-title'>
 					<span class='e-n-accordion-item-title-header'><?php echo wp_kses_post( "<$title_html_tag class=\"e-n-accordion-item-title-text\"> $item_title </$title_html_tag>" ); ?></span>
@@ -790,6 +830,17 @@ class Nested_Accordion extends Widget_Nested_Base {
 				</summary>
 				<?php echo $item_content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</details>
+=======
+				<details <?php echo wp_kses_post( $title_render_attributes ); ?>>
+					<summary class='e-n-accordion-item-title'>
+						<span class='e-n-accordion-item-title-header'><?php echo wp_kses_post( "<$title_html_tag class=\"e-n-accordion-item-title-text\"> $item_title </$title_html_tag>" ); ?></span>
+						<?php if ( ! empty( $settings['accordion_item_title_icon']['value'] ) ) {
+							echo $icons_content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+						} ?>
+					</summary>
+					<?php echo $item_content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				</details>
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			<?php
 			$items_title_html .= ob_get_clean();
 		}

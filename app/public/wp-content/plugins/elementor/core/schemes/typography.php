@@ -12,31 +12,51 @@ if ( ! defined( 'ABSPATH' ) ) {
  * for typography.
  *
  * @since 1.0.0
+<<<<<<< HEAD
  * @deprecated 3.0.0 Use `Global_Typography` instead.
+=======
+ * @deprecated 3.15.0 Use Global_Typography instead
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
  */
 class Typography {
 
 	/**
 	 * 1st typography scheme.
+<<<<<<< HEAD
 	 * @deprecated 3.0.0 Use `Global_Typography::TYPOGRAPHY_PRIMARY` instead.
+=======
+	 * @deprecated 3.15.0 Use Global_Typography::TYPOGRAPHY_PRIMARY instead
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	const TYPOGRAPHY_1 = '1';
 
 	/**
 	 * 2nd typography scheme.
+<<<<<<< HEAD
 	 * @deprecated 3.0.0 Use `Global_Typography::TYPOGRAPHY_SECONDARY` instead.
+=======
+	 * @deprecated 3.15.0 Use Global_Typography::TYPOGRAPHY_SECONDARY instead
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	const TYPOGRAPHY_2 = '2';
 
 	/**
 	 * 3rd typography scheme.
+<<<<<<< HEAD
 	 * @deprecated 3.0.0 Use `Global_Typography::TYPOGRAPHY_TEXT` instead.
+=======
+	 * @deprecated 3.15.0 Use Global_Typography::TYPOGRAPHY_TEXT instead
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	const TYPOGRAPHY_3 = '3';
 
 	/**
 	 * 4th typography scheme.
+<<<<<<< HEAD
 	 * @deprecated 3.0.0 Use `Global_Typography::TYPOGRAPHY_ACCENT` instead.
+=======
+	 * @deprecated 3.15.0 Use Global_Typography::TYPOGRAPHY_ACCENT instead
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	const TYPOGRAPHY_4 = '4';
 
@@ -48,7 +68,11 @@ class Typography {
 	 * @since 1.0.0
 	 * @access public
 	 * @static
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 *
 	 * @return string Typography scheme type.
 	 */
@@ -63,7 +87,11 @@ class Typography {
 	 *
 	 * @since 1.0.0
 	 * @access public
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 *
 	 * @return string Typography scheme title.
 	 */
@@ -78,7 +106,11 @@ class Typography {
 	 *
 	 * @since 1.0.0
 	 * @access public
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 *
 	 * @return string Typography scheme disabled title.
 	 */
@@ -93,7 +125,11 @@ class Typography {
 	 *
 	 * @since 1.0.0
 	 * @access public
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 *
 	 * @return array Typography scheme titles.
 	 */
@@ -108,7 +144,11 @@ class Typography {
 	 *
 	 * @since 1.0.0
 	 * @access public
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 *
 	 * @return array Default typography scheme.
 	 */
@@ -124,7 +164,11 @@ class Typography {
 	 *
 	 * @since 1.0.0
 	 * @access public
+<<<<<<< HEAD
 	 * @deprecated 3.0.0
+=======
+	 * @deprecated 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 */
 	public function print_template_content() {}
 }

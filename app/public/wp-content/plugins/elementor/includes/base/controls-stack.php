@@ -229,6 +229,7 @@ abstract class Controls_Stack extends Base_Object {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get widget number.
 	 *
 	 * Get the first three numbers of the element converted ID.
@@ -243,6 +244,8 @@ abstract class Controls_Stack extends Base_Object {
 	}
 
 	/**
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 * Get the type.
 	 *
 	 * Retrieve the type, e.g. 'stack', 'section', 'widget' etc.
@@ -346,7 +349,11 @@ abstract class Controls_Stack extends Base_Object {
 			array_keys( $controls ), function( $active_controls, $control_key ) use ( $controls, $settings ) {
 				$control = $controls[ $control_key ];
 
+<<<<<<< HEAD
 				if ( $this->is_control_visible( $control, $settings, $controls ) ) {
+=======
+				if ( $this->is_control_visible( $control, $settings ) ) {
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 					$active_controls[ $control_key ] = $control;
 				}
 
@@ -1148,8 +1155,11 @@ abstract class Controls_Stack extends Base_Object {
 
 		$active_settings = [];
 
+<<<<<<< HEAD
 		$controls_objs = Plugin::$instance->controls_manager->get_controls();
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		foreach ( $settings as $setting_key => $setting ) {
 			if ( ! isset( $controls[ $setting_key ] ) ) {
 				$active_settings[ $setting_key ] = $setting;
@@ -1159,8 +1169,13 @@ abstract class Controls_Stack extends Base_Object {
 
 			$control = $controls[ $setting_key ];
 
+<<<<<<< HEAD
 			if ( $this->is_control_visible( $control, $settings, $controls ) ) {
 				$control_obj = $controls_objs[ $control['type'] ] ?? null;
+=======
+			if ( $this->is_control_visible( $control, $settings ) ) {
+				$control_obj = Plugin::$instance->controls_manager->get_control( $control['type'] );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 				if ( $control_obj instanceof Control_Repeater ) {
 					foreach ( $setting as & $item ) {
@@ -1229,11 +1244,17 @@ abstract class Controls_Stack extends Base_Object {
 			$controls = $this->get_controls();
 		}
 
+<<<<<<< HEAD
 		$controls_objs = Plugin::$instance->controls_manager->get_controls();
 
 		foreach ( $controls as $control ) {
 			$control_name = $control['name'];
 			$control_obj = $controls_objs[ $control['type'] ] ?? null;
+=======
+		foreach ( $controls as $control ) {
+			$control_name = $control['name'];
+			$control_obj = Plugin::$instance->controls_manager->get_control( $control['type'] );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 			if ( ! $control_obj instanceof Base_Data_Control ) {
 				continue;
@@ -1370,7 +1391,11 @@ abstract class Controls_Stack extends Base_Object {
 	 *
 	 * @return bool Whether the control is visible.
 	 */
+<<<<<<< HEAD
 	public function is_control_visible( $control, $values = null, $controls = null ) {
+=======
+	public function is_control_visible( $control, $values = null ) {
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 		if ( null === $values ) {
 			$values = $this->get_settings();
 		}
@@ -1383,9 +1408,13 @@ abstract class Controls_Stack extends Base_Object {
 			return true;
 		}
 
+<<<<<<< HEAD
 		if ( ! $controls ) {
 			$controls = $this->get_controls();
 		}
+=======
+		$controls = $this->get_controls();
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 		foreach ( $control['condition'] as $condition_key => $condition_value ) {
 			preg_match( '/([a-z_\-0-9]+)(?:\[([a-z_]+)])?(!?)$/i', $condition_key, $condition_key_parts );
@@ -2157,10 +2186,15 @@ abstract class Controls_Stack extends Base_Object {
 	protected function get_init_settings() {
 		$settings = $this->get_data( 'settings' );
 
+<<<<<<< HEAD
 		$controls_objs = Plugin::$instance->controls_manager->get_controls();
 
 		foreach ( $this->get_controls() as $control ) {
 			$control_obj = $controls_objs[ $control['type'] ] ?? null;
+=======
+		foreach ( $this->get_controls() as $control ) {
+			$control_obj = Plugin::$instance->controls_manager->get_control( $control['type'] );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 			if ( ! $control_obj instanceof Base_Data_Control ) {
 				continue;

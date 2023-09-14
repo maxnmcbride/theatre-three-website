@@ -4,8 +4,13 @@
  * Description: Elevate your designs and unlock the full power of Elementor. Gain access to dozens of Pro widgets and kits, Theme Builder, Pop Ups, Forms and WooCommerce building capabilities.
  * Plugin URI: https://go.elementor.com/wp-dash-wp-plugins-author-uri/
  * Author: Elementor.com
+<<<<<<< HEAD
  * Version: 3.16.0
  * Elementor tested up to: 3.16.0
+=======
+ * Version: 3.15.1
+ * Elementor tested up to: 3.15.0
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
  * Author URI: https://go.elementor.com/wp-dash-wp-plugins-author-uri/
  *
  * Text Domain: elementor-pro
@@ -15,7 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+<<<<<<< HEAD
 define( 'ELEMENTOR_PRO_VERSION', '3.16.0' );
+=======
+define( 'ELEMENTOR_PRO_VERSION', '3.15.1' );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 /**
  * All versions should be `major.minor`, without patch, in order to compare them properly.
@@ -23,8 +32,13 @@ define( 'ELEMENTOR_PRO_VERSION', '3.16.0' );
  * (e.g. Core 3.14.0-beta1 and Core 3.14.0-cloud2 should be fine when requiring 3.14, while
  * requiring 3.14.2 is not allowed)
  */
+<<<<<<< HEAD
 define( 'ELEMENTOR_PRO_REQUIRED_CORE_VERSION', '3.14' );
 define( 'ELEMENTOR_PRO_RECOMMENDED_CORE_VERSION', '3.16' );
+=======
+define( 'ELEMENTOR_PRO_REQUIRED_CORE_VERSION', '3.13' );
+define( 'ELEMENTOR_PRO_RECOMMENDED_CORE_VERSION', '3.15' );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 define( 'ELEMENTOR_PRO__FILE__', __FILE__ );
 define( 'ELEMENTOR_PRO_PLUGIN_BASE', plugin_basename( ELEMENTOR_PRO__FILE__ ) );

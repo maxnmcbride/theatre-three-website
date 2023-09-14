@@ -270,6 +270,7 @@ class Widget_Heading extends Widget_Base {
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'' => esc_html__( 'Normal', 'elementor' ),
+<<<<<<< HEAD
 					'multiply' => esc_html__( 'Multiply', 'elementor' ),
 					'screen' => esc_html__( 'Screen', 'elementor' ),
 					'overlay' => esc_html__( 'Overlay', 'elementor' ),
@@ -282,6 +283,20 @@ class Widget_Heading extends Widget_Base {
 					'exclusion' => esc_html__( 'Exclusion', 'elementor' ),
 					'hue' => esc_html__( 'Hue', 'elementor' ),
 					'luminosity' => esc_html__( 'Luminosity', 'elementor' ),
+=======
+					'multiply' => 'Multiply',
+					'screen' => 'Screen',
+					'overlay' => 'Overlay',
+					'darken' => 'Darken',
+					'lighten' => 'Lighten',
+					'color-dodge' => 'Color Dodge',
+					'saturation' => 'Saturation',
+					'color' => 'Color',
+					'difference' => 'Difference',
+					'exclusion' => 'Exclusion',
+					'hue' => 'Hue',
+					'luminosity' => 'Luminosity',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				],
 				'selectors' => [
 					'{{WRAPPER}} .elementor-heading-title' => 'mix-blend-mode: {{VALUE}}',

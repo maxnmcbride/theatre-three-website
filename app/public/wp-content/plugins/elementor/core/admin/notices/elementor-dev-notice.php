@@ -2,7 +2,13 @@
 namespace Elementor\Core\Admin\Notices;
 
 use Elementor\User;
+<<<<<<< HEAD
 use Elementor\Settings;
+=======
+use Elementor\Plugin;
+use Elementor\Settings;
+use Elementor\Core\Experiments\Manager as Experiments_Manager;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -61,6 +67,13 @@ class Elementor_Dev_Notice extends Base_Notice {
 			! $this->is_elementor_dev_installed() &&
 			! $this->is_install_screen() &&
 			(
+<<<<<<< HEAD
+=======
+				(
+					$this->has_at_least_one_active_experiment() &&
+					$this->is_elementor_setting_page()
+				) ||
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				$this->is_promotion_plugins_installed() ||
 				$this->is_promotion_options_enabled()
 			);
@@ -158,6 +171,24 @@ class Elementor_Dev_Notice extends Base_Notice {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * Checks if as at least one active experiment (The state must be "active" and not default-active).
+	 *
+	 * @return bool
+	 */
+	private function has_at_least_one_active_experiment() {
+		foreach ( Plugin::$instance->experiments->get_features() as $feature_name => $feature ) {
+			if ( Experiments_Manager::STATE_ACTIVE === $feature['state'] ) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	 * Checks if the current page is elementor settings page
 	 *
 	 * @return bool

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.16.0 - 13-09-2023 */
+=======
+/*! elementor - v3.15.0 - 20-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 :root {
   --e-is-device-mode: 0;
 }
@@ -53,7 +57,12 @@
   display: none;
 }
 .e-responsive-bar-switcher__option:not(:last-child) {
+<<<<<<< HEAD
   margin-inline-end: 6px;
+=======
+  -webkit-margin-end: 6px;
+          margin-inline-end: 6px;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 }
 .e-responsive-bar__button {
   -webkit-appearance: none;
@@ -110,9 +119,18 @@
 
 #e-responsive-bar {
   width: 100%;
+<<<<<<< HEAD
   margin-block-start: calc(-40px + 40px * var(--e-is-device-mode));
   z-index: 1;
   transition: margin-block-start 0.2s ease-in-out;
+=======
+  -webkit-margin-before: calc(-40px + 40px * var(--e-is-device-mode));
+          margin-block-start: calc(-40px + 40px * var(--e-is-device-mode));
+  z-index: 1;
+  transition: -webkit-margin-before 0.2s ease-in-out;
+  transition: margin-block-start 0.2s ease-in-out;
+  transition: margin-block-start 0.2s ease-in-out, -webkit-margin-before 0.2s ease-in-out;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -149,7 +167,12 @@
 #e-responsive-bar__size-inputs-wrapper {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   margin-inline-end: 8px;
+=======
+  -webkit-margin-end: 8px;
+          margin-inline-end: 8px;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
   color: #BABFC5;
 }
 #e-responsive-bar-switcher {

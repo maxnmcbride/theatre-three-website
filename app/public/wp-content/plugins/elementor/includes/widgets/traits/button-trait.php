@@ -104,6 +104,10 @@ trait Button_Trait {
 				'dynamic' => [
 					'active' => true,
 				],
+<<<<<<< HEAD
+=======
+				'placeholder' => esc_html__( 'https://your-link.com', 'elementor' ),
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				'default' => [
 					'url' => '#',
 				],

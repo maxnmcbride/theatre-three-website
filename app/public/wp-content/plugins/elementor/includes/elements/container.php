@@ -39,8 +39,11 @@ class Container extends Element_Base {
 		parent::__construct( $data, $args );
 
 		$this->active_kit = Plugin::$instance->kits_manager->get_active_kit();
+<<<<<<< HEAD
 		$this->logical_dimensions_inline_start = is_rtl() ? '{{RIGHT}}{{UNIT}}' : '{{LEFT}}{{UNIT}}';
 		$this->logical_dimensions_inline_end = is_rtl() ? '{{LEFT}}{{UNIT}}' : '{{RIGHT}}{{UNIT}}';
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	}
 
 	/**
@@ -89,6 +92,7 @@ class Container extends Element_Base {
 		return $keywords;
 	}
 
+<<<<<<< HEAD
 	public function get_panel_presets() {
 		return [
 			'container_grid' => [
@@ -114,6 +118,8 @@ class Container extends Element_Base {
 		];
 	}
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	/**
 	 * Override the render attributes to add a custom wrapper class.
 	 *
@@ -122,6 +128,7 @@ class Container extends Element_Base {
 	protected function add_render_attributes() {
 		parent::add_render_attributes();
 
+<<<<<<< HEAD
 		$is_nested_class_name = $this->get_data( 'isInner' ) ? 'e-child' : 'e-parent';
 
 		$this->add_render_attribute( '_wrapper', [
@@ -140,6 +147,13 @@ class Container extends Element_Base {
 		$this->add_render_attribute( '_wrapper', [
 			'data-core-v316-plus' => 'true',
 		] );
+=======
+		$this->add_render_attribute( '_wrapper', [
+			'class' => [
+				'e-con',
+			],
+		] );
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	}
 
 	/**
@@ -350,7 +364,11 @@ class Container extends Element_Base {
 			'selector' => '{{WRAPPER}}',
 			'fields_options' => [
 				'gap' => [
+<<<<<<< HEAD
 					'label' => esc_html_x( 'Gaps', 'Flex Container Control', 'elementor' ),
+=======
+					'label' => esc_html_x( 'Gap between elements', 'Flex Container Control', 'elementor' ),
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 					'device_args' => [
 						Breakpoints_Manager::BREAKPOINT_KEY_DESKTOP => [
 							// Use the default gap from the kit as a placeholder.
@@ -385,7 +403,10 @@ class Container extends Element_Base {
 					'{{WRAPPER}}' => '--display: {{VALUE}}',
 				],
 				'separator' => 'after',
+<<<<<<< HEAD
 				'frontend_available' => true,
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			];
 		}
 
@@ -657,6 +678,10 @@ class Container extends Element_Base {
 				'dynamic' => [
 					'active' => true,
 				],
+<<<<<<< HEAD
+=======
+				'placeholder' => esc_html__( 'https://your-link.com', 'elementor' ),
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				'condition' => [
 					'html_tag' => 'a',
 				],
@@ -1020,7 +1045,11 @@ class Container extends Element_Base {
 				'fields_options' => [
 					'width' => [
 						'selectors' => [
+<<<<<<< HEAD
 							'{{SELECTOR}}' => "border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}; --border-block-start-width: {{TOP}}{{UNIT}}; --border-inline-end-width: $this->logical_dimensions_inline_end; --border-block-end-width: {{BOTTOM}}{{UNIT}}; --border-inline-start-width: $this->logical_dimensions_inline_start;",
+=======
+							'{{SELECTOR}}' => 'border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}; --border-width-top: {{TOP}}{{UNIT}}; --border-width-right: {{RIGHT}}{{UNIT}}; --border-width-bottom: {{BOTTOM}}{{UNIT}}; --border-width-left: {{LEFT}}{{UNIT}};',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 						],
 					],
 					'color' => [
@@ -1044,7 +1073,11 @@ class Container extends Element_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
+<<<<<<< HEAD
 					'{{WRAPPER}}' => '--border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+=======
+					'{{WRAPPER}}' => '--border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}; --border-top-left-radius: {{TOP}}{{UNIT}}; --border-top-right-radius: {{RIGHT}}{{UNIT}}; --border-bottom-right-radius: {{BOTTOM}}{{UNIT}}; --border-bottom-left-radius: {{LEFT}}{{UNIT}};',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				],
 			]
 		);
@@ -1076,7 +1109,11 @@ class Container extends Element_Base {
 				'fields_options' => [
 					'width' => [
 						'selectors' => [
+<<<<<<< HEAD
 							'{{SELECTOR}}' => "border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}; --border-block-start-width: {{TOP}}{{UNIT}}; --border-inline-end-width: $this->logical_dimensions_inline_end; --border-block-end-width: {{BOTTOM}}{{UNIT}}; --border-inline-start-width: $this->logical_dimensions_inline_start;",
+=======
+							'{{SELECTOR}}' => 'border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}; --border-width-top: {{TOP}}{{UNIT}}; --border-width-right: {{RIGHT}}{{UNIT}}; --border-width-bottom: {{BOTTOM}}{{UNIT}}; --border-width-left: {{LEFT}}{{UNIT}};',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 						],
 					],
 					'color' => [
@@ -1095,7 +1132,11 @@ class Container extends Element_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
+<<<<<<< HEAD
 					'{{WRAPPER}}:hover' => "--border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}; --border-top-left-radius: {{TOP}}{{UNIT}}; --border-top-right-radius: $this->logical_dimensions_inline_end; --border-bottom-right-radius: {{BOTTOM}}{{UNIT}}; --border-bottom-left-radius: $this->logical_dimensions_inline_start;",
+=======
+					'{{WRAPPER}}:hover' => '--border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}; --border-top-left-radius: {{TOP}}{{UNIT}}; --border-top-right-radius: {{RIGHT}}{{UNIT}}; --border-bottom-right-radius: {{BOTTOM}}{{UNIT}}; --border-bottom-left-radius: {{LEFT}}{{UNIT}};',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				],
 			]
 		);
@@ -1346,7 +1387,11 @@ class Container extends Element_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'vw', 'custom' ],
 				'selectors' => [
+<<<<<<< HEAD
 					'{{WRAPPER}}' => "--margin-block-start: {{TOP}}{{UNIT}}; --margin-block-end: {{BOTTOM}}{{UNIT}}; --margin-inline-start: $this->logical_dimensions_inline_start; --margin-inline-end: $this->logical_dimensions_inline_end;",
+=======
+					'{{WRAPPER}}' => '--margin-top: {{TOP}}{{UNIT}}; --margin-right: {{RIGHT}}{{UNIT}}; --margin-bottom: {{BOTTOM}}{{UNIT}}; --margin-left:{{LEFT}}{{UNIT}};',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				],
 			]
 		);
@@ -1358,7 +1403,11 @@ class Container extends Element_Base {
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'vw', 'custom' ],
 				'selectors' => [
+<<<<<<< HEAD
 					'{{WRAPPER}}' => "--padding-block-start: {{TOP}}{{UNIT}}; --padding-block-end: {{BOTTOM}}{{UNIT}}; --padding-inline-start: $this->logical_dimensions_inline_start; --padding-inline-end: $this->logical_dimensions_inline_end;",
+=======
+					'{{WRAPPER}}' => '--padding-top: {{TOP}}{{UNIT}}; --padding-right: {{RIGHT}}{{UNIT}}; --padding-bottom: {{BOTTOM}}{{UNIT}}; --padding-left: {{LEFT}}{{UNIT}};',
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 				],
 			]
 		);
@@ -1822,6 +1871,7 @@ class Container extends Element_Base {
 		$this->register_style_tab();
 		$this->register_advanced_tab();
 	}
+<<<<<<< HEAD
 
 	public function on_import( $element ) {
 		return self::slider_to_gaps_converter( $element );
@@ -1854,4 +1904,6 @@ class Container extends Element_Base {
 
 		return $element;
 	}
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 }

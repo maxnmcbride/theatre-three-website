@@ -31,7 +31,10 @@ final class Modules_Manager {
 			'compatibility-tag',
 			'admin-top-bar',
 			'notes',
+<<<<<<< HEAD
 			'announcements',
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 			// Modules with Widgets.
 			'theme-builder',

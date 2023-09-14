@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.16.0 - 13-09-2023 */
+=======
+/*! elementor - v3.15.0 - 20-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -462,7 +466,11 @@ try {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
+<<<<<<< HEAD
 /******/ 			if (chunkId === "modules_nested-tabs_assets_js_editor_module_js") return "a493d490206d9432cc8b.bundle.js";
+=======
+/******/ 			if (chunkId === "modules_nested-tabs_assets_js_editor_module_js") return "82916c9aba5712bca47c.bundle.js";
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
@@ -510,7 +518,10 @@ try {
 /******/ 					script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 				}
 /******/ 				script.setAttribute("data-webpack", dataWebpackPrefix + key);
+<<<<<<< HEAD
 /******/ 		
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ 				script.src = url;
 /******/ 			}
 /******/ 			inProgress[url] = [done];
@@ -541,10 +552,14 @@ try {
 /******/ 				scriptUrl = document.currentScript.src;
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
+<<<<<<< HEAD
 /******/ 				if(scripts.length) {
 /******/ 					var i = scripts.length - 1;
 /******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
 /******/ 				}
+=======
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -599,7 +614,11 @@ try {
 /******/ 								}
 /******/ 							};
 /******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
+<<<<<<< HEAD
 /******/ 						}
+=======
+/******/ 						} else installedChunks[chunkId] = 0;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ 					}
 /******/ 				}
 /******/ 		};

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor-pro - v3.16.0 - 12-09-2023 */
+=======
+/*! elementor-pro - v3.15.0 - 09-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 (self["webpackChunkelementor_pro"] = self["webpackChunkelementor_pro"] || []).push([["frontend"],{
 
 /***/ "../assets/dev/js/frontend/frontend.js":
@@ -182,7 +186,10 @@ class DropdownMenuHeightController {
     this.widgetConfig = widgetConfig;
   }
   calculateStickyMenuNavHeight() {
+<<<<<<< HEAD
     this.widgetConfig.elements.$dropdownMenuContainer.css(this.widgetConfig.settings.menuHeightCssVarName, '');
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
     const menuToggleHeight = this.widgetConfig.elements.$dropdownMenuContainer.offset().top - jQuery(window).scrollTop();
     return elementorFrontend.elements.$window.height() - menuToggleHeight;
   }
@@ -196,6 +203,7 @@ class DropdownMenuHeightController {
     this.widgetConfig.elements.$dropdownMenuContainer.css(this.widgetConfig.settings.menuHeightCssVarName, menuHeight);
   }
   reassignMobileMenuHeight() {
+<<<<<<< HEAD
     const menuHeight = this.isToggleActive() ? this.getMenuHeight() : 0;
     return this.setMenuHeight(menuHeight);
   }
@@ -212,6 +220,11 @@ class DropdownMenuHeightController {
     // Previously we used state classes to indicate the active state of the menu toggle.
     return $menuToggle.hasClass(this.widgetConfig.classes.menuToggleActiveClass);
   }
+=======
+    const menuHeight = this.widgetConfig.elements.$menuToggle.hasClass(this.widgetConfig.classes.menuToggleActiveClass) ? this.getMenuHeight() : 0;
+    return this.setMenuHeight(menuHeight);
+  }
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 }
 exports["default"] = DropdownMenuHeightController;
 

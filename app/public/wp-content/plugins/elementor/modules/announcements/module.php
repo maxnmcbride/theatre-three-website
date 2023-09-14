@@ -88,7 +88,11 @@ class Module extends BaseApp {
 	 * @return array[]
 	 */
 	private function get_raw_announcements(): array {
+<<<<<<< HEAD
 		$raw_announcements = [
+=======
+		return [
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 			[
 				'title' => 'Picture perfect: Introducing the AI image generator',
 				'description' => '<p>Generate new images or edit existing ones with text to image prompts.</p>
@@ -119,10 +123,40 @@ class Module extends BaseApp {
 					],
 				],
 			],
+<<<<<<< HEAD
 		];
 
 		// DO NOT USE THIS FILTER
 		return apply_filters( 'elementor/announcements/raw_announcements', $raw_announcements );
+=======
+			[
+				'title' => 'Activate Containers for Brilliant Layouts',
+				'description' => 'Take advantage of the full power of Containers in Elementor to create slick, pixel-perfect, responsive layouts, plus improve the performance of your website. Follow these steps: <strong>Switch Flexbox Container to ‘Active’ and Save.</strong>',
+				'media' => [
+					'type' => 'image',
+					'src' => ELEMENTOR_ASSETS_URL . 'images/containers-announcement.png',
+				],
+				'cta' => [
+					[
+						'label' => 'Activate Container',
+						'variant' => 'primary',
+						'target' => '_blank',
+						'url' => ElementorSettings::get_url() . '#tab-experiments',
+					],
+					[
+						'label' => 'Try It First',
+						'target' => '_blank',
+						'url' => 'https://go.elementor.com/whats-new-popup/',
+					],
+				],
+				'triggers' => [
+					[
+						'action' => 'isFlexContainerInactive',
+					],
+				],
+			],
+		];
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 	}
 
 	/**
@@ -156,6 +190,7 @@ class Module extends BaseApp {
 	}
 
 	public function __construct() {
+<<<<<<< HEAD
 		parent::__construct();
 
 		add_action( 'elementor/init', [ $this, 'on_elementor_init' ] );
@@ -165,6 +200,12 @@ class Module extends BaseApp {
 		if ( empty( $this->get_active_announcements() ) ) {
 			return;
 		}
+=======
+		if ( empty( $this->get_active_announcements() ) ) {
+			return;
+		}
+		parent::__construct();
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 
 		add_action( 'elementor/editor/footer', function () {
 			$this->render_app_wrapper();

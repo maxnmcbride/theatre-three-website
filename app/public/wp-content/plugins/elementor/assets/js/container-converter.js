@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.16.0 - 13-09-2023 */
+=======
+/*! elementor - v3.15.0 - 20-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -360,8 +364,11 @@ var map = function map() {
     var deviceKey = (0, _utils.getDeviceKey)('flex_gap', breakpoint);
     var newValue = {
       size: deviceValue,
+<<<<<<< HEAD
       column: '' + deviceValue,
       row: '' + deviceValue,
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
       unit: 'px'
     };
     return [deviceKey, newValue];
@@ -439,8 +446,11 @@ var map = function map(_ref) {
       };
       value = 'custom' === value ? sectionSettings.gap_columns_custom : {
         size: sizesMap[value],
+<<<<<<< HEAD
         column: '' + sizesMap[value],
         row: '' + sizesMap[value],
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
         unit: 'px'
       };
       return ['flex_gap', value];
@@ -677,8 +687,11 @@ exports["default"] = Migrator;
         flex_align_items: settings.flex_align_items || 'stretch',
         flex_gap: settings.flex_gap || {
           size: 10,
+<<<<<<< HEAD
           column: '10',
           row: '10',
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
           unit: 'px'
         }
       }, isInner ? {

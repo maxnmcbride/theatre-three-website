@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor-pro - v3.16.0 - 12-09-2023 */
+=======
+/*! elementor-pro - v3.15.0 - 09-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 (self["webpackChunkelementor_pro"] = self["webpackChunkelementor_pro"] || []).push([["vendors-node_modules_dompurify_dist_purify_js"],{
 
 /***/ "../node_modules/dompurify/dist/purify.js":

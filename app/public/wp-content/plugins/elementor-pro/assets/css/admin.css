@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor-pro - v3.16.0 - 12-09-2023 */
+=======
+/*! elementor-pro - v3.15.0 - 09-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 .wrap.elementor-admin-page-license form.elementor-license-box {
   max-width: 600px;
   background: white;
@@ -6,6 +10,7 @@
   padding: 20px 20px;
 }
 .wrap.elementor-admin-page-license form.elementor-license-box h3 {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +20,15 @@
           padding-block-end: 20px;
   -webkit-border-after: 1px solid #eee;
           border-block-end: 1px solid #eee;
+=======
+  -webkit-border-after: 1px solid #eee;
+          border-block-end: 1px solid #eee;
+  padding: 20px;
+  margin: -20px -20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 }
 .wrap.elementor-admin-page-license form.elementor-license-box h3 span {
   flex-grow: 1;
@@ -22,6 +36,10 @@
           padding-inline-start: 5px;
 }
 .wrap.elementor-admin-page-license form.elementor-license-box h3 small {
+<<<<<<< HEAD
+=======
+  float: right;
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
   font-size: 13px;
   font-weight: normal;
 }

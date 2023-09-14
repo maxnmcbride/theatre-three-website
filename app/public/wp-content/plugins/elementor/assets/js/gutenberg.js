@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.16.0 - 13-09-2023 */
+=======
+/*! elementor - v3.15.0 - 20-08-2023 */
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -74,6 +78,7 @@ var __webpack_exports__ = {};
       if (!self.cache.$gutenberg.find('#elementor-switch-mode').length) {
         self.cache.$gutenberg.find('.edit-post-header-toolbar').append(self.cache.$switchMode);
       }
+<<<<<<< HEAD
       if (this.hasIframe()) {
         this.hideIframeContent();
       }
@@ -81,6 +86,13 @@ var __webpack_exports__ = {};
         self.cache.$editorPanel = $($('#elementor-gutenberg-panel').html());
         self.cache.$gurenbergBlockList = self.cache.$gutenberg.find('.is-desktop-preview');
         self.cache.$gurenbergBlockList.append(self.cache.$editorPanel);
+=======
+      if (!$('#elementor-editor').length) {
+        self.cache.$editorPanel = $($('#elementor-gutenberg-panel').html());
+        // TODO: `editor-block-list__layout` class for WP < 5.3 support.
+        self.cache.$gurenbergBlockList = self.cache.$gutenberg.find('.editor-block-list__layout, .editor-post-text-editor, .block-editor-block-list__layout');
+        self.cache.$gurenbergBlockList.after(self.cache.$editorPanel);
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
         self.cache.$editorPanelButton = self.cache.$editorPanel.find('#elementor-go-to-edit-page-link');
         self.cache.$editorPanelButton.on('click', function (event) {
           event.preventDefault();
@@ -102,6 +114,7 @@ var __webpack_exports__ = {};
         });
       }
     },
+<<<<<<< HEAD
     // Sometimes Gutenberg uses iframe instead of div.
     hasIframe: function hasIframe() {
       return !!this.cache.$gutenberg.find('iframe[name="editor-canvas"]').length;
@@ -113,6 +126,8 @@ var __webpack_exports__ = {};
       var style = "<style>\n\t\t\t\t.editor-post-text-editor,\n\t\t\t\t.block-editor-block-list__layout {\n\t\t\t\t\tdisplay: none;\n\t\t\t\t}\n\n\t\t\t\tbody {\n\t\t\t\t\tpadding: 0 !important;\n\t\t\t\t}\n\t\t\t</style>";
       this.cache.$gutenberg.find('iframe[name="editor-canvas"]').contents().find('body').append(style);
     },
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
     bindEvents: function bindEvents() {
       var self = this;
       self.cache.$switchModeButton.on('click', function () {

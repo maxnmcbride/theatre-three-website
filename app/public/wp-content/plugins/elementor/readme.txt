@@ -1,11 +1,18 @@
 === Elementor Website Builder - More than Just a Page Builder ===
 Contributors: elemntor
 Tags: page builder, editor, landing page, drag-and-drop, elementor, visual editor, wysiwyg, design, maintenance mode, coming soon, under construction, website builder, landing page builder, front-end builder
+<<<<<<< HEAD
 Requires at least: 6.0
 Tested up to: 6.3
 Requires PHP: 7.0
 Stable tag: 3.16.2
 Beta tag: 3.16.0-beta4
+=======
+Requires at least: 5.9
+Tested up to: 6.3
+Requires PHP: 7.0
+Stable tag: 3.15.3
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -147,7 +154,11 @@ There is also a managed security [Bug Bounty program](https://go.elementor.com/w
 
 = Minimum Requirements =
 
+<<<<<<< HEAD
 * WordPress 6.0 or greater
+=======
+* WordPress 5.9 or greater
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 * PHP version 7.0 or greater
 * MySQL version 5.0 or greater
 
@@ -241,6 +252,7 @@ You can also add a new language via [translate.wordpress.org](https://go.element
 
 See Elementor Developer Edition versions changelog [here](https://go.elementor.com/dev-changelog/)
 
+<<<<<<< HEAD
 = 3.16.2 - 2023-09-13 =
 
 * Fix: Various issues with deprecation updates and 3rd party plugins
@@ -283,6 +295,8 @@ See Elementor Developer Edition versions changelog [here](https://go.elementor.c
 * Fix: Title is not breaking in Recently Edited modal in Editor Top Bar
 * Fix: Edit page with WordPress Editor issue when using WordPress 6.3
 
+=======
+>>>>>>> b0dafb7cb4672d409986cded5079814d9e056d2b
 = 3.15.3 - 2023-08-20 =
 
 * Fix: Elements can't be edited after accessing the page settings panel ([#23365](https://github.com/elementor/elementor/issues/23365))
