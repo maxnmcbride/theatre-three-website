@@ -278,3 +278,104 @@ Stack trace:
 #14 /Users/max/Local Sites/theatre-three/app/public/wp-cron.php(191): do_action_ref_array('elementor/track...', Array)
 #15 {main}
   thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/wp-api.php on line 26
+[14-Sep-2023 15:50:28 UTC] PHP Warning:  Undefined array key 0 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[14-Sep-2023 15:50:28 UTC] PHP Warning:  Undefined array key 1 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[14-Sep-2023 15:50:28 UTC] PHP Fatal error:  Uncaught TypeError: htmlentities(): Argument #1 ($string) must be of type string, array given in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php:71
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php(71): htmlentities(Array)
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/data-tag.php(44): ElementorPro\Modules\DynamicTags\ACF\Tags\ACF_Image->get_value(Array)
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/manager.php(444): Elementor\Core\DynamicTags\Data_Tag->get_content()
+#3 [internal function]: Elementor\Core\DynamicTags\Manager->ajax_render_tags(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php(175): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin-ajax.php(188): do_action('wp_ajax_element...')
+#9 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 71
+[14-Sep-2023 15:50:33 UTC] PHP Warning:  Undefined array key 0 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[14-Sep-2023 15:50:33 UTC] PHP Warning:  Undefined array key 1 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[14-Sep-2023 15:50:33 UTC] PHP Fatal error:  Uncaught TypeError: htmlentities(): Argument #1 ($string) must be of type string, array given in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php:71
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php(71): htmlentities(Array)
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/data-tag.php(44): ElementorPro\Modules\DynamicTags\ACF\Tags\ACF_Image->get_value(Array)
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/manager.php(444): Elementor\Core\DynamicTags\Data_Tag->get_content()
+#3 [internal function]: Elementor\Core\DynamicTags\Manager->ajax_render_tags(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php(175): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin-ajax.php(188): do_action('wp_ajax_element...')
+#9 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 71
+[14-Sep-2023 16:09:56 UTC] PHP Warning:  Undefined array key 0 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[14-Sep-2023 16:09:56 UTC] PHP Warning:  Undefined array key 1 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[14-Sep-2023 16:09:56 UTC] PHP Fatal error:  Uncaught TypeError: htmlentities(): Argument #1 ($string) must be of type string, array given in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php:71
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php(71): htmlentities(Array)
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/data-tag.php(44): ElementorPro\Modules\DynamicTags\ACF\Tags\ACF_Image->get_value(Array)
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/manager.php(444): Elementor\Core\DynamicTags\Data_Tag->get_content()
+#3 [internal function]: Elementor\Core\DynamicTags\Manager->ajax_render_tags(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php(175): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin-ajax.php(188): do_action('wp_ajax_element...')
+#9 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 71
+[14-Sep-2023 16:10:03 UTC] PHP Warning:  Undefined array key 0 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[14-Sep-2023 16:10:03 UTC] PHP Warning:  Undefined array key 1 in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 40
+[14-Sep-2023 16:10:03 UTC] PHP Fatal error:  Uncaught TypeError: htmlentities(): Argument #1 ($string) must be of type string, array given in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php:71
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php(71): htmlentities(Array)
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/data-tag.php(44): ElementorPro\Modules\DynamicTags\ACF\Tags\ACF_Image->get_value(Array)
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/manager.php(444): Elementor\Core\DynamicTags\Data_Tag->get_content()
+#3 [internal function]: Elementor\Core\DynamicTags\Manager->ajax_render_tags(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/common/modules/ajax/module.php(175): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin-ajax.php(188): do_action('wp_ajax_element...')
+#9 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 71
+[14-Sep-2023 16:27:39 UTC] PHP Fatal error:  Uncaught TypeError: htmlentities(): Argument #1 ($string) must be of type string, array given in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php:71
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php(71): htmlentities(Array)
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/data-tag.php(44): ElementorPro\Modules\DynamicTags\ACF\Tags\ACF_Image->get_value(Array)
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/manager.php(216): Elementor\Core\DynamicTags\Data_Tag->get_content()
+#3 [internal function]: Elementor\Core\DynamicTags\Manager->get_tag_data_content('765e837', 'acf-image', Array)
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/manager.php(109): call_user_func_array(Array, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/dynamic-tags/manager.php(70): Elementor\Core\DynamicTags\Manager->parse_tag_text('[elementor-tag ...', Array, Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/includes/controls/base-data.php(91): Elementor\Core\DynamicTags\Manager->parse_tags_text('[elementor-tag ...', Array, Array)
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/includes/base/controls-stack.php(1269): Elementor\Base_Data_Control->parse_tags('[elementor-tag ...', Array)
+#8 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/includes/base/controls-stack.php(1116): Elementor\Controls_Stack->parse_dynamic_settings(Array)
+#9 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/css/post.php(298): Elementor\Controls_Stack->get_parsed_dynamic_settings()
+#10 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/css/post.php(226): Elementor\Core\Files\CSS\Post->render_styles(Object(Elementor\Widget_Image))
+#11 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/css/post.php(298): Elementor\Core\Files\CSS\Post->add_controls_stack_style_rules(Object(Elementor\Element_Column), Array, Array, Array, Array)
+#12 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/css/post.php(226): Elementor\Core\Files\CSS\Post->render_styles(Object(Elementor\Element_Column))
+#13 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/css/post.php(298): Elementor\Core\Files\CSS\Post->add_controls_stack_style_rules(Object(Elementor\Element_Section), Array, Array, Array, Array)
+#14 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/css/post.php(178): Elementor\Core\Files\CSS\Post->render_styles(Object(Elementor\Element_Section))
+#15 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/css/base.php(677): Elementor\Core\Files\CSS\Post->render_css()
+#16 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/base.php(180): Elementor\Core\Files\CSS\Base->parse_content()
+#17 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/css/base.php(130): Elementor\Core\Files\Base->update_file()
+#18 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/css/base.php(226): Elementor\Core\Files\CSS\Base->update()
+#19 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/files/css/post.php(201): Elementor\Core\Files\CSS\Base->enqueue()
+#20 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/includes/frontend.php(676): Elementor\Core\Files\CSS\Post->enqueue()
+#21 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): Elementor\Frontend->enqueue_styles('')
+#22 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#23 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#24 /Users/max/Local Sites/theatre-three/app/public/wp-includes/script-loader.php(2225): do_action('wp_enqueue_scri...')
+#25 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): wp_enqueue_scripts('')
+#26 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#27 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#28 /Users/max/Local Sites/theatre-three/app/public/wp-includes/general-template.php(3053): do_action('wp_head')
+#29 /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/header.php(7): wp_head()
+#30 /Users/max/Local Sites/theatre-three/app/public/wp-includes/template.php(785): require_once('/Users/max/Loca...')
+#31 /Users/max/Local Sites/theatre-three/app/public/wp-includes/template.php(720): load_template('/Users/max/Loca...', true, Array)
+#32 /Users/max/Local Sites/theatre-three/app/public/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#33 /Users/max/Local Sites/theatre-three/app/public/wp-content/themes/theatre-three-theme/single.php(3): get_header()
+#34 /Users/max/Local Sites/theatre-three/app/public/wp-includes/template-loader.php(106): include('/Users/max/Loca...')
+#35 /Users/max/Local Sites/theatre-three/app/public/wp-blog-header.php(19): require_once('/Users/max/Loca...')
+#36 /Users/max/Local Sites/theatre-three/app/public/index.php(17): require('/Users/max/Loca...')
+#37 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/dynamic-tags/acf/tags/acf-image.php on line 71
