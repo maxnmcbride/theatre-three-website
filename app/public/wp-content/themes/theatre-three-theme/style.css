@@ -282,6 +282,7 @@ Version: 1.0
     .main-div-events-container {
         flex-direction: column;
     }
+
     .main-div-events-mainstage-shows,
     .main-div-events-secondstage-shows,
     .main-div-events-childrens-theater-shows,
@@ -385,7 +386,6 @@ Version: 1.0
     color: skyblue;
 }
 
-
 /* BODY */
 .body {
     margin: 0;
@@ -401,7 +401,6 @@ Version: 1.0
 
 
 /* POST */
-
 .post-title {
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
@@ -480,7 +479,6 @@ Version: 1.0
 
 .staff-table-spacing {
     width: 1rem;
-    /* Remove height property */
 }
 
 /* FOOTER */
@@ -535,8 +533,7 @@ Version: 1.0
     text-decoration: none;
 }
 
-/* Page Styling */
-
+/* PAGE STYLING */
 .page-title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
@@ -593,7 +590,8 @@ Version: 1.0
 
 .show-date-span-container {
     margin-left: 35%;
-    text-align: left;}
+    text-align: left;
+}
 
 .single-show-description-container,
 .single-show-description {
@@ -619,8 +617,8 @@ Version: 1.0
 .show-image-container {
     position: absolute;
     left: 0;
-    top: 0;               
-    bottom: 0;            
+    top: 0;
+    bottom: 0;
     width: 30%;
     height: 100%;
     overflow: hidden;
@@ -629,16 +627,16 @@ Version: 1.0
 }
 
 .show-image-container img {
-    width: 100%;           /* Image will take up the full width of its container */
-    height: 100%;          /* Image will take up the full height of its container */
-    object-fit: cover;     /* Ensures image covers the space without distortion */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
     background-color: black;
 }
 
 .single-show-buttons-container {
-    text-align: center;  /* this will center inline and inline-block elements */
-    margin: 0 auto;      /* this can help with block elements */
+    text-align: center;
+    margin: 0 auto;
 }
 
 .single-show-buttons {
@@ -651,7 +649,7 @@ Version: 1.0
     padding-right: 2rem;
 }
 
-.single-show-buttons a{
+.single-show-buttons a {
     text-decoration: none;
     color: white;
     font-size: medium;
