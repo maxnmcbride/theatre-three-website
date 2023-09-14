@@ -568,16 +568,17 @@ Version: 1.0
 }
 
 .archive-title-content-break {
-    width: 65%;
+    width: 50%;
     color: black;
     position: absolute;
     left: 0;
     right: 0;
     z-index: 2;
+    margin-left: 30%;
 }
 
 .single-show-title {
-    margin-left: 25%;
+    margin-left: 35%;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 1rem;
@@ -591,7 +592,7 @@ Version: 1.0
 }
 
 .show-date-span-container {
-    margin-left: 25%;
+    margin-left: 35%;
     text-align: left;}
 
 .single-show-description-container,
@@ -608,30 +609,30 @@ Version: 1.0
 }
 
 .card {
+    position: relative;
     width: 50%;
     margin: 20px auto;
     overflow: hidden;
     background-color: white;
-    position: relative;
 }
-
 
 .show-image-container {
     position: absolute;
     left: 0;
-    top: 50%; 
-    transform: translateY(-50%);
-    width: 20%;
+    top: 0;               
+    bottom: 0;            
+    width: 30%;
+    height: 100%;         /* Set height to 100% */
     overflow: hidden;
     z-index: 1;
     background-color: black;
 }
 
 .show-image-container img {
-    max-width: 100%;
-    height: 100%;
+    width: 100%;           /* Image will take up the full width of its container */
+    height: 100%;          /* Image will take up the full height of its container */
+    object-fit: cover;     /* Ensures image covers the space without distortion */
     display: block;
-    filter: grayscale(1);
     background-color: black;
 }
 
@@ -673,26 +674,19 @@ Version: 1.0
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    /* Allow columns to grow in height */
     min-height: 100vh;
-    /* Set a minimum height to ensure the footer is pushed down */
     padding-bottom: 100px;
-    /* Add padding to make space for the footer */
     box-sizing: border-box;
-    /* Include padding in the total height calculation */
 }
 
 .second-stage-left-column,
 .second-stage-middle-column,
 .second-stage-right-column {
     flex: 1;
-    /* Allow columns to grow */
     align-items: center;
     text-align: center;
     padding: 20px;
-    /* Add padding to the columns */
     box-sizing: border-box;
-    /* Include padding in the total height calculation */
     display: flex;
     flex-direction: column;
 }

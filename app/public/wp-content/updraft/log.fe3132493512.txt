@@ -1,0 +1,319 @@
+0000.000 (0) Opened log file at time: Thu, 14 Sep 2023 01:42:19 +0000 on http://theatre-three.local
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.10 WP: 6.3.1 PHP: 8.1.9 (fpm-fcgi, Darwin Maxs-MacBook-Pro.local 22.4.0 Darwin Kernel Version 22.4.0: Mon Mar  6 20:59:28 PST 2023; root:xnu-8796.101.5~3/RELEASE_ARM64_T6000 arm64) MySQL: 8.0.16 (max packet size=16777216) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 5M | 6M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.001 (0) Free space on disk containing Updraft's temporary directory: 749803 MB
+0000.002 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.004 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.005 (0) Set semaphore last lock (fd) time to 2023-09-14 01:42:19
+0000.006 (0) Semaphore lock (fd) complete
+0000.007 (0) Backup run: resumption=0, nonce=fe3132493512, file_nonce=fe3132493512 begun at=1694655739 (0s ago), job type=backup
+0000.008 (0) Scheduling a resumption (1) after 300 seconds (1694656039) in case this run gets aborted
+0000.022 (0) Checking if we have a zip executable available
+0000.022 (0) Testing: /usr/bin/zip
+0000.029 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.030 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.030 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.030 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.031 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.038 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.038 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.039 (0) Working binary zip found: /usr/bin/zip
+0000.040 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.040 (0) Creation of backups of directories: beginning
+0000.042 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.140 (0) Total entities for the zip file: 827 directories, 3650 files (0 skipped as non-modified), 92.9 MB
+0000.143 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.145 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.148 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.150 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.153 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.156 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.158 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.160 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.163 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.165 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.166 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (19 MB, 3650 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0000.766 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: size is now: 5.50 MB
+0000.769 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 1100 files added (on-disk size: 5601.6 KB)
+0000.772 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 1200 files added (on-disk size: 5601.6 KB)
+0000.774 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 1300 files added (on-disk size: 5601.6 KB)
+0000.777 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 1400 files added (on-disk size: 5601.6 KB)
+0000.779 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 1500 files added (on-disk size: 5601.6 KB)
+0000.781 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 1600 files added (on-disk size: 5601.6 KB)
+0000.783 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 1700 files added (on-disk size: 5601.6 KB)
+0000.785 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 1800 files added (on-disk size: 5601.6 KB)
+0000.788 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 1900 files added (on-disk size: 5601.6 KB)
+0000.790 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 2000 files added (on-disk size: 5601.6 KB)
+0000.790 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (21.2 MB, 3650 files batched, 1001 (2002) added so far); re-opening (prior size: 5601.6 KB)
+0001.263 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: size is now: 9.50 MB
+0001.269 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 2100 files added (on-disk size: 9683.2 KB)
+0001.272 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 2200 files added (on-disk size: 9683.2 KB)
+0001.275 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 2300 files added (on-disk size: 9683.2 KB)
+0001.277 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.4 MB, 3650 files batched, 370 (2372) added so far); re-opening (prior size: 9683.2 KB)
+0002.033 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: size is now: 15.60 MB
+0002.035 (0) A useful amount of data was added after this amount of zip processing: 1.5 s (normalised: 1.5 s, rate: 16854.2 KB/s)
+0002.036 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.5406610965729, normalised_time=1.5189088277256, max_time=2.0351221561432, data points known=1, old_max_bytes=26214400, new_max_bytes=103552232)
+0002.038 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 2400 files added (on-disk size: 15933.3 KB)
+0002.040 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 2500 files added (on-disk size: 15933.3 KB)
+0002.043 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 2600 files added (on-disk size: 15933.3 KB)
+0002.045 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 2700 files added (on-disk size: 15933.3 KB)
+0002.048 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 2800 files added (on-disk size: 15933.3 KB)
+0002.051 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 2900 files added (on-disk size: 15933.3 KB)
+0002.053 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 3000 files added (on-disk size: 15933.3 KB)
+0002.056 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 3100 files added (on-disk size: 15933.3 KB)
+0002.059 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 3200 files added (on-disk size: 15933.3 KB)
+0002.061 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 3300 files added (on-disk size: 15933.3 KB)
+0002.063 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (26.2 MB, 3650 files batched, 1001 (3373) added so far); re-opening (prior size: 15933.3 KB)
+0003.028 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: size is now: 23.70 MB
+0003.032 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 3400 files added (on-disk size: 24236.5 KB)
+0003.034 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 3500 files added (on-disk size: 24236.5 KB)
+0003.037 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.tmp: 3600 files added (on-disk size: 24236.5 KB)
+0003.151 (0) Creating zip file manifest (backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.list-temp.tmp)
+0003.160 (0) Successfully created zip file manifest (size: 294105)
+0003.407 (0) Created plugins zip (0) - 24720.2 KB in 3.4 s (7347.9 KB/s) (sha1: 54064fa447a2c06543bbfdffedc0ff25dee98620, sha256: ef7aa0e84b7bd9d995739131b56fe41dd0b38f5a8c7d5d750fc76c32f24e200d)
+0003.410 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0003.410 (0) No remote despatch: user chose no remote backup service
+0003.411 (0) Recording as successfully uploaded: backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip
+0003.412 (0) Deleting zip manifest (backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip.list.tmp)
+0003.413 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0003.413 (0) Number of backup sets in history: 1; groups (db): 1
+0003.414 (0) Examining (for databases) backup set with group_id=0, nonce=2122f74707f3, datestamp=1693402630 (Aug 30 2023 13:37:10)
+0003.414 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0003.414 (0) Number of backup sets in history: 1; groups (files): 1
+0003.415 (0) Examining (for files) backup set with nonce=2122f74707f3, datestamp=1693402630 (Aug 30 2023 13:37:10)
+0003.415 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0003.415 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0003.417 (0) Beginning creation of dump of themes (split every: 400 MB)
+0003.420 (0) Total entities for the zip file: 3 directories, 29 files (0 skipped as non-modified), 14.9 MB
+0003.596 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-themes.zip.tmp: size is now: 14.90 MB
+0003.598 (0) Creating zip file manifest (backup_2023-09-13-2142_Theatre_Three_fe3132493512-themes.zip.list-temp.tmp)
+0003.599 (0) Successfully created zip file manifest (size: 1756)
+0003.750 (0) Created themes zip (0) - 15220.4 KB in 0.3 s (45863.9 KB/s) (sha1: c71c8942c4714e1a491a17cecc24000d4560a387, sha256: 3755bb37730e6df4e8a2a34ba615652700c51666026abdd00687dc3eaeddc519)
+0003.752 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0003.753 (0) No remote despatch: user chose no remote backup service
+0003.753 (0) Recording as successfully uploaded: backup_2023-09-13-2142_Theatre_Three_fe3132493512-themes.zip
+0003.754 (0) Deleting zip manifest (backup_2023-09-13-2142_Theatre_Three_fe3132493512-themes.zip.list.tmp)
+0003.755 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0003.755 (0) Number of backup sets in history: 1; groups (db): 1
+0003.756 (0) Examining (for databases) backup set with group_id=0, nonce=2122f74707f3, datestamp=1693402630 (Aug 30 2023 13:37:10)
+0003.756 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0003.756 (0) Number of backup sets in history: 1; groups (files): 1
+0003.756 (0) Examining (for files) backup set with nonce=2122f74707f3, datestamp=1693402630 (Aug 30 2023 13:37:10)
+0003.756 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0003.756 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0003.758 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0003.759 (0) Looking for candidates to backup in: /Users/max/Local Sites/theatre-three/app/public/wp-content/uploads
+0003.759 (0) finding files: 2023: adding to list (1)
+0003.760 (0) finding files: elementor: adding to list (2)
+0003.760 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0003.766 (0) Total entities for the zip file: 5 directories, 166 files (0 skipped as non-modified), 124.2 MB
+0003.768 (0) Zip: backup_2023-09-13-2142_Theatre_Three_fe3132493512-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0003.769 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 98.8 MB added on this batch (100.1 MB, 166 files batched, 154 (154) added so far); re-opening (prior size: 0 KB)
+0004.248 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-uploads.zip.tmp: size is now: 100.20 MB
+0004.249 (0) A useful amount of data was added after this amount of zip processing: 0.8 s (normalised: 0.7 s, rate: 135778.9 KB/s)
+0004.253 (0) Performance is good - will increase the amount of data we attempt to batch (time=0.75516700744629, normalised_time=0.74477877931978, max_time=4.2524909973145, data points known=1, old_max_bytes=103552232, new_max_bytes=209715200)
+0004.430 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-uploads.zip.tmp: size is now: 124.20 MB
+0004.434 (0) Creating zip file manifest (backup_2023-09-13-2142_Theatre_Three_fe3132493512-uploads.zip.list-temp.tmp)
+0004.435 (0) Successfully created zip file manifest (size: 9673)
+0005.689 (0) Created uploads zip (0) - 127185.9 KB in 1.9 s (65980.7 KB/s) (sha1: 05c0f374ea0ca7d2108f48c0569fab6b37d8526e, sha256: 03e48c3845507a3083dffd26f9151ef4c8fc7516cf91de4e93f53d94a95a7179)
+0005.691 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0005.691 (0) No remote despatch: user chose no remote backup service
+0005.692 (0) Recording as successfully uploaded: backup_2023-09-13-2142_Theatre_Three_fe3132493512-uploads.zip
+0005.693 (0) Deleting zip manifest (backup_2023-09-13-2142_Theatre_Three_fe3132493512-uploads.zip.list.tmp)
+0005.694 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0005.694 (0) Number of backup sets in history: 1; groups (db): 1
+0005.695 (0) Examining (for databases) backup set with group_id=0, nonce=2122f74707f3, datestamp=1693402630 (Aug 30 2023 13:37:10)
+0005.695 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0005.695 (0) Number of backup sets in history: 1; groups (files): 1
+0005.695 (0) Examining (for files) backup set with nonce=2122f74707f3, datestamp=1693402630 (Aug 30 2023 13:37:10)
+0005.695 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0005.696 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0005.698 (0) Beginning backup of other directories found in the content directory (index: 0)
+0005.698 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0005.699 (0) Looking for candidates to backup in: /Users/max/Local Sites/theatre-three/app/public/wp-content
+0005.699 (0) finding files: upgrade: skipping: excluded by options
+0005.699 (0) finding files: .DS_Store: adding to list (1)
+0005.700 (0) finding files: index.php: adding to list (2)
+0005.700 (0) finding files: upgrade-temp-backup: adding to list (3)
+0005.700 (0) finding files: plugins: skipping: this is the plugins directory
+0005.701 (0) finding files: uploads: skipping: this is the uploads directory
+0005.701 (0) finding files: updraft: skipping: this is the updraft directory
+0005.701 (0) finding files: themes: skipping: this is the themes directory
+0005.701 (0) finding files: mu-plugins: adding to list (4)
+0005.703 (0) Total entities for the zip file: 3 directories, 3 files (0 skipped as non-modified), 0 MB
+0005.712 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-others.zip.tmp: size is now: 0.00 MB
+0005.714 (0) Creating zip file manifest (backup_2023-09-13-2142_Theatre_Three_fe3132493512-others.zip.list-temp.tmp)
+0005.715 (0) Successfully created zip file manifest (size: 105)
+0005.717 (0) Created others zip (0) - 1.9 KB in 0 s (138.1 KB/s) (sha1: b3731904540d193e0fdd2616e95923493de3fd63, sha256: b65eb86f45a26c17c670a41a86187eeb27ef551c49219982f73260fa5598241c)
+0005.718 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0005.719 (0) No remote despatch: user chose no remote backup service
+0005.719 (0) Recording as successfully uploaded: backup_2023-09-13-2142_Theatre_Three_fe3132493512-others.zip
+0005.720 (0) Deleting zip manifest (backup_2023-09-13-2142_Theatre_Three_fe3132493512-others.zip.list.tmp)
+0005.721 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0005.721 (0) Number of backup sets in history: 1; groups (db): 1
+0005.722 (0) Examining (for databases) backup set with group_id=0, nonce=2122f74707f3, datestamp=1693402630 (Aug 30 2023 13:37:10)
+0005.722 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0005.722 (0) Number of backup sets in history: 1; groups (files): 1
+0005.722 (0) Examining (for files) backup set with nonce=2122f74707f3, datestamp=1693402630 (Aug 30 2023 13:37:10)
+0005.722 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0005.723 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0005.726 (0) Saving backup status to database (elements: 8)
+0005.727 (0) Beginning creation of database dump (WordPress DB)
+0005.728 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0005.735 (0) Table wp_options: Total expected rows (via COUNT): 295
+0005.736 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.749 (0) Table wp_options: Rows added in this batch (next record: 1426): 291 (uncompressed bytes in this segment=756358) in 0.02 seconds
+0005.752 (0) Table wp_options: finishing file(s) (2, 74.4 KB)
+0005.754 (0) Table wp_users: Total expected rows (via COUNT): 2
+0005.755 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.756 (0) Table wp_users: Rows added in this batch (next record: 3): 2 (uncompressed bytes in this segment=1670) in 0.00 seconds
+0005.757 (0) Table wp_users: finishing file(s) (2, 0.7 KB)
+0005.761 (0) Table wp_usermeta: Total expected rows (via COUNT): 54
+0005.761 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.763 (0) Table wp_usermeta: Rows added in this batch (next record: 68): 54 (uncompressed bytes in this segment=5448) in 0.00 seconds
+0005.765 (0) Table wp_usermeta: finishing file(s) (2, 2.3 KB)
+0005.768 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0005.769 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=685) in 0.00 seconds
+0005.772 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0005.775 (0) Table wp_comments: Total expected rows (via COUNT): 0
+0005.776 (0) Table wp_comments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1722) in 0.00 seconds
+0005.778 (0) Table wp_comments: finishing file(s) (2, 0.5 KB)
+0005.783 (0) Table wp_links: Total expected rows (via COUNT): 0
+0005.784 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1310) in 0.00 seconds
+0005.786 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0005.790 (0) Table wp_postmeta: Total expected rows (approximate): 2743
+0005.815 (0) Table wp_postmeta: Rows added in this batch (next record: 3745): 3016 (uncompressed bytes in this segment=1715337) in 0.03 seconds
+0005.818 (0) Table wp_postmeta: finishing file(s) (2, 75 KB)
+0005.822 (0) Table wp_posts: Total expected rows (via COUNT): 369
+0005.823 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.843 (0) Table wp_posts: Rows added in this batch (next record: 526): 369 (uncompressed bytes in this segment=1779945) in 0.02 seconds
+0005.846 (0) Table wp_posts: finishing file(s) (2, 58.9 KB)
+0005.848 (0) Table wp_term_relationships: Total expected rows (approximate): 8
+0005.849 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 11 (uncompressed bytes in this segment=844) in 0.00 seconds
+0005.851 (0) Table wp_term_relationships: finishing file(s) (2, 0.4 KB)
+0005.855 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 6
+0005.856 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.857 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 7): 6 (uncompressed bytes in this segment=1137) in 0.00 seconds
+0005.859 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0005.863 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0005.864 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=658) in 0.00 seconds
+0005.866 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0005.869 (0) Table wp_terms: Total expected rows (via COUNT): 6
+0005.869 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.870 (0) Table wp_terms: Rows added in this batch (next record: 7): 6 (uncompressed bytes in this segment=919) in 0.00 seconds
+0005.872 (0) Table wp_terms: finishing file(s) (2, 0.5 KB)
+0005.877 (0) Table wp_actionscheduler_actions: Total expected rows (via COUNT): 2
+0005.877 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.878 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 162): 2 (uncompressed bytes in this segment=2302) in 0.00 seconds
+0005.880 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 0.8 KB)
+0005.884 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 0
+0005.885 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=624) in 0.00 seconds
+0005.887 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0005.890 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 1
+0005.890 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.893 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=689) in 0.00 seconds
+0005.895 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0005.898 (0) Table wp_actionscheduler_logs: Total expected rows (via COUNT): 6
+0005.898 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.900 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 6): 6 (uncompressed bytes in this segment=1346) in 0.00 seconds
+0005.902 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 0.6 KB)
+0005.905 (0) Table wp_e_events: Total expected rows (via COUNT): 7
+0005.905 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.906 (0) Table wp_e_events: Rows added in this batch (next record: 7): 7 (uncompressed bytes in this segment=2472) in 0.00 seconds
+0005.909 (0) Table wp_e_events: finishing file(s) (2, 0.7 KB)
+0005.912 (0) Table wp_e_submissions: Total expected rows (via COUNT): 1
+0005.912 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.914 (0) Table wp_e_submissions: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2813) in 0.00 seconds
+0005.915 (0) Table wp_e_submissions: finishing file(s) (2, 1 KB)
+0005.919 (0) Table wp_e_submissions_actions_log: Total expected rows (via COUNT): 1
+0005.920 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.920 (0) Table wp_e_submissions_actions_log: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1454) in 0.00 seconds
+0005.922 (0) Table wp_e_submissions_actions_log: finishing file(s) (2, 0.5 KB)
+0005.926 (0) Table wp_e_submissions_values: Total expected rows (via COUNT): 7
+0005.926 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0005.927 (0) Table wp_e_submissions_values: Rows added in this batch (next record: 7): 7 (uncompressed bytes in this segment=1037) in 0.00 seconds
+0005.929 (0) Table wp_e_submissions_values: finishing file(s) (2, 0.5 KB)
+0005.932 (0) Table wp_tec_events: Total expected rows (via COUNT): 0
+0005.933 (0) Table wp_tec_events: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1058) in 0.00 seconds
+0005.936 (0) Table wp_tec_events: finishing file(s) (2, 0.5 KB)
+0005.939 (0) Table wp_tec_occurrences: Total expected rows (via COUNT): 0
+0005.940 (0) Table wp_tec_occurrences: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1078) in 0.00 seconds
+0005.942 (0) Table wp_tec_occurrences: finishing file(s) (2, 0.5 KB)
+0005.942 (0) PHP event: code E_WARNING: filemtime(): stat failed for /Users/max/Local Sites/theatre-three/app/public/wp-content/updraft/backup_2023-09-13-2142_Theatre_Three_fe3132493512-db.gz (line 1976, wp-content/plugins/updraftplus/backup.php)
+0005.943 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_options.table.tmpr1427.gz (1/22/fopen): adding to final database dump
+0005.944 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_options.table.gz (2/22/fopen): adding to final database dump
+0005.944 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_users.table.tmpr4.gz (3/22/fopen): adding to final database dump
+0005.944 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_users.table.gz (4/22/fopen): adding to final database dump
+0005.945 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_usermeta.table.tmpr69.gz (5/22/fopen): adding to final database dump
+0005.945 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_usermeta.table.gz (6/22/fopen): adding to final database dump
+0005.945 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_commentmeta.table.tmpr0.gz (7/22/fopen): adding to final database dump
+0005.946 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_commentmeta.table.gz (8/22/fopen): adding to final database dump
+0005.946 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_comments.table.tmpr0.gz (9/22/fopen): adding to final database dump
+0005.946 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_comments.table.gz (10/22/fopen): adding to final database dump
+0005.947 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_links.table.tmpr0.gz (11/22/fopen): adding to final database dump
+0005.947 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_links.table.gz (12/22/fopen): adding to final database dump
+0005.947 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_postmeta.table.tmpr3746.gz (13/22/fopen): adding to final database dump
+0005.948 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_postmeta.table.gz (14/22/fopen): adding to final database dump
+0005.949 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_posts.table.tmpr527.gz (15/22/fopen): adding to final database dump
+0005.949 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_posts.table.gz (16/22/fopen): adding to final database dump
+0005.950 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_term_relationships.table.tmpr100001.gz (17/22/fopen): adding to final database dump
+0005.950 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_term_relationships.table.gz (18/22/fopen): adding to final database dump
+0005.950 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_term_taxonomy.table.tmpr8.gz (19/22/fopen): adding to final database dump
+0005.951 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_term_taxonomy.table.gz (20/22/fopen): adding to final database dump
+0005.951 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_termmeta.table.tmpr0.gz (21/22/fopen): adding to final database dump
+0005.951 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_termmeta.table.gz (22/22/fopen): adding to final database dump
+0005.952 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_terms.table.tmpr8.gz (23/22/fopen): adding to final database dump
+0005.952 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_terms.table.gz (24/22/fopen): adding to final database dump
+0005.952 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_actionscheduler_actions.table.tmpr163.gz (25/22/fopen): adding to final database dump
+0005.953 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_actionscheduler_actions.table.gz (26/22/fopen): adding to final database dump
+0005.953 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_actionscheduler_claims.table.tmpr0.gz (27/22/fopen): adding to final database dump
+0005.954 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_actionscheduler_claims.table.gz (28/22/fopen): adding to final database dump
+0005.954 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_actionscheduler_groups.table.tmpr2.gz (29/22/fopen): adding to final database dump
+0005.954 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_actionscheduler_groups.table.gz (30/22/fopen): adding to final database dump
+0005.955 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_actionscheduler_logs.table.tmpr7.gz (31/22/fopen): adding to final database dump
+0005.955 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_actionscheduler_logs.table.gz (32/22/fopen): adding to final database dump
+0005.955 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_e_events.table.tmpr8.gz (33/22/fopen): adding to final database dump
+0005.956 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_e_events.table.gz (34/22/fopen): adding to final database dump
+0005.956 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_e_submissions.table.tmpr2.gz (35/22/fopen): adding to final database dump
+0005.956 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_e_submissions.table.gz (36/22/fopen): adding to final database dump
+0005.956 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_e_submissions_actions_log.table.tmpr2.gz (37/22/fopen): adding to final database dump
+0005.957 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_e_submissions_actions_log.table.gz (38/22/fopen): adding to final database dump
+0005.957 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_e_submissions_values.table.tmpr8.gz (39/22/fopen): adding to final database dump
+0005.957 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_e_submissions_values.table.gz (40/22/fopen): adding to final database dump
+0005.958 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_tec_events.table.tmpr0.gz (41/22/fopen): adding to final database dump
+0005.958 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_tec_events.table.gz (42/22/fopen): adding to final database dump
+0005.958 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_tec_occurrences.table.tmpr0.gz (43/22/fopen): adding to final database dump
+0005.959 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db-table-wp_tec_occurrences.table.gz (44/22/fopen): adding to final database dump
+0005.964 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db.gz: finished writing out complete database file (220.5 KB)
+0005.970 (0) Total database tables backed up: 22 (backup_2023-09-13-2142_Theatre_Three_fe3132493512-db.gz, size: 225948, sha1: 58a46f0b72c1f24f2179c2417d8d105a3be5183c, sha256: d484e5da21083fa9a807fc01c02fb9bcc67389b95f703d6ee7572cc2763db22f)
+0005.973 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-plugins.zip: plugins: This file has already been successfully uploaded
+0005.973 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-themes.zip: themes: This file has already been successfully uploaded
+0005.973 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-uploads.zip: uploads: This file has already been successfully uploaded
+0005.974 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-others.zip: others: This file has already been successfully uploaded
+0005.974 (0) backup_2023-09-13-2142_Theatre_Three_fe3132493512-db.gz: db: This file has not yet been successfully uploaded: will queue
+0005.974 (0) Saving backup history. Total backup size: 163.4 MB
+0005.975 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0005.977 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0005.977 (0) No remote despatch: user chose no remote backup service
+0005.977 (0) Recording as successfully uploaded: backup_2023-09-13-2142_Theatre_Three_fe3132493512-db.gz
+0005.980 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0005.980 (0) Number of backup sets in history: 2; groups (db): 1
+0005.981 (0) Examining (for databases) backup set with group_id=0, nonce=fe3132493512, datestamp=1694655739 (Sep 14 2023 01:42:19)
+0005.981 (0) This backup set is the backup set just made, so will not be deleted.
+0005.981 (0) Examining (for databases) backup set with group_id=0, nonce=2122f74707f3, datestamp=1693402630 (Aug 30 2023 13:37:10)
+0005.981 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0005.981 (0) Number of backup sets in history: 2; groups (files): 1
+0005.981 (0) Examining (for files) backup set with nonce=fe3132493512, datestamp=1694655739 (Sep 14 2023 01:42:19)
+0005.981 (0) This backup set is the backup set just made, so will not be deleted.
+0005.982 (0) This backup set is the backup set just made, so will not be deleted.
+0005.982 (0) This backup set is the backup set just made, so will not be deleted.
+0005.982 (0) This backup set is the backup set just made, so will not be deleted.
+0005.982 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0005.982 (0) Examining (for files) backup set with nonce=2122f74707f3, datestamp=1693402630 (Aug 30 2023 13:37:10)
+0005.982 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0005.982 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0005.983 (0) Resume backup (fe3132493512, 0): finish run
+0005.984 (0) Decremented the semaphore (fd) by 1
+0005.984 (0) Semaphore (fd) unlocked
+0005.985 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0005.986 (0) No email will/can be sent - the user has not configured an email address.
+0005.987 (0) The backup succeeded and is now complete

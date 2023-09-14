@@ -32,7 +32,7 @@ get_header(); ?>
             <div class="card single-show-div-container">
 
                 <?php
-                $show_image = get_field('show_image');
+                $show_image = get_field('promotional_image');
                 if ($show_image): ?>
                     <div class="show-image-container">
                         <img src="<?php echo esc_url($show_image['url']); ?>" alt="<?php echo esc_attr($show_image['alt']); ?>">

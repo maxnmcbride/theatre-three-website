@@ -83,7 +83,7 @@ class ACF_URL extends Data_Tag {
 		} // End if().
 
 		if ( empty( $value ) && $this->get_settings( 'fallback' ) ) {
-			$value = $this->get_settings( 'fallback' );
+			$value = htmlentities( $this->get_settings( 'fallback' ) );
 		}
 
 		return wp_kses_post( $value );

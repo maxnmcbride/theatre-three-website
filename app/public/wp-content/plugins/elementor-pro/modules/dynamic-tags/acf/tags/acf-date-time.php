@@ -61,7 +61,7 @@ class ACF_Date_Time extends Data_Tag {
 		}
 
 		if ( empty( $value ) && $this->get_settings( 'fallback' ) ) {
-			$value = $this->get_settings( 'fallback' );
+			$value = sanitize_text_field( $this->get_settings( 'fallback' ) );
 		}
 
 		return wp_kses_post( $value );

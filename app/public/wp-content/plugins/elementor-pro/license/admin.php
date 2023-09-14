@@ -227,7 +227,7 @@ class Admin {
 						<small>
 							<?php // Fake link to make the user think something is going on. In fact, every refresh of this page will re-check the license status. ?>
 							<a class="button" href="<?php echo esc_url( static::get_url() . '&check-license=1' ); ?>">
-								<i class="eicon-sync"></i>
+								<i class="eicon-sync" aria-hidden="true"></i>
 								<?php echo esc_html__( 'Check license status', 'elementor-pro' ); ?>
 							</a>
 						</small>
