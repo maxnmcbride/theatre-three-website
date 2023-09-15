@@ -1,5 +1,11 @@
 # Elementor Pro - by Elementor.com
 
+#### 3.16.1 - 2023-09-14
+
+* Fix: Dynamic tag for ACF image field is not working as expected ([#23757](https://github.com/elementor/elementor/issues/23757))
+* Fix: Sticky functionality affects padding values in Container ([#23758](https://github.com/elementor/elementor/issues/23758))
+* Fix: HTML list issues for padding and margin in Menu widget
+
 #### 3.16.0 - 2023-09-12
 
 * Tweak: Implemented accessibility improvements in Menu widget ([#23607](https://github.com/elementor/elementor/issues/23607), [#22554](https://github.com/elementor/elementor/issues/22554))

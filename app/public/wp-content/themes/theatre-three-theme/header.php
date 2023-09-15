@@ -14,6 +14,11 @@
       <p class="subtitle-font">Broadway on Main Street</p>
     </div>
     <nav class="nav-bar">
+    <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
       <ul class="nav-list">
         <li class="nav-item">
           <a href="<?php echo site_url('/tickets') ?>" class="nav-link">Tickets</a>
@@ -70,11 +75,5 @@
           </ul>
         </li>
       </ul>
-      <!-- <a href="<?php echo site_url('/tickets') ?>">Tickets</a>
-        <a href="#">Season</a>
-        <a href="#">Engage & Learn</a>
-        <a href="#">Your Visit</a>
-        <a href="<?php echo site_url('/about-us') ?>">About Us</a>
-        <a href="#">Support Us</a> -->
     </nav>
   </header>
