@@ -326,11 +326,10 @@ Version: 1.0
 
 /* NAV BAR */
 
+/* Original CSS for the nav component */
 .nav-bar {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    /* display: flex;
-    align-items: center; */
 }
 
 .nav-list {
@@ -360,12 +359,10 @@ Version: 1.0
 
 .sub-links li {
     margin-right: 30px;
-    /* Adjust the spacing between sublinks */
 }
 
 .nav-item:hover .sub-links {
     display: flex;
-    /* Display sublinks when hovering over the main link */
     justify-content: center;
     padding-bottom: 10px;
 }
@@ -378,6 +375,65 @@ Version: 1.0
 
 .nav-bar a:hover {
     color: skyblue;
+}
+
+/* New CSS for the hamburger menu and mobile version */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #555;
+    }
+
+    .nav-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sub-links {
+        position: relative;
+        top: unset;
+        background-color: #666;
+    }
+
+    .nav-item:hover .sub-links {
+        display: none;
+    }
+
+    .sub-links.active {
+        display: flex;
+    }
 }
 
 /* BODY */
@@ -484,7 +540,7 @@ Version: 1.0
     justify-content: space-between;
     margin-top: auto;
     width: 100%;
-    bottom: 0;
+    box-sizing: border-box;
 }
 
 .footer-column {

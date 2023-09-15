@@ -61,7 +61,7 @@ class Toolset_URL extends Data_Tag {
 		}
 
 		if ( empty( $value ) && $this->get_settings( 'fallback' ) ) {
-			$value = htmlentities( $this->get_settings( 'fallback' ) );
+			$value = $this->get_settings( 'fallback' );
 		}
 
 		return wp_kses_post( $value );
