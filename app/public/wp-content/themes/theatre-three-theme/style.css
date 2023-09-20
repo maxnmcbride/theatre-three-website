@@ -272,7 +272,7 @@ Version: 1.0
 
 /* RESPONSIVE FOR TABLET AND CELLPHONE */
 
-@media (max-width: 768px) {
+@media (max-width:820px) {
     .main-div-events-container {
         flex-direction: column;
     }
@@ -395,7 +395,7 @@ Version: 1.0
     display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     .hamburger {
         display: flex;
     }
@@ -706,9 +706,8 @@ Version: 1.0
 }
 
 @media (max-width: 820px) {
-
     .card {
-        width: 90%; /* Adjusts the card width */
+        width: 90%;
         margin: 20px auto;
     }
 }
@@ -717,19 +716,16 @@ Version: 1.0
 @media (max-width: 768px) {
     .show-image-container {
         display: none;
-        /* Hides the image */
     }
 
     .card {
         width: 90%;
-        /* Adjusts the card width */
         margin: 20px auto;
     }
 
     .single-show-title,
     .show-date-span-container {
         margin-left: 10%;
-        /* Adjusts the margin for title and date */
     }
 
     .single-show-description-container,
