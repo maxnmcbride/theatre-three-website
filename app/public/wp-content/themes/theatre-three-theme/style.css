@@ -270,6 +270,27 @@ Version: 1.0
     z-index: 1;
 }
 
+.sold-out-sign {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: red;
+    text-align: center;
+    font-size: 5rem;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-30deg); 
+}
+
+.sold-out-event {
+    position: relative;
+    opacity: 0.5;
+}
+
 /* RESPONSIVE FOR TABLET AND CELLPHONE */
 
 @media (max-width:820px) {

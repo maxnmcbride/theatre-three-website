@@ -59,8 +59,12 @@ if ($homepageShows->have_posts()) {
 
     while ($homepageShowsThree->have_posts()) {
         $homepageShowsThree->the_post();
+        $is_sold_out = get_field('sold_out');
         ?>
-        <div>
+        <div class="<?php echo $is_sold_out ? 'sold-out-event' : ''; ?>">
+            <?php if ($is_sold_out) : ?>
+                <div class="sold-out-sign">Sold Out</div>
+            <?php endif; ?>
             <h3 class="upcoming-show-titles">
                 <a href="<?php the_permalink(); ?>">
                     <?php the_title(); ?>
