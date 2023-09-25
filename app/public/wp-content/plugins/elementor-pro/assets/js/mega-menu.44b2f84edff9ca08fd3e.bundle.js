@@ -1,4 +1,4 @@
-/*! elementor-pro - v3.16.0 - 14-09-2023 */
+/*! elementor-pro - v3.16.0 - 20-09-2023 */
 "use strict";
 (self["webpackChunkelementor_pro"] = self["webpackChunkelementor_pro"] || []).push([["mega-menu"],{
 
@@ -180,8 +180,9 @@ class MegaMenu extends elementorModules.frontend.handlers.NestedTabs {
   }
   getMenuItemContainerAbsolutePosition($contentContainer) {
     const tabIndex = $contentContainer.data('tab-index'),
-      $titleEl = this.elements.$tabDropdowns.filter(this.getTabTitleFilterSelector(tabIndex))[0],
-      titleBoundingBox = $titleEl.getBoundingClientRect(),
+      $activeDropdown = this.elements.$tabDropdowns.filter(this.getTabTitleFilterSelector(tabIndex))[0],
+      $titleElement = $activeDropdown.closest(this.getSettings('selectors').tabTitle),
+      titleBoundingBox = $titleElement.getBoundingClientRect(),
       contentContainerWidth = $contentContainer[0].clientWidth;
     let menuItemContainerOffset = null;
     switch (this.getElementSettings('content_horizontal_position')) {
@@ -649,4 +650,4 @@ function isMenuInDropdownMode(elementSettings) {
 /***/ })
 
 }]);
-//# sourceMappingURL=mega-menu.a55621b680e3d8ff735a.bundle.js.map
+//# sourceMappingURL=mega-menu.44b2f84edff9ca08fd3e.bundle.js.map
