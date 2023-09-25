@@ -378,10 +378,10 @@ class Nested_Carousel extends Widget_Nested_Base {
 						<# } ); #>
 					</div>
 				</div>
-				<# if ( 'yes' === settings['arrows'] && 1 < settings['carousel_items'].length ) { #>
+				<# if ( 'yes' === settings['arrows'] ) { #>
 					<?php $this->content_template_navigation_arrows(); ?>
 				<# } #>
-				<# if ( settings['pagination'] && 1 < settings['carousel_items'].length ) { #>
+				<# if ( settings['pagination']  ) { #>
 					<div class="swiper-pagination"></div>
 				<# } #>
 			<# } #>

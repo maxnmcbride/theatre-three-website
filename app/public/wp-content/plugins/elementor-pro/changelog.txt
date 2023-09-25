@@ -1,5 +1,10 @@
 # Elementor Pro - by Elementor.com
 
+#### 3.16.2 - 2023-09-20
+
+* Fix: Fit to Content dropdown position calculation is incorrect in Menu widget ([#23808](https://github.com/elementor/elementor/issues/23808))
+* Fix: Reverted hide navigation arrows when there is only one slide in the Loop or Nested carousel ([#23804](https://github.com/elementor/elementor/issues/23804))
+
 #### 3.16.1 - 2023-09-14
 
 * Fix: Dynamic tag for ACF image field is not working as expected ([#23757](https://github.com/elementor/elementor/issues/23757))
