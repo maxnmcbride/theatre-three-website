@@ -4,8 +4,7 @@ $homepageShows = new WP_Query(
     array(
         'posts_per_page' => 1,
         'post_type' => 'acting_class',
-        'meta_key' => 'start_date',
-        'orderby' => 'meta_value_num',
+        'orderby' => 'date',
         'order' => 'ASC',
         'meta_query' => array(
             array(
@@ -35,8 +34,9 @@ if ($homepageShows->have_posts()) {
 ?>
 
 <div class="div-one">
-    <h2 class="upcoming-stage-titles"><a href="<?php echo get_post_type_archive_link('acting_class') ?>">Acting
-            Classes</a></h2>
+    <h2 class="upcoming-stage-titles">
+        <a href="<?php echo get_post_type_archive_link('acting_class') ?>">Acting Classes</a>
+    </h2>
     <hr class="upcoming-stage-titles-break">
 
     <?php
@@ -44,8 +44,7 @@ if ($homepageShows->have_posts()) {
         array(
             'posts_per_page' => -1,
             'post_type' => 'acting_class',
-            'meta_key' => 'start_date',
-            'orderby' => 'meta_value_num',
+            'orderby' => 'date',
             'order' => 'ASC',
             'meta_query' => array(
                 array(
