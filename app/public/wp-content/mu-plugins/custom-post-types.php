@@ -81,6 +81,27 @@ function custom_post_types()
             )
         )
     );
+
+// AUDTIONS
+
+register_post_type(
+    'auditions',
+    array(
+        'rewrite' => array('slug' => 'auditions'),
+        'has_archive' => true,
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
+        'public' => true,
+        'menu_icon' => 'dashicons-megaphone',
+        'labels' => array(
+            'name' => 'Auditions',
+            'singular_name' => 'Audition',
+            'add_new_item' => 'Add Audition',
+            'edit_item' => 'Edit Audition',
+        )
+    )
+);
+
 }
 
 add_action('init', 'custom_post_types');

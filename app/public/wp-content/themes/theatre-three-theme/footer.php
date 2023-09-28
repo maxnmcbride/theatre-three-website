@@ -3,7 +3,7 @@
   <div class="footer-column">
 
     <h4 class="footer-column-heading">Contact Us</h4>
-
+    <hr class = "footer-column-hr">
     <h5 class="footer-column-heading">Location</h5>
     <pre class="footer-column-paragraph">
       <a class="address" href="https://www.google.com/maps/search/412-main-street-port-jefferson-ny" target="_blank">
@@ -31,6 +31,7 @@
 
   <div class="footer-column">
     <h4 class="footer-column-heading">Hours</h4>
+    <hr class = "footer-column-hr">
     <pre class="footer-column-paragraph">
     <h5 class="footer-column-heading">Box Office</h5>
       <i>Mon - Sat</i> 10AM - 5PM
@@ -39,12 +40,6 @@
     <h5 class="footer-column-heading">Business Office</h5>
       <i>Tue - Fri</i> 10AM - 4PM
     </pre>
-  </div>
-  <div class="footer-column">
-    <h4 class="footer-column-heading">Contact Us</h4>
-  </div>
-  <div class="footer-column">
-    <h4 class="footer-column-heading">Contact Us</h4>
   </div>
 </footer>
 

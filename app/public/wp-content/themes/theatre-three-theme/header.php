@@ -71,6 +71,7 @@
           <ul class="sub-links">
             <li>
               <a href="<?php echo site_url('/tickets') ?>">Donate</a>
+              <a href="<?php echo site_url('/tickets') ?>">Volunteer</a>
             </li>
           </ul>
         </li>

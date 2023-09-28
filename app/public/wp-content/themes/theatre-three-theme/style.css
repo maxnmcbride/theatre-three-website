@@ -380,12 +380,19 @@ Version: 1.0
 
 .sub-links li {
     margin-right: 30px;
+    white-space: nowrap;
+    padding: .5rem;
 }
 
 .nav-item:hover .sub-links {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
+}
+
+.nav-item:last-child .sub-links {
+    left: auto;
+    right: 0;
 }
 
 .nav-bar a {
@@ -445,7 +452,7 @@ Version: 1.0
     .sub-links {
         position: relative;
         top: unset;
-        background-color: #666;
+        background-color: #555;
     }
 
     .nav-item:hover .sub-links {
@@ -490,13 +497,7 @@ Version: 1.0
 
 /* ABOUT US */
 .about-us-body-container {
-    margin: 2rem;
-    color: white;
-    font-family: Futura, Trebuchet MS, Arial, sans-serif;
-    display: flex;
-    /* Add flex container */
-    flex-direction: column;
-    /* Stack children vertically */
+    background-color: beige;
 }
 
 .about-us-section-title {
@@ -516,7 +517,6 @@ Version: 1.0
 .staff-table-container {
     display: flex;
     justify-content: center;
-    /* Remove height: 100%; */
 }
 
 .staff-table {
@@ -602,6 +602,10 @@ Version: 1.0
 .footer-title a {
     color: white;
     text-decoration: none;
+}
+
+.footer-column-hr{
+    width: 75%;
 }
 
 /* PAGE STYLING */
