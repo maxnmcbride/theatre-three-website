@@ -83,7 +83,6 @@ extension=php_openssl.dll
 extension=php_exif.dll
 extension=php_gd.dll
 extension=php_ftp.dll
-extension=php_ffi.dll
 extension=php_imap.dll
 extension=php_bz2.dll
 extension=php_mbstring.dll
@@ -94,9 +93,6 @@ extension=php_soap.dll
 extension=php_mysqli.dll
 extension=php_pdo_mysql.dll
 extension=php_fileinfo.dll
-extension=php_pdo_sqlite.dll
-extension=php_sqlite3.dll
-
 {{/if}}
 
 [MySQL]
@@ -129,10 +125,8 @@ mysqli.reconnect = Off
 pdo_mysql.default_socket = "{{mysql.socket}}"
 pdo_mysql.default_port = {{mysql.port}}
 
+{{#if intelChipMac}}
 [imagick]
-{{#if os.windows}}
-extension = php_imagick.dll
-{{else}}
 extension = {{extensionsDir}}/imagick.so
 {{/if}}
 
@@ -143,7 +137,6 @@ extension = {{extensionsDir}}/imagick.so
 {{#if os.windows}}
 extension = php_intl.dll
 {{/if}}
-
 [sqlite]
 [sqlite3]
 [Pcre]
