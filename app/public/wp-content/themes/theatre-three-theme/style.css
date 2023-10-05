@@ -308,7 +308,7 @@ Version: 1.0
 
 /* HEADER */
 .site-header {
-    margin: 0%;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -325,7 +325,7 @@ Version: 1.0
 }
 
 .title-container {
-    flex: 1;
+    flex: .3;
     margin-right: 20px;
     display: flex;
     flex-direction: column;
@@ -357,6 +357,8 @@ Version: 1.0
 .nav-bar {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    font-size: 1.25rem; 
+    flex: 0.6;
 }
 
 .nav-list {
