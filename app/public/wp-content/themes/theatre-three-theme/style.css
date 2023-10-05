@@ -316,6 +316,12 @@ Version: 1.0
     padding: 20px;
     z-index: 1;
     position: relative;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.site-header:hover,
+.site-header:focus-within {
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 .title-container {
@@ -401,8 +407,11 @@ Version: 1.0
     color: white;
 }
 
-.nav-bar a:hover {
+.nav-bar a:hover,
+.nav-bar a:focus {
     color: skyblue;
+    text-decoration: underline;
+    text-decoration-color: skyblue;
 }
 
 /* New CSS for the hamburger menu and mobile version */
@@ -488,12 +497,6 @@ Version: 1.0
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
-
-/* .post-image-container{} */
-/* need to create css so that image is centered in page and has padding or margin of 25% on each side */
-
-/* .post-image{} */
-/* need to create css so that image is centered in page and has padding or margin of 25% on each side */
 
 /* ABOUT US */
 .about-us-body-container {
