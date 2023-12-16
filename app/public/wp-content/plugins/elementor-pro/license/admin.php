@@ -175,6 +175,16 @@ class Admin {
 				'elementor_pro_renew_license_menu_link'
 			);
 		}
+
+		if ( ! API::is_license_expired() && API::is_need_to_show_upgrade_promotion() ) {
+			add_submenu_page(
+				Settings::PAGE_ID,
+				'',
+				esc_html__( 'Upgrade', 'elementor-pro' ),
+				'manage_options',
+				'elementor_pro_upgrade_license_menu_link'
+			);
+		}
 	}
 
 	public static function get_url() {
