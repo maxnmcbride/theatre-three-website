@@ -18,6 +18,8 @@ wp_enqueue_script('jquery');
 
 function enqueue_custom_scripts() {
     wp_enqueue_script('custom-navigation', get_template_directory_uri() . '/js/custom-navigation.js', array('jquery'), null, true);
+    wp_enqueue_script('custom-submenu', get_template_directory_uri() . '/js/custom-submenu.js', array('jquery'), null, true);
+
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 ?>

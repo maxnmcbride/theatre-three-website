@@ -308,18 +308,24 @@ Version: 1.0
 
 /* HEADER */
 .site-header {
-    margin: 0%;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    z-index: 1;
+    z-index: 10;
     position: relative;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.site-header:hover,
+.site-header:focus-within {
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 .title-container {
-    flex: 1;
+    flex: .3;
     margin-right: 20px;
     display: flex;
     flex-direction: column;
@@ -351,6 +357,9 @@ Version: 1.0
 .nav-bar {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    font-size: 1.25rem;
+    flex: 0.6;
+    width: 100%;
 }
 
 .nav-list {
@@ -369,25 +378,32 @@ Version: 1.0
     padding: 10px;
 }
 
-.sub-links {
+/* .nav-item .sub-links {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #555;
     list-style: none;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.nav-item .sub-links {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0; 
+    top: calc(100% + 20px); 
+    background-color: #555; 
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9;
 }
 
 .sub-links li {
-    margin-right: 30px;
-    white-space: nowrap;
-    padding: .5rem;
-}
-
-.nav-item:hover .sub-links {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
 }
 
 .nav-item:last-child .sub-links {
@@ -401,8 +417,11 @@ Version: 1.0
     color: white;
 }
 
-.nav-bar a:hover {
+.nav-bar a:hover,
+.nav-bar a:focus {
     color: skyblue;
+    text-decoration: underline;
+    text-decoration-color: skyblue;
 }
 
 /* New CSS for the hamburger menu and mobile version */
@@ -488,12 +507,6 @@ Version: 1.0
     color: white;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
-
-/* .post-image-container{} */
-/* need to create css so that image is centered in page and has padding or margin of 25% on each side */
-
-/* .post-image{} */
-/* need to create css so that image is centered in page and has padding or margin of 25% on each side */
 
 /* ABOUT US */
 .about-us-body-container {

@@ -21,16 +21,22 @@
     </button>
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="<?php echo site_url('/tickets') ?>" class="nav-link">Tickets</a>
+          <a href="<?php echo site_url('#') ?>" class="nav-link">Tickets</a>
           <ul class="sub-links">
             <li>
-              <a href="<?php echo site_url('/tickets') ?>">Buy Tickets</a>
+              <a href="<?php echo site_url('#') ?>">Buy Tickets</a>
             </li>
             <li>
-              <a href="<?php echo site_url('/tickets') ?>">Seating Chart</a>
+              <a href="<?php echo site_url('#') ?>">Group Tickets</a>
             </li>
             <li>
-              <a href="<?php echo site_url('/tickets') ?>">Ticket Policy</a>
+              <a href="<?php echo site_url('#') ?>">Seating Chart</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Gift Certificates</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Ticket Policy</a>
             </li>
           </ul>
         </li>
@@ -38,7 +44,22 @@
           <a href="#" class="nav-link">Season</a>
           <ul class="sub-links">
             <li>
-              <a href="<?php echo site_url('/tickets') ?>">Events Calendar</a>
+              <a href="<?php echo site_url('#') ?>">Calendar</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Mainstage</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Second Stage</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Children's Theatre</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">One-Act Plays</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Subscriptions</a>
             </li>
           </ul>
         </li>
@@ -46,7 +67,22 @@
           <a href="#" class="nav-link">Engage & Learn</a>
           <ul class="sub-links">
             <li>
-              <a href="<?php echo site_url('/tickets') ?>">Acting Classes</a>
+              <a href="<?php echo site_url('#') ?>">Auditions</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Acting Classes</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Submit a One-Act Play</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">School Outreach</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Plan Your School Trip</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Julie Peierls Scholarship</a>
             </li>
           </ul>
         </li>
@@ -54,24 +90,30 @@
           <a href="#" class="nav-link">Your Visit</a>
           <ul class="sub-links">
             <li>
-              <a href="<?php echo site_url('/tickets') ?>">Tours</a>
+              <a href="<?php echo site_url('#') ?>">Accessibility</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Directions</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Contact Us</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">About Us</a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a href="<?php echo site_url('/about-us') ?>" class="nav-link">About Us</a>
+          <a href="<?php echo site_url('#') ?>" class="nav-link">Support Us</a>
           <ul class="sub-links">
             <li>
-              <a href="<?php echo site_url('/tickets') ?>">Theatre History</a>
+              <a href="<?php echo site_url('#') ?>">Donate</a>
             </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Support Us</a>
-          <ul class="sub-links">
             <li>
-              <a href="<?php echo site_url('/tickets') ?>">Donate</a>
-              <a href="<?php echo site_url('/tickets') ?>">Volunteer</a>
+              <a href="<?php echo site_url('#') ?>">Volunteer</a>
+            </li>
+            <li>
+              <a href="<?php echo site_url('#') ?>">Become a Sponsor</a>
             </li>
           </ul>
         </li>
