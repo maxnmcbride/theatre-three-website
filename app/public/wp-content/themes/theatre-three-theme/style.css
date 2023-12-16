@@ -314,7 +314,7 @@ Version: 1.0
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    z-index: 1;
+    z-index: 10;
     position: relative;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -359,6 +359,7 @@ Version: 1.0
     color: white;
     font-size: 1.25rem;
     flex: 0.6;
+    width: 100%;
 }
 
 .nav-list {
@@ -377,15 +378,32 @@ Version: 1.0
     padding: 10px;
 }
 
-.nav-item .sub-links {
-    display: none; /* Ensures the sub-menu doesn't display by default */
+/* .nav-item .sub-links {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #555;
     list-style: none;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.nav-item .sub-links {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0; 
+    top: calc(100% + 20px); 
+    background-color: #555; 
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+}
+
+.sub-links li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
 }
 
 .nav-item:last-child .sub-links {
