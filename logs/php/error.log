@@ -405,3 +405,24 @@ Stack trace:
 [09-Dec-2023 14:19:25 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 449
 [09-Dec-2023 14:19:25 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 730
 [16-Dec-2023 00:17:59 UTC] Cron reschedule event error for hook: elementor_1_elementor_updater_cron, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"elementor_1_elementor_updater_cron_interval","args":[],"interval":300}
+[20-Dec-2023 14:51:07 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 449
+[20-Dec-2023 14:51:07 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 730
+[23-Dec-2023 15:41:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Elementor\Core\get_plugins() in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/wp-api.php:26
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/modules/compatibility-tag/base-module.php(96): Elementor\Core\Wp_Api->get_plugins()
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/modules/compatibility-tag/base-module.php(58): Elementor\Modules\CompatibilityTag\Base_Module->get_plugins_with_header()
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/modules/compatibility-tag/module.php(57): Elementor\Modules\CompatibilityTag\Base_Module->get_plugins_to_check()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/modules/compatibility-tag/base-module.php(148): Elementor\Modules\CompatibilityTag\Module->get_plugins_to_check()
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): Elementor\Modules\CompatibilityTag\Base_Module->Elementor\Modules\CompatibilityTag\{closure}('')
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/modules/system-info/module.php(340): do_action('elementor/syste...')
+#8 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/includes/tracker.php(241): Elementor\Modules\System_Info\Module::get_allowed_reports()
+#9 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/includes/tracker.php(530): Elementor\Tracker::get_system_reports_data()
+#10 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/includes/tracker.php(141): Elementor\Tracker::get_tracking_data(false)
+#11 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): Elementor\Tracker::send_tracking_data()
+#12 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#13 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#14 /Users/max/Local Sites/theatre-three/app/public/wp-cron.php(191): do_action_ref_array('elementor/track...', Array)
+#15 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/wp-api.php on line 26

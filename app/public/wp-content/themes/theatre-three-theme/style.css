@@ -283,7 +283,7 @@ Version: 1.0
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(-30deg); 
+    transform: rotate(-30deg);
 }
 
 .sold-out-event {
@@ -292,7 +292,6 @@ Version: 1.0
 }
 
 /* RESPONSIVE FOR TABLET AND CELLPHONE */
-
 @media (max-width:820px) {
     .main-div-events-container {
         flex-direction: column;
@@ -310,10 +309,9 @@ Version: 1.0
 .site-header {
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 25px 45px;
     z-index: 10;
     position: relative;
     background-color: rgba(255, 255, 255, 0);
@@ -325,11 +323,10 @@ Version: 1.0
 }
 
 .title-container {
-    flex: .3;
-    margin-right: 20px;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .title-font {
@@ -352,94 +349,90 @@ Version: 1.0
 }
 
 /* NAV BAR */
-
-/* Original CSS for the nav component */
 .nav-bar {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;
     color: white;
     font-size: 1.25rem;
-    flex: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    padding: 0;
+    position: relative;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item {
     position: relative;
+    padding: 0 10px;
 }
 
 .nav-link {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-}
-
-/* .nav-item .sub-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #555;
-    list-style: none;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
-
-.nav-item .sub-links {
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0; 
-    top: calc(100% + 20px); 
-    background-color: #555; 
-    width: 100%; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 9;
-}
-
-.sub-links li {
-    padding: 0.5rem;
-    border-bottom: 1px solid #ccc;
-}
-
-.nav-item:last-child .sub-links {
-    left: auto;
-    right: 0;
-}
-
-.nav-bar a {
-    margin-left: 10px;
-    text-decoration: none;
     color: white;
-}
-
-.nav-bar a:hover,
-.nav-bar a:focus {
-    color: skyblue;
-    text-decoration: underline;
-    text-decoration-color: skyblue;
-}
-
-/* New CSS for the hamburger menu and mobile version */
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    border: none;
-    background: transparent;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    display: block;
     cursor: pointer;
 }
 
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    display: block;
+/* SUB-LINKS */
+.sub-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    z-index: 999;
+    border-top: 2px solid #0389c3;
+    list-style: none;
+    white-space: nowrap;
+}
+
+@media (max-width: 100%) {
+    .sub-links {
+        right: auto;
+        left: 0;
+    }
+}
+
+/* Active state for sub-links to display as a horizontal menu */
+.sub-links.active {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+}
+
+/* Styles for each list item in the sub-links */
+.sub-links li {
+    padding: 0 15px;
+}
+
+/* Styles for anchor tags in sub-links */
+.sub-links a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Hover state for dropdown items */
+.sub-links a:hover,
+.sub-links a:focus {
+    color:  #0389c3
+}
+
+/* Hamburger Menu and Mobile Version */
+.hamburger {
+    display: none;
 }
 
 @media (max-width: 820px) {
@@ -447,10 +440,17 @@ Version: 1.0
         display: flex;
     }
 
+    .nav-bar {
+        justify-content: flex-start;
+    }
+
     .nav-list {
         display: none;
+        /* Hide the nav list initially on mobile */
         flex-direction: column;
+        /* Stack the nav items vertically */
         width: 100%;
+        /* Full width of the nav-bar */
         position: absolute;
         top: 40px;
         left: 0;
@@ -458,28 +458,27 @@ Version: 1.0
     }
 
     .nav-item {
-        display: block;
-        margin-bottom: 10px;
+        padding: 0;
+        /* Remove padding for mobile */
     }
 
     .nav-link {
-        display: block;
-        padding: 10px;
-        text-align: center;
+        text-align: left;
+        /* Align nav links to the left on mobile */
     }
 
     .sub-links {
-        position: relative;
-        top: unset;
-        background-color: #555;
+        position: static;
+        /* Default position for mobile */
+        width: 100%;
+        /* Full width of the nav-item */
+        box-shadow: none;
+        /* Remove box shadow on mobile for a flat design */
     }
 
-    .nav-item:hover .sub-links {
-        display: none;
-    }
-
-    .sub-links.active {
-        display: flex;
+    .sub-links li {
+        background-color: transparent;
+        /* Sub-menu items match the nav-item */
     }
 }
 
@@ -617,7 +616,7 @@ Version: 1.0
     text-decoration: none;
 }
 
-.footer-column-hr{
+.footer-column-hr {
     width: 75%;
 }
 
