@@ -67,7 +67,7 @@
           <a href="#" class="nav-link">Engage & Learn</a>
           <ul class="sub-links">
             <li>
-              <a href="<?php echo site_url('#') ?>">Auditions</a>
+              <a href="<?php echo site_url('auditions-2gi') ?>">Auditions</a>
             </li>
             <li>
               <a href="<?php echo site_url('#') ?>">Acting Classes</a>
