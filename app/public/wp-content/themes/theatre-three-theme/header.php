@@ -50,7 +50,7 @@
             <a href="<?php echo get_post_type_archive_link('show') ?>">Mainstage</a>
             </li>
             <li>
-              <a href="<?php echo site_url('#') ?>">Second Stage</a>
+              <a href="<?php echo site_url('second_stage_shows') ?>">Second Stage</a>
             </li>
             <li>
               <a href="<?php echo site_url('#') ?>">Children's Theatre</a>
