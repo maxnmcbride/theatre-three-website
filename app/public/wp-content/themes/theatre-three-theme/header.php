@@ -36,7 +36,7 @@
               <a href="<?php echo site_url('#') ?>">Gift Certificates</a>
             </li>
             <li>
-              <a href="<?php echo site_url('#') ?>">Ticket Policy</a>
+              <a href="<?php echo site_url('ticket-policy') ?>">Ticket Policy</a>
             </li>
           </ul>
         </li>
@@ -47,7 +47,7 @@
               <a href="<?php echo site_url('#') ?>">Calendar</a>
             </li>
             <li>
-              <a href="<?php echo site_url('#') ?>">Mainstage</a>
+            <a href="<?php echo get_post_type_archive_link('show') ?>">Mainstage</a>
             </li>
             <li>
               <a href="<?php echo site_url('#') ?>">Second Stage</a>
@@ -82,7 +82,7 @@
               <a href="<?php echo site_url('#') ?>">Plan Your School Trip</a>
             </li>
             <li>
-              <a href="<?php echo site_url('#') ?>">Julie Peierls Scholarship</a>
+              <a href="<?php echo site_url('julie-peierls-scholarship') ?>">Julie Peierls Scholarship</a>
             </li>
           </ul>
         </li>
@@ -99,7 +99,7 @@
               <a href="<?php echo site_url('#') ?>">Contact Us</a>
             </li>
             <li>
-              <a href="<?php echo site_url('#') ?>">About Us</a>
+              <a href="<?php echo site_url('about-us') ?>">About Us</a>
             </li>
           </ul>
         </li>

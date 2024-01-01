@@ -427,7 +427,7 @@ Version: 1.0
 /* Hover state for dropdown items */
 .sub-links a:hover,
 .sub-links a:focus {
-    color:  #0389c3
+    color: #0389c3
 }
 
 /* Hamburger Menu and Mobile Version */
@@ -562,6 +562,11 @@ Version: 1.0
 
 .staff-table-spacing {
     width: 1rem;
+}
+
+/* TICKET POLICY */
+.ticket-policy-body-container {
+    background-color: beige;
 }
 
 /* FOOTER */
