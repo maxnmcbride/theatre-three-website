@@ -569,6 +569,14 @@ Version: 1.0
     background-color: beige;
 }
 
+/* GENERIC PAGE */
+.generic-page-body-container{
+    background-color: beige;
+}
+.generic-page-content{
+    background-color: beige;
+}
+
 /* FOOTER */
 .site-footer {
     z-index: 2;

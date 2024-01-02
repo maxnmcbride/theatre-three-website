@@ -21,10 +21,10 @@
     </button>
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="<?php echo site_url('#') ?>" class="nav-link">Tickets</a>
+          <a class="nav-link">Tickets</a>
           <ul class="sub-links">
             <li>
-              <a href="<?php echo site_url('#') ?>">Buy Tickets</a>
+              <a href="<?php echo site_url('/events-calendar') ?>">Buy Tickets</a>
             </li>
             <li>
               <a href="<?php echo site_url('#') ?>">Group Tickets</a>
@@ -44,7 +44,7 @@
           <a href="#" class="nav-link">Season</a>
           <ul class="sub-links">
             <li>
-              <a href="<?php echo site_url('#') ?>">Calendar</a>
+              <a href="<?php echo site_url('/events-calendar') ?>">Calendar</a>
             </li>
             <li>
             <a href="<?php echo get_post_type_archive_link('show') ?>">Mainstage</a>
