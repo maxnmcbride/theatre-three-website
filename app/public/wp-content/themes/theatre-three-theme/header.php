@@ -47,13 +47,13 @@
               <a href="<?php echo site_url('/events-calendar') ?>">Calendar</a>
             </li>
             <li>
-            <a href="<?php echo get_post_type_archive_link('show') ?>">Mainstage</a>
+            <a href="<?php echo get_post_type_archive_link('/show') ?>">Mainstage</a>
             </li>
             <li>
-              <a href="<?php echo site_url('second_stage_shows') ?>">Second Stage</a>
+              <a href="<?php echo site_url('/second_stage_shows') ?>">Second Stage</a>
             </li>
             <li>
-              <a href="<?php echo site_url('#') ?>">Children's Theatre</a>
+              <a href="<?php echo site_url('/childrens_theatre_shows') ?>">Children's Theatre</a>
             </li>
             <li>
               <a href="<?php echo site_url('#') ?>">One-Act Plays</a>
