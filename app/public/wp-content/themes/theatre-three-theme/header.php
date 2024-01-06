@@ -47,7 +47,7 @@
               <a href="<?php echo site_url('/events-calendar') ?>">Calendar</a>
             </li>
             <li>
-            <a href="<?php echo get_post_type_archive_link('/show') ?>">Mainstage</a>
+            <a href="<?php echo site_url('/shows') ?>">Mainstage</a>
             </li>
             <li>
               <a href="<?php echo site_url('/second_stage_shows') ?>">Second Stage</a>
@@ -67,10 +67,10 @@
           <a href="#" class="nav-link">Engage & Learn</a>
           <ul class="sub-links">
             <li>
-              <a href="<?php echo site_url('auditions-2gi') ?>">Auditions</a>
+              <a href="<?php echo site_url('auditions-2') ?>">Auditions</a>
             </li>
             <li>
-              <a href="<?php echo site_url('#') ?>">Acting Classes</a>
+              <a href="<?php echo site_url('/acting_classes') ?>">Acting Classes</a>
             </li>
             <li>
               <a href="<?php echo site_url('#') ?>">Submit a One-Act Play</a>
@@ -110,7 +110,7 @@
               <a href="<?php echo site_url('#') ?>">Donate</a>
             </li>
             <li>
-              <a href="<?php echo site_url('#') ?>">Volunteer</a>
+              <a href="<?php echo site_url('/volunteering') ?>">Volunteer</a>
             </li>
             <li>
               <a href="<?php echo site_url('#') ?>">Become a Sponsor</a>
