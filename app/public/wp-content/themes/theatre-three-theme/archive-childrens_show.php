@@ -90,8 +90,7 @@ get_header(); ?>
                         <?php echo get_the_excerpt(); ?>
                     </p>
                     <div class="single-show-buttons-container">
-                        <button class="single-show-buttons"><a href="#"><i>Buy Tickets</i></a></button>
-                        <button class="single-show-buttons"><a href="<?php the_permalink(); ?>"><i>Explore</i></a></button>
+                        <button class="single-show-buttons"><a href="<?php the_permalink(); ?>"><i>More Information</i></a></button>
                     </div>
                 </div>
             </div>
