@@ -4,6 +4,26 @@ get_header(); ?>
 <div class="mainstage-archive-page">
 
     <h1 class="mainstage-archive-page-title">ACTING CLASSES</h1>
+    <p class="acting-class-content">
+Theatre Three strives to offer the best educational acting experience.<br>
+Our experienced teachers help participants explore their creativity, <br>
+expand their skills, and experience live theatre in new ways, all while having fun.<br> 
+We believe any student should have a chance to be onstage. We create a safe space<br>
+for all students to try new things. Part of our mission is to give our students the <br>
+most interesting, innovative, and exciting experience possible. Students will receive <br>
+two tickets to attend any Mainstage or Children's Theatre production during the season <br>
+in which they are enrolled. They will be given an opportunity to discuss the production <br> 
+with their instructors and classmates.<br>
+
+<br>Workshops are limited to 20 students and meet once a week for for a total of 10 classes.<br>
+
+<br>SPACES ARE VERY LIMITED. REGISTER NOW!!!<br>
+
+<br>Sorry, no refunds unless classes are cancelled.<br>
+<br>Register online, by mail, at the Box Office, or charge by phone!<br>
+
+<br>Questions? Call Tuesday through Friday, 10 a.m. to 4 p.m.<br>
+(631) 928 - 9202</p>
     <hr class="archive-title-content-break1">
 
     <?php

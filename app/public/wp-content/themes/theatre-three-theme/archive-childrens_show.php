@@ -1,10 +1,9 @@
 <?php
 get_header(); ?>
 
-<div class="mainstage-archive-page">
+<div class="childrens-archive-page">
 
     <h1 class="mainstage-archive-page-title">CHILDREN'S THEATRE</h1>
-    <hr class="archive-title-content-break1">
 
     <?php
     $today = date('Ymd');

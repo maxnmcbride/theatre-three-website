@@ -1,10 +1,9 @@
 <?php
 get_header(); ?>
 
-<div class="mainstage-archive-page">
+<div class="second-stage-archive-page">
 
     <h1 class="mainstage-archive-page-title">SECOND STAGE SHOWS</h1>
-    <hr class="archive-title-content-break1">
 
     <?php
     $today = date('Ymd');
