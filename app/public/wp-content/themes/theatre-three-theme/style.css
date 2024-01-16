@@ -646,42 +646,47 @@ Version: 1.0
     margin-left: 20%;
 }
 
-/* ARCHIVE-SHOW */
-.mainstage-archive-page {
+/* ARCHIVE CHILDRENS-THEATRE-SHOW */
+.childrens-archive-page {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: beige;
+    background-color: rgb(5, 110, 128);
     height: 100%;
 }
 
+/* ARCHIVE SECOND-STAGE-SHOW */
+.second-stage-archive-page {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(5, 13, 128);
+    height: 100%;
+}
+
+/* ARCHIVE-SHOW */
+.mainstage-archive-page {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(79, 4, 4);
+    height: 100%;
+}
+
+.mainstage-description{
+    margin: 2rem;
+}
+
 .mainstage-archive-page-title {
-    color: black;
+    color: white;
     text-align: center;
     font-size: 3rem;
 }
 
-.archive-title-content-break1 {
-    width: 75%;
-    color: black;
-}
-
-.archive-title-content-break {
-    width: 100%;
-    color: black;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    margin-left: 30%;
-}
-
 .single-show-title {
-    margin-left: 35%;
+    margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .single-show-title a:hover {
@@ -695,23 +700,72 @@ Version: 1.0
 
 .single-show-description-container,
 .single-show-description {
-    margin-left: 20%;
+    text-align: center; /* Center align text */
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2rem;
+    width: 80%; /* Adjust as needed */
 }
 
-.single-show-description {
-    font-size: large;
-    padding-right: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.mainstage-container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* This will ensure the container takes up the full viewport height */
+    overflow: hidden; /* Prevents the main page from scrolling */
+}
+
+.left-static-section {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    text-align: center;
+    overflow: hidden;
+}
+
+.left-static-section .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: 1; /* Places the image behind the text */
+}
+
+.left-static-section h1 {
+    position: relative;
+    color: white; /* Adjust color as needed */
+    z-index: 2; /* Ensures the text is above the image */
+}
+
+/* Right Section */
+.right-scroll-section {
+    width: 50%;
+    height: 100%; /* This height will be the same as the mainstage-container */
+    overflow-y: auto; /* Enables internal vertical scrolling */
 }
 
 .card {
     position: relative;
-    width: 50%;
-    margin: 20px auto;
+    width: 80%; /* Reduce the width to make the card smaller */
+    margin: 20px auto; /* Add margin for spacing and centering */
     overflow: hidden;
     background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a shadow for the floating effect */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.card-background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image fits within the container */
+    display: block;
+    background-color: #FFF; /* Optional: Adjust the color as needed */
+    margin: auto; /* Centers the image if it's smaller than the container */
 }
 
 .show-image-container {
@@ -719,7 +773,7 @@ Version: 1.0
     left: 0;
     top: 0;
     bottom: 0;
-    width: 30%;
+    width: 50%;
     height: 100%;
     overflow: hidden;
     z-index: 1;
@@ -866,4 +920,10 @@ Version: 1.0
 .childrens-theatre-content-div {
     background-color: beige;
     min-width: 100%;
+}
+
+.acting-class-content{
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    margin: auto;
+    text-align: center;
 }
