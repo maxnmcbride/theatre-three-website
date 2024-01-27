@@ -10,15 +10,16 @@
 <body class="body" <?php body_class(); ?>>
   <header class="site-header">
     <div class="title-container">
-      <h1 class="title-font"><a href="<?php echo site_url('/') ?>">Theatre<i>Three</i></a></h1>
-      <p class="subtitle-font">Broadway on Main Street</p>
+    <a href="<?php echo site_url('/') ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/T3 Logo.png" alt="Theatre Three Logo">
+    </a>
     </div>
     <nav class="nav-bar">
-    <button class="hamburger">
+      <button class="hamburger">
         <span></span>
         <span></span>
         <span></span>
-    </button>
+      </button>
       <ul class="nav-list">
         <li class="nav-item">
           <a class="nav-link">Tickets</a>
@@ -47,7 +48,7 @@
               <a href="<?php echo site_url('/events-calendar') ?>">Calendar</a>
             </li>
             <li>
-            <a href="<?php echo site_url('/shows') ?>">Mainstage</a>
+              <a href="<?php echo site_url('/shows') ?>">Mainstage</a>
             </li>
             <li>
               <a href="<?php echo site_url('/second_stage_shows') ?>">Second Stage</a>
