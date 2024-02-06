@@ -146,3 +146,31 @@
 [15-Jan-2024 20:33:43] NOTICE: exiting, bye-bye!
 [27-Jan-2024 11:16:09] NOTICE: fpm is running, pid 5442
 [27-Jan-2024 11:16:09] NOTICE: ready to handle connections
+[01-Feb-2024 09:02:26] NOTICE: Terminating ...
+[01-Feb-2024 09:02:26] NOTICE: Terminating ...
+[01-Feb-2024 09:02:26] NOTICE: exiting, bye-bye!
+[01-Feb-2024 09:04:50] NOTICE: fpm is running, pid 1952
+[01-Feb-2024 09:04:50] NOTICE: ready to handle connections
+[02-Feb-2024 10:51:16] NOTICE: Terminating ...
+[02-Feb-2024 10:51:16] NOTICE: Terminating ...
+[02-Feb-2024 10:51:16] NOTICE: exiting, bye-bye!
+[02-Feb-2024 11:46:09] NOTICE: fpm is running, pid 2377
+[02-Feb-2024 11:46:09] NOTICE: ready to handle connections
+[02-Feb-2024 16:57:28] NOTICE: Terminating ...
+[02-Feb-2024 16:57:28] NOTICE: Terminating ...
+[02-Feb-2024 16:57:28] NOTICE: exiting, bye-bye!
+[02-Feb-2024 16:57:32] NOTICE: fpm is running, pid 4661
+[02-Feb-2024 16:57:32] NOTICE: ready to handle connections
+[02-Feb-2024 16:58:58] NOTICE: Terminating ...
+[02-Feb-2024 16:58:58] NOTICE: Terminating ...
+[02-Feb-2024 16:58:58] NOTICE: exiting, bye-bye!
+[02-Feb-2024 16:59:16] NOTICE: fpm is running, pid 4783
+[02-Feb-2024 16:59:16] NOTICE: ready to handle connections
+[02-Feb-2024 17:13:46] ERROR: Another FPM instance seems to already listen on /Users/max/Library/Application Support/Local/run/k3akC-CKC/php/php-fpm.socket
+[02-Feb-2024 17:13:46] ERROR: FPM initialization failed
+[02-Feb-2024 17:13:47] ERROR: Another FPM instance seems to already listen on /Users/max/Library/Application Support/Local/run/k3akC-CKC/php/php-fpm.socket
+[02-Feb-2024 17:13:47] ERROR: FPM initialization failed
+[02-Feb-2024 17:13:47] ERROR: Another FPM instance seems to already listen on /Users/max/Library/Application Support/Local/run/k3akC-CKC/php/php-fpm.socket
+[02-Feb-2024 17:13:47] ERROR: FPM initialization failed
+[02-Feb-2024 17:13:48] ERROR: Another FPM instance seems to already listen on /Users/max/Library/Application Support/Local/run/k3akC-CKC/php/php-fpm.socket
+[02-Feb-2024 17:13:48] ERROR: FPM initialization failed

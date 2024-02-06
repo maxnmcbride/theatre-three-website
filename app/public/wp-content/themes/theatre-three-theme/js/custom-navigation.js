@@ -1,45 +1,23 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var hamburger = document.querySelector(".hamburger");
-    var navList = document.querySelector(".nav-list");
-
-    hamburger.addEventListener("click", function() {
-        // Toggle the 'active' class instead of directly changing the style
-        navList.classList.toggle("active");
-    });
-
     var navItems = document.querySelectorAll(".nav-item");
+
     navItems.forEach(function(navItem) {
         navItem.addEventListener("click", function(event) {
-            event.stopPropagation();
-            var submenu = navItem.querySelector(".sub-links");
-            
+            event.preventDefault(); // Prevent default anchor link behavior
+
+            // Find the next sibling `.sub-links-container` relative to the clicked `.nav-item`
+            var submenu = this.nextElementSibling;
+
+            // Check if the clicked `.nav-item`'s submenu is already active
             if (submenu.classList.contains("active")) {
-                submenu.classList.remove("active");
+                submenu.classList.remove("active"); // Hide the submenu if it was already visible
             } else {
-                // Close other sub-menus
-                var activeMenus = document.querySelectorAll(".sub-links.active");
-                activeMenus.forEach(function(activeMenu) {
+                // Hide all other submenus before showing the clicked one
+                document.querySelectorAll(".sub-links-container.active").forEach(function(activeMenu) {
                     activeMenu.classList.remove("active");
                 });
-                submenu.classList.add("active");
+                submenu.classList.add("active"); // Show the submenu for the clicked `.nav-item`
             }
-        });
-    });
-
-    // Clicking anywhere outside of the nav-items will close all sub-menus
-    document.addEventListener("click", function(event) {
-        if (!event.target.closest(".nav-item")) {
-            var subMenus = document.querySelectorAll(".sub-links");
-            subMenus.forEach(function(menu) {
-                menu.classList.remove("active");
-            });
-        }
-    });
-
-    // Prevent clicks within the submenu from closing it
-    document.querySelectorAll(".sub-links").forEach(function(menu) {
-        menu.addEventListener("click", function(event) {
-            event.stopPropagation();
         });
     });
 });

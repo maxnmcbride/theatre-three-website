@@ -552,14 +552,22 @@ class Admin {
 		} );
 
 		add_filter( 'elementor/admin/dashboard_overview_widget/footer_actions', function( $additions_actions ) {
+
 			unset( $additions_actions['go-pro'] );
 
-			if ( current_user_can( 'manage_options' ) && API::is_license_expired() ) {
+			if ( current_user_can( 'manage_options' ) ) {
 				// Using 'go-pro' key to style the 'renew' button as the 'go-pro' button
-				$additions_actions['go-pro'] = [
-					'title' => esc_html__( 'Renew Now', 'elementor-pro' ),
-					'link' => 'https://go.elementor.com/overview-widget-renew/',
-				];
+				if ( API::is_license_expired() ) {
+					$additions_actions['go-pro'] = [
+						'title' => esc_html__( 'Renew Now', 'elementor-pro' ),
+						'link' => 'https://go.elementor.com/overview-widget-renew/',
+					];
+				} elseif ( API::is_need_to_show_upgrade_promotion() ) {
+					$additions_actions['go-pro'] = [
+						'title' => esc_html__( 'Upgrade', 'elementor-pro' ),
+						'link' => 'https://go.elementor.com/go-pro-advanced-wordpress-elementor-overview/',
+					];
+				}
 			}
 
 			return $additions_actions;
