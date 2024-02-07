@@ -304,6 +304,7 @@ Version: 1.0
         width: 100%;
     }
 }
+
 /* HEADER */
 .site-header {
     margin: 0;
@@ -319,61 +320,82 @@ Version: 1.0
 
 .site-header:hover,
 .site-header:focus-within {
-  background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(128, 128, 128, 0.5);
 }
- .logo-container {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
+
+.logo-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
 }
- .logo-container img {
-  max-width: 100%;
-  height: auto;
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
 }
- /* NAVBAR */
+
+/* NAVBAR */
 .navbar {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
- .main-nav {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
- .main-nav li {
-  position: relative;
-  margin-left: 20px;
+
+.main-nav li {
+    position: relative;
+    margin-left: 20px;
 }
- .main-nav a {
-  text-decoration: none;
-  font-family: Futura, Trebuchet MS, Arial, sans-serif;
-  color: white;
-  display: block;
-  padding: 5px 10px;
+
+.main-nav a {
+    text-decoration: none;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    font-size: larger;
+    color: white;
+    display: block;
+    padding: 5px 10px;
 }
- .subnav {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 5;
+
+.subnav {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgba(128, 128, 128);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 5;
 }
- .subnav li {
-  min-width: 160px;
+
+.subnav li {
+    list-style: none;
+    min-width: 160px;
 }
- .main-nav li:hover > .subnav,
-.main-nav li:focus-within > .subnav {
-  display: block;
+
+.main-nav li:hover>.subnav,
+.main-nav li:focus-within>.subnav {
+    display: block;
 }
- .subnav a {
-  padding: 10px 20px;
+
+.main-nav a:hover,
+.main-nav a:focus {
+    color: #5de1ff;
+    text-decoration: underline;
+    text-decoration-color:  #5de1ff;
 }
- .subnav a:hover {
-  background-color: #f0f0f0;
+
+.subnav a {
+    /* padding: 10px 20px; */
+    text-decoration: none;
+}
+
+.subnav a:hover {
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 /* BODY */
