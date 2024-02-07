@@ -1,20 +1,22 @@
 <?php
 get_header(); ?>
-
+<div class="title-container">
+    <h1 class="mainstage-archive-page-title">MAINSTAGE SHOWS</h1>
+</div>
 <div class="mainstage-archive-page">
     <div class="mainstage-container">
         <div class="left-static-section">
             <img src="<?php echo get_template_directory_uri(); ?>/images/mainstage_image.jpeg" alt="Background Image"
                 class="background-image">
-            <h1 class="mainstage-description">The Mainstage at Theatre Three, celebrated for its premier shows, provides
-                basic handicap accessibility within its classic, welcoming setting. Please note if you are a patron who
-                requires wheelchair accessibility to arrive at least 15 minutes prior to show time!
-            </h1>
+            <p class="mainstage-description">Each year, Theatre Three presents an exciting and entertaining Mainstage
+                season.
+                Composed of musicals, comedies, dramas, and its celebrated production of A Christmas
+                Carol, Theatre Three's Mainstage offerings have entertained Long Island audiences for
+                over fifty years. Summers feature a diverse concert series as well as home to the Long
+                Island Comedy Festival.
+            </p>
         </div>
         <div class="right-scroll-section">
-            <div class="fixed-title-container">
-                <h1 class="mainstage-archive-page-title">MAINSTAGE SHOWS</h1>
-            </div>
             <?php
             $today = date('Ymd');
             $args = array(
