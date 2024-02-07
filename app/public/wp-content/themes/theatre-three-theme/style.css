@@ -366,15 +366,32 @@ Version: 1.0
 .subnav {
     display: none;
     position: absolute;
-    left: 0;
+    transform: translateX(-50%);
+    left: 50%;
     background-color: rgba(128, 128, 128);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 5;
+    text-align: center;
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+
+.subnav ul {
+    box-sizing: border-box; 
 }
 
 .subnav li {
-    list-style: none;
+    list-style: none; /* This removes the bullet points */
     min-width: 160px;
+    box-sizing: border-box; 
+}
+
+.subnav a {
+    text-decoration: none;
+    display: block;
+}
+
+.subnav a:hover {
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 .main-nav li:hover>.subnav,
@@ -387,15 +404,6 @@ Version: 1.0
     color: #5de1ff;
     text-decoration: underline;
     text-decoration-color:  #5de1ff;
-}
-
-.subnav a {
-    /* padding: 10px 20px; */
-    text-decoration: none;
-}
-
-.subnav a:hover {
-    background-color: rgba(128, 128, 128, 0.5);
 }
 
 /* BODY */
