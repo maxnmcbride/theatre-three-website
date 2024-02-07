@@ -1,10 +1,10 @@
 <?php
 get_header(); ?>
 <div class="title-container">
-    <h1 class="mainstage-archive-page-title">MAINSTAGE SHOWS</h1>
+    <h1 class="archive-page-title">MAINSTAGE SHOWS</h1>
 </div>
 <div class="mainstage-archive-page">
-    <div class="mainstage-container">
+    <div class="archive-content-container">
         <div class="left-static-section">
             <img src="<?php echo get_template_directory_uri(); ?>/images/mainstage_image.jpeg" alt="Background Image"
                 class="background-image">
