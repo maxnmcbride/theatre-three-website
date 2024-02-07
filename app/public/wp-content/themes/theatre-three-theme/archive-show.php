@@ -4,7 +4,7 @@ get_header(); ?>
 <div class="mainstage-archive-page">
     <div class="mainstage-container">
         <div class="left-static-section">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/background.png" alt="Background Image"
+            <img src="<?php echo get_template_directory_uri(); ?>/images/mainstage_image.jpeg" alt="Background Image"
                 class="background-image">
             <h1 class="mainstage-description">The Mainstage at Theatre Three, celebrated for its premier shows, provides
                 basic handicap accessibility within its classic, welcoming setting. Please note if you are a patron who

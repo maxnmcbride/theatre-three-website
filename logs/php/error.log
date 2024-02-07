@@ -471,3 +471,110 @@ Stack trace:
   thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor/core/wp-api.php on line 26
 [15-Jan-2024 16:06:35 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 449
 [15-Jan-2024 16:06:35 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 730
+[02-Feb-2024 15:50:38 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-admin/includes/update.php on line 154
+[02-Feb-2024 15:50:39 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 211
+[02-Feb-2024 15:50:39 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 449
+[02-Feb-2024 15:50:39 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/max/Local Sites/theatre-three/app/public/wp-includes/update.php on line 730
+[02-Feb-2024 17:11:45 UTC] PHP Fatal error:  Uncaught WCPay\Exceptions\API_Exception: Your site host "theatre-three.local" is on a private network. Jetpack can only connect to public sites. in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php:194
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(222): WC_Payments_Http->start_connection('http://theatre-...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1923): WC_Payments_API_Client->start_server_connection('http://theatre-...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1018): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): WC_Payments_Account->maybe_handle_onboarding('')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin.php(175): do_action('admin_init')
+#7 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php on line 194
+[02-Feb-2024 21:19:40 UTC] PHP Fatal error:  Uncaught WCPay\Exceptions\API_Exception: Your site host "theatre-three.local" is on a private network. Jetpack can only connect to public sites. in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php:194
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(222): WC_Payments_Http->start_connection('http://theatre-...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1923): WC_Payments_API_Client->start_server_connection('http://theatre-...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1018): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): WC_Payments_Account->maybe_handle_onboarding('')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin.php(175): do_action('admin_init')
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-admin/index.php(10): require_once('/Users/max/Loca...')
+#8 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php on line 194
+[02-Feb-2024 21:19:47 UTC] PHP Fatal error:  Uncaught WCPay\Exceptions\API_Exception: Your site host "theatre-three.local" is on a private network. Jetpack can only connect to public sites. in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php:194
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(222): WC_Payments_Http->start_connection('http://theatre-...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1923): WC_Payments_API_Client->start_server_connection('http://theatre-...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1018): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): WC_Payments_Account->maybe_handle_onboarding('')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin.php(175): do_action('admin_init')
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-admin/index.php(10): require_once('/Users/max/Loca...')
+#8 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php on line 194
+[02-Feb-2024 21:20:02 UTC] PHP Fatal error:  Uncaught WCPay\Exceptions\API_Exception: Your site host "theatre-three.local" is on a private network. Jetpack can only connect to public sites. in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php:194
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(222): WC_Payments_Http->start_connection('http://theatre-...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1923): WC_Payments_API_Client->start_server_connection('http://theatre-...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1018): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): WC_Payments_Account->maybe_handle_onboarding('')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin.php(175): do_action('admin_init')
+#7 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php on line 194
+[02-Feb-2024 21:23:23 UTC] PHP Fatal error:  Uncaught WCPay\Exceptions\API_Exception: Your site host "theatre-three.local" is on a private network. Jetpack can only connect to public sites. in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php:194
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(222): WC_Payments_Http->start_connection('http://theatre-...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1923): WC_Payments_API_Client->start_server_connection('http://theatre-...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1018): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): WC_Payments_Account->maybe_handle_onboarding('')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin.php(175): do_action('admin_init')
+#7 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php on line 194
+[02-Feb-2024 21:23:29 UTC] PHP Fatal error:  Uncaught WCPay\Exceptions\API_Exception: Your site host "theatre-three.local" is on a private network. Jetpack can only connect to public sites. in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php:194
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(222): WC_Payments_Http->start_connection('http://theatre-...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1923): WC_Payments_API_Client->start_server_connection('http://theatre-...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1018): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): WC_Payments_Account->maybe_handle_onboarding('')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin.php(175): do_action('admin_init')
+#7 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php on line 194
+[02-Feb-2024 21:25:25 UTC] PHP Fatal error:  Uncaught WCPay\Exceptions\API_Exception: Your site host "theatre-three.local" is on a private network. Jetpack can only connect to public sites. in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php:194
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(222): WC_Payments_Http->start_connection('http://theatre-...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1923): WC_Payments_API_Client->start_server_connection('http://theatre-...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1018): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): WC_Payments_Account->maybe_handle_onboarding('')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin.php(175): do_action('admin_init')
+#7 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php on line 194
+[02-Feb-2024 21:27:17 UTC] PHP Fatal error:  Uncaught WCPay\Exceptions\API_Exception: Your site host "theatre-three.local" is on a private network. Jetpack can only connect to public sites. in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php:194
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(222): WC_Payments_Http->start_connection('http://theatre-...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1923): WC_Payments_API_Client->start_server_connection('http://theatre-...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1018): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): WC_Payments_Account->maybe_handle_onboarding('')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin.php(175): do_action('admin_init')
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-admin/index.php(10): require_once('/Users/max/Loca...')
+#8 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php on line 194
+[02-Feb-2024 21:52:40 UTC] PHP Fatal error:  Uncaught WCPay\Exceptions\API_Exception: Jetpack requires your site https://breakable-hammer.localsite.io/ to be publicly accessible. in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php:194
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(222): WC_Payments_Http->start_connection('https://breakab...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1923): WC_Payments_API_Client->start_server_connection('https://breakab...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1018): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): WC_Payments_Account->maybe_handle_onboarding('')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin.php(175): do_action('admin_init')
+#7 /Users/max/Local Sites/theatre-three/app/public/wp-admin/index.php(10): require_once('/Users/max/Loca...')
+#8 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php on line 194
