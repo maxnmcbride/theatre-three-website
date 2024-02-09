@@ -30,7 +30,6 @@
             <li><a href="<?php echo site_url('/shows'); ?>">Mainstage</a></li>
             <li><a href="<?php echo site_url('/second_stage_shows'); ?>">Second Stage</a></li>
             <li><a href="<?php echo site_url('/childrens_theatre_shows'); ?>">Children's Theatre</a></li>
-            <li><a href="<?php echo site_url('#'); ?>">One-Act Plays</a></li>
             <li><a href="<?php echo site_url('#'); ?>">Subscriptions</a></li>
           </ul>
         </li>

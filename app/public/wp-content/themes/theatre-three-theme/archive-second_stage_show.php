@@ -2,6 +2,7 @@
 get_header(); ?>
 <div class="title-container">
     <h1 class="archive-page-title">SECOND STAGE SHOWS</h1>
+    <hr class="archive-title-content-break1">
 </div>
 <div class="mainstage-archive-page">
     <div class="archive-content-container">
