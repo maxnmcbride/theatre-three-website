@@ -657,7 +657,8 @@ Version: 1.0
     width: 25%;
     height: 100vh;
     display: flex;
-    align-items: center;
+    padding-top: 5%;
+    align-items: flex-start;
     justify-content: center;
     text-align: center;
     overflow: hidden;
