@@ -500,6 +500,8 @@ Version: 1.0
 
 .generic-page-content {
     background-color: beige;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    color: black;
 }
 
 /* FOOTER */

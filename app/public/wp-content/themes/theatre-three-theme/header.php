@@ -40,7 +40,7 @@
           </ul>
         </li>
         <li><a href="#">One Act Plays</a></li>
-        <li><a href="#">Acting Classes</a></li>
+        <li><a href="<?php echo site_url('/acting_classes'); ?>">Acting Classes</a></li>
         <li><a href="#">Auditions</a></li>
       </ul>
     </nav>

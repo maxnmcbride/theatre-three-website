@@ -1,0 +1,12 @@
+2024-02-09T17:29:55+00:00 CRITICAL Uncaught WCPay\Exceptions\API_Exception: Your site host "localhost" is on a private network. Jetpack can only connect to public sites. in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php:194
+Stack trace:
+#0 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-api-client.php(222): WC_Payments_Http->start_connection('http://localhos...')
+#1 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1923): WC_Payments_API_Client->start_server_connection('http://localhos...')
+#2 /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/class-wc-payments-account.php(1018): WC_Payments_Account->redirect_to_onboarding_flow_page()
+#3 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(310): WC_Payments_Account->maybe_handle_onboarding('')
+#4 /Users/max/Local Sites/theatre-three/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/max/Local Sites/theatre-three/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/max/Local Sites/theatre-three/app/public/wp-admin/admin.php(175): do_action('admin_init')
+#7 {main}
+  thrown in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/woocommerce-payments/includes/wc-payment-api/class-wc-payments-http.php on line 194
+
