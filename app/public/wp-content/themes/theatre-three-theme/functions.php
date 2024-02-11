@@ -13,17 +13,18 @@ function site_features()
 }
 add_action('after_setup_theme', 'site_features');
 
+// Enqueue your scripts here
+function enqueue_custom_scripts()
+{
+    // Enqueue jQuery that comes with WordPress
+    wp_enqueue_script('jquery');
 
-wp_enqueue_script('jquery');
-
-function enqueue_custom_scripts() {
+    // Assuming other custom scripts are correctly enqueued
     wp_enqueue_script('custom-navigation', get_template_directory_uri() . '/js/custom-navigation.js', array('jquery'), null, true);
     wp_enqueue_script('custom-submenu', get_template_directory_uri() . '/js/custom-submenu.js', array('jquery'), null, true);
 
+    // Enqueue the script for the hamburger menu functionality
+    wp_enqueue_script('hamburger-nav', get_template_directory_uri() . '/js/hamburger-nav.js', array('jquery'), null, true);
 }
-add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 
-function prevent_page_scroll(){
-    
-}
 ?>

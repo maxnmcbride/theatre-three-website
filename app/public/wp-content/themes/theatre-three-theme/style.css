@@ -407,53 +407,65 @@ Version: 1.0
     text-decoration-color: #5de1ff;
 }
 
-/* RESPONSIVE NAVIGATION */
+/* HAMBURGER MENU ICON */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+  
+/* Media query for responsive adjustments */
 @media (max-width: 768px) {
-    .navbar {
-        display: block;
-    }
-
-    .main-nav {
-        display: none;
-        /* Hide the navigation on small screens */
-        flex-direction: column;
-        /* Stack the items vertically */
-    }
-
-    /* You'll need some JavaScript or a CSS-only solution to toggle this display on click */
-    .main-nav.active {
-        display: flex;
-    }
-
-    .main-nav li {
-        margin-left: 0;
-        /* Remove margin for stacked display */
-        width: 100%;
-        /* Full width */
-    }
-
-    .subnav {
-        position: static;
-        /* Override absolute positioning */
-        transform: none;
-        /* Remove any transforms */
+    .site-header {
+        flex-direction: column; /* Stack logo and menu vertically */
+        align-items: center; /* Center-align items */
+        padding: 10px 0; /* Adjust padding */
     }
 
     .logo-container {
-        width: auto;
-        /* Adjust logo container width */
+        margin-bottom: 10px; /* Space between logo and menu button */
     }
 
-    .logo-container img {
-        max-width: 80%;
-        /* Adjust logo size */
-        height: auto;
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu */
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
     }
 
-    /* Add a menu icon for toggling the navigation */
-    .menu-toggle {
-        display: block;
-        /* Style your menu toggle button */
+    .navbar {
+        display: none; /* Hide the navbar by default */
+        width: 100%; /* Full width */
+    }
+
+    .navbar.is-active {
+        display: block; /* Display navbar when active */
+    }
+
+    .main-nav {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .main-nav li {
+        text-align: center; /* Center-align nav items */
+        margin-bottom: 5px; /* Space between nav items */
+    }
+
+    .subnav {
+        display: none; /* Hide subnav by default */
+    }
+
+    .main-nav li:hover > .subnav,
+    .main-nav li:focus-within > .subnav {
+        display: block; /* Display subnav on hover/focus */
+        position: static; /* Override absolute positioning */
     }
 }
 
@@ -557,14 +569,14 @@ Version: 1.0
 
 /* FOOTER */
 .site-footer {
-        z-index: 2;
-        background-color: black;
-        display: flex;
-        justify-content: space-between;
-        margin-top: auto;
-        box-sizing: border-box;
-        padding-left: 0;
-        padding-right: 0;
+    z-index: 2;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .footer-column {
@@ -617,24 +629,30 @@ Version: 1.0
     .site-footer {
         flex-direction: column;
         align-items: center;
-        text-align: center; /* Center-align footer text */
+        text-align: center;
+        /* Center-align footer text */
     }
 
     .footer-column {
-        width: 100%; /* Full width */
-        padding: 5% 3%; /* Adjust padding as needed */
+        width: 100%;
+        /* Full width */
+        padding: 5% 3%;
+        /* Adjust padding as needed */
     }
 
     .footer-column-heading,
     .footer-column-paragraph,
     .footer-column-hr,
     .footer-title {
-        text-align: center; /* Center text for all elements in the footer */
+        text-align: center;
+        /* Center text for all elements in the footer */
     }
 
     .footer-column-hr {
-        margin: 10px auto; /* Center horizontal rule */
-        width: 50%; /* Adjust width of horizontal rule */
+        margin: 10px auto;
+        /* Center horizontal rule */
+        width: 50%;
+        /* Adjust width of horizontal rule */
     }
 }
 
