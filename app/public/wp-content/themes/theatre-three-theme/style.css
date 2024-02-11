@@ -726,6 +726,7 @@ Version: 1.0
     overflow: hidden;
 }
 
+/* LEFT SECTION ARCHIVE */
 .left-static-section {
     position: relative;
     width: 25%;
@@ -760,7 +761,7 @@ Version: 1.0
     position: relative;
 }
 
-/* Right Section */
+/* RIGHT SECTION ARCHIVE */
 .right-scroll-section {
     width: 75%;
     height: 100%;
@@ -856,6 +857,39 @@ Version: 1.0
     }
 }
 
+/* RESPONSIVE ARCHIVE PAGE */
+@media (max-width: 820px) {
+    .archive-content-container {
+        flex-direction: column;
+    }
+
+    @media (max-width: 820px) {
+        .left-static-section {
+            overflow-y: auto;
+            max-height: 400px;
+        }
+    }
+
+    .left-static-section,
+    .right-scroll-section {
+        width: 100%;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .single-show-title,
+    .show-date-span-container,
+    .single-show-description-container,
+    .single-show-description {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
 /* SINGLE SHOW */
 .mainstage-show-content-div {
     background-color: beige;
@@ -863,7 +897,6 @@ Version: 1.0
 }
 
 /* SECOND STAGE */
-
 .second-stage-title-line-break {
     color: white;
     width: 100%;
