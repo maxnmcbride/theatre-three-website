@@ -407,65 +407,39 @@ Version: 1.0
     text-decoration-color: #5de1ff;
 }
 
-/* HAMBURGER MENU ICON */
-.hamburger-menu {
-    display: none;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    padding: 10px;
-}
-  
-/* Media query for responsive adjustments */
-@media (max-width: 768px) {
-    .site-header {
-        flex-direction: column; /* Stack logo and menu vertically */
-        align-items: center; /* Center-align items */
-        padding: 10px 0; /* Adjust padding */
-    }
-
-    .logo-container {
-        margin-bottom: 10px; /* Space between logo and menu button */
-    }
-
-    .hamburger-menu {
-        display: block; /* Show the hamburger menu */
-        background: none;
-        border: none;
-        font-size: 2rem;
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-    }
-
+/* RESPONSIVE NAV */
+@media (max-width: 820px) {
     .navbar {
-        display: none; /* Hide the navbar by default */
-        width: 100%; /* Full width */
-    }
-
-    .navbar.is-active {
-        display: block; /* Display navbar when active */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center-align items if needed */
+        width: 100%;
+        /* Use the full width */
     }
 
     .main-nav {
-        flex-direction: column; /* Stack nav items vertically */
+        flex-direction: column;
+        width: 100%;
+        /* Ensure nav items span the full width */
     }
 
     .main-nav li {
-        text-align: center; /* Center-align nav items */
-        margin-bottom: 5px; /* Space between nav items */
+        text-align: center;
+        /* Center-align the text for each nav item */
+        width: 100%;
+        /* Ensure list items span the full width */
+        margin: 5px 0;
+        /* Add some space between items */
     }
 
     .subnav {
-        display: none; /* Hide subnav by default */
-    }
-
-    .main-nav li:hover > .subnav,
-    .main-nav li:focus-within > .subnav {
-        display: block; /* Display subnav on hover/focus */
-        position: static; /* Override absolute positioning */
+        position: static;
+        /* Override absolute positioning */
+        width: 100%;
+        /* Ensure dropdowns span the full width */
+        transform: none;
+        /* Remove transform */
     }
 }
 
