@@ -1,4 +1,4 @@
-/*! elementor-pro - v3.19.0 - 29-01-2024 */
+/*! elementor-pro - v3.19.0 - 07-02-2024 */
 "use strict";
 (self["webpackChunkelementor_pro"] = self["webpackChunkelementor_pro"] || []).push([["countdown"],{
 
@@ -84,7 +84,7 @@ var _default = exports["default"] = elementorModules.frontend.handlers.Base.exte
           self.cache.$countDown.hide();
           break;
         case 'redirect':
-          if (action.redirect_url) {
+          if (action.redirect_url && action.redirect_url.startsWith('http')) {
             window.location.href = action.redirect_url;
           }
           break;
@@ -145,4 +145,4 @@ var _default = exports["default"] = elementorModules.frontend.handlers.Base.exte
 /***/ })
 
 }]);
-//# sourceMappingURL=countdown.f6a533f1dcbc65c83181.bundle.js.map
+//# sourceMappingURL=countdown.60cf02eaf22d71d83f3d.bundle.js.map

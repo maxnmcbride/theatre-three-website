@@ -600,3 +600,4 @@ Stack trace:
 [10-Feb-2024 16:52:34 UTC] PHP Warning:  Undefined array key "calendar_type" in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/query-control/module.php on line 767
 [10-Feb-2024 16:52:34 UTC] PHP Warning:  Attempt to read property "labels" on null in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/query-control/module.php on line 767
 [10-Feb-2024 16:52:34 UTC] PHP Warning:  Attempt to read property "name" on null in /Users/max/Local Sites/theatre-three/app/public/wp-content/plugins/elementor-pro/modules/query-control/module.php on line 767
+[11-Feb-2024 16:03:22 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
