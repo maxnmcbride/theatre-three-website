@@ -48,11 +48,12 @@
         </li>
         <li><a href="<?php echo site_url('/acting_classes'); ?>">Acting Classes</a></li>
         <li><a href="<?php echo site_url('/auditions-page'); ?>">Auditions</a></li>
-        <li><a href="<?php echo site_url('/auditions-page'); ?>">More</a>
+        <li><a href="#" ?>">More</a>
           <ul class="subnav">
             <li><a href="<?php echo site_url('/'); ?>">Donations</a></li>
             <li><a href="<?php echo site_url('/julie-peierls-scholarship'); ?>">Julie Peierls Scholarship</a></li>
             <li><a href="<?php echo site_url('/volunteering'); ?>">Volunteer</a></li>
+            <li><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
           </ul>
         </li>
       </ul>
