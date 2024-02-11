@@ -19,9 +19,8 @@
         <li><a href="#">Tickets</a>
           <ul class="subnav">
             <li><a href="<?php echo site_url('/events-calendar'); ?>">Buy Tickets</a></li>
-            <li><a href="<?php echo site_url('#'); ?>">Group Tickets</a></li>
-            <li><a href="<?php echo site_url('#'); ?>">Gift Certificates</a></li>
-            <li><a href="<?php echo site_url('ticket-policy'); ?>">Ticket Policy</a></li>
+            <li><a href="<?php echo site_url('/group-sales'); ?>">Group Tickets</a></li>
+            <li><a href="<?php echo site_url('/ticket-policy'); ?>">Ticket Policy</a></li>
           </ul>
         </li>
         <li><a href="#">Season</a>
@@ -30,7 +29,6 @@
             <li><a href="<?php echo site_url('/shows'); ?>">Mainstage</a></li>
             <li><a href="<?php echo site_url('/second_stage_shows'); ?>">Second Stage</a></li>
             <li><a href="<?php echo site_url('/childrens_theatre_shows'); ?>">Children's Theatre</a></li>
-            <li><a href="<?php echo site_url('#'); ?>">Subscriptions</a></li>
           </ul>
         </li>
         <li><a href="#">Educational Experiences</a>
