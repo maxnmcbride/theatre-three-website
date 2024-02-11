@@ -29,23 +29,32 @@
             <li><a href="<?php echo site_url('/shows'); ?>">Mainstage</a></li>
             <li><a href="<?php echo site_url('/second_stage_shows'); ?>">Second Stage</a></li>
             <li><a href="<?php echo site_url('/childrens_theatre_shows'); ?>">Children's Theatre</a></li>
+            <li><a href="<?php echo site_url('/sensory-friendly-performances'); ?>">Sensory Friendly Performances</a>
+            </li>
           </ul>
         </li>
         <li><a href="#">Educational Experiences</a>
           <ul class="subnav">
-            <li><a href="#">Workshops</a></li>
-            <li><a href="#">School Programs</a></li>
+            <li><a href="<?php echo site_url('/field-trips'); ?>">Field Trips</a></li>
+            <li><a href="<?php echo site_url('/field-trips'); ?>">Educational Touring</a></li>
           </ul>
         </li>
         <li><a href="#">One Act Plays</a>
           <ul class="subnav">
-            <li><a href="<?php echo site_url('/festival-schedule'); ?>">Festival Schedule</a></li>
+            <li><a href="<?php echo site_url('/festival-schedule'); ?>">One-Act Plays</a></li>
             <li><a href="<?php echo site_url('/past-festival-archive'); ?>">Past Festival Archive</a></li>
             <li><a href="<?php echo site_url('/one-act-play-submissions'); ?>">Submit a One Act Play</a></li>
           </ul>
         </li>
         <li><a href="<?php echo site_url('/acting_classes'); ?>">Acting Classes</a></li>
         <li><a href="<?php echo site_url('/auditions-page'); ?>">Auditions</a></li>
+        <li><a href="<?php echo site_url('/auditions-page'); ?>">More</a>
+          <ul class="subnav">
+            <li><a href="<?php echo site_url('/'); ?>">Donations</a></li>
+            <li><a href="<?php echo site_url('/julie-peierls-scholarship'); ?>">Julie Peierls Scholarship</a></li>
+            <li><a href="<?php echo site_url('/volunteering'); ?>">Volunteer</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
