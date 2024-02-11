@@ -370,19 +370,20 @@ Version: 1.0
     left: 50%;
     background-color: rgba(128, 128, 128);
     text-align: center;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 .subnav ul {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .subnav li {
-    list-style: none; /* This removes the bullet points */
+    list-style: none;
+    /* This removes the bullet points */
     min-width: 160px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .subnav a {
@@ -403,7 +404,57 @@ Version: 1.0
 .main-nav a:focus {
     color: #5de1ff;
     text-decoration: underline;
-    text-decoration-color:  #5de1ff;
+    text-decoration-color: #5de1ff;
+}
+
+/* RESPONSIVE NAVIGATION */
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        /* Hide the navigation on small screens */
+        flex-direction: column;
+        /* Stack the items vertically */
+    }
+
+    /* You'll need some JavaScript or a CSS-only solution to toggle this display on click */
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav li {
+        margin-left: 0;
+        /* Remove margin for stacked display */
+        width: 100%;
+        /* Full width */
+    }
+
+    .subnav {
+        position: static;
+        /* Override absolute positioning */
+        transform: none;
+        /* Remove any transforms */
+    }
+
+    .logo-container {
+        width: auto;
+        /* Adjust logo container width */
+    }
+
+    .logo-container img {
+        max-width: 80%;
+        /* Adjust logo size */
+        height: auto;
+    }
+
+    /* Add a menu icon for toggling the navigation */
+    .menu-toggle {
+        display: block;
+        /* Style your menu toggle button */
+    }
 }
 
 /* BODY */
@@ -506,19 +557,20 @@ Version: 1.0
 
 /* FOOTER */
 .site-footer {
-    z-index: 2;
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: auto;
-    width: 100%;
-    box-sizing: border-box;
+        z-index: 2;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        box-sizing: border-box;
+        padding-left: 0;
+        padding-right: 0;
 }
 
 .footer-column {
     flex: 1;
-    padding: 5%;
+    box-sizing: border-box;
+
 }
 
 .footer-column-heading {
@@ -560,6 +612,32 @@ Version: 1.0
     width: 75%;
 }
 
+/* FOOTER RESPONSIVE */
+@media (max-width: 768px) {
+    .site-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center-align footer text */
+    }
+
+    .footer-column {
+        width: 100%; /* Full width */
+        padding: 5% 3%; /* Adjust padding as needed */
+    }
+
+    .footer-column-heading,
+    .footer-column-paragraph,
+    .footer-column-hr,
+    .footer-title {
+        text-align: center; /* Center text for all elements in the footer */
+    }
+
+    .footer-column-hr {
+        margin: 10px auto; /* Center horizontal rule */
+        width: 50%; /* Adjust width of horizontal rule */
+    }
+}
+
 /* PAGE STYLING */
 .page-title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -594,11 +672,11 @@ Version: 1.0
     height: 100%;
 }
 
-.archive-title-content-break1{
+.archive-title-content-break1 {
     color: black;
 }
 
-.title-container{
+.title-container {
     background-color: beige;
 }
 
@@ -645,7 +723,7 @@ Version: 1.0
     width: 80%;
 }
 
-.archive-content-container{
+.archive-content-container {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -679,7 +757,7 @@ Version: 1.0
 .left-static-section p.mainstage-description {
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     font-size: larger;
-    color: white; 
+    color: white;
     text-align: center;
     margin: 2rem;
     z-index: 2;
@@ -791,7 +869,7 @@ Version: 1.0
 /* SECOND STAGE */
 
 .second-stage-title-line-break {
-    color:white;
+    color: white;
     width: 100%;
 }
 
