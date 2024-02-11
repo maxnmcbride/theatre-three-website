@@ -39,7 +39,13 @@
             <li><a href="#">School Programs</a></li>
           </ul>
         </li>
-        <li><a href="#">One Act Plays</a></li>
+        <li><a href="#">One Act Plays</a>
+          <ul class="subnav">
+            <li><a href="<?php echo site_url('/festival-schedule'); ?>">Festival Schedule</a></li>
+            <li><a href="<?php echo site_url('/past-festival-archive'); ?>">Past Festival Archive</a></li>
+            <li><a href="<?php echo site_url('/one-act-play-submissions'); ?>">Submit a One Act Play</a></li>
+          </ul>
+        </li>
         <li><a href="<?php echo site_url('/acting_classes'); ?>">Acting Classes</a></li>
         <li><a href="<?php echo site_url('/auditions-page'); ?>">Auditions</a></li>
       </ul>
