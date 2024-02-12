@@ -190,3 +190,11 @@
 [11-Feb-2024 11:40:19] ERROR: FPM initialization failed
 [11-Feb-2024 11:40:20] ERROR: Another FPM instance seems to already listen on /Users/max/Library/Application Support/Local/run/k3akC-CKC/php/php-fpm.socket
 [11-Feb-2024 11:40:20] ERROR: FPM initialization failed
+[11-Feb-2024 19:19:11] ERROR: Another FPM instance seems to already listen on /Users/max/Library/Application Support/Local/run/k3akC-CKC/php/php-fpm.socket
+[11-Feb-2024 19:19:11] ERROR: FPM initialization failed
+[11-Feb-2024 19:19:12] ERROR: Another FPM instance seems to already listen on /Users/max/Library/Application Support/Local/run/k3akC-CKC/php/php-fpm.socket
+[11-Feb-2024 19:19:12] ERROR: FPM initialization failed
+[11-Feb-2024 19:19:12] ERROR: Another FPM instance seems to already listen on /Users/max/Library/Application Support/Local/run/k3akC-CKC/php/php-fpm.socket
+[11-Feb-2024 19:19:12] ERROR: FPM initialization failed
+[11-Feb-2024 19:19:13] ERROR: Another FPM instance seems to already listen on /Users/max/Library/Application Support/Local/run/k3akC-CKC/php/php-fpm.socket
+[11-Feb-2024 19:19:13] ERROR: FPM initialization failed

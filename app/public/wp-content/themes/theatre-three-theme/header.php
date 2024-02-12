@@ -36,7 +36,7 @@
         <li><a href="#">Educational Experiences</a>
           <ul class="subnav">
             <li><a href="<?php echo site_url('/field-trips'); ?>">Field Trips</a></li>
-            <li><a href="<?php echo site_url('/field-trips'); ?>">Educational Touring</a></li>
+            <li><a href="<?php echo site_url('/educational-touring'); ?>">Educational Touring</a></li>
           </ul>
         </li>
         <li><a href="#">One Act Plays</a>
@@ -50,7 +50,7 @@
         <li><a href="<?php echo site_url('/auditions-page'); ?>">Auditions</a></li>
         <li><a href="#" ?>More</a>
           <ul class="subnav">
-            <li><a href="<?php echo site_url('/'); ?>">Donations</a></li>
+            <li><a href="<?php echo site_url('/donations'); ?>">Donations</a></li>
             <li><a href="<?php echo site_url('/julie-peierls-scholarship'); ?>">Julie Peierls Scholarship</a></li>
             <li><a href="<?php echo site_url('/volunteering'); ?>">Volunteer</a></li>
             <li><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
